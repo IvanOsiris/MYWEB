@@ -1,0 +1,601 @@
+/* STREAMING_CHUNK:Configurando el reset y estilos base del sitio... /
+/ ==========================================================================
+HOJA DE ESTILOS CSS ESTÁNDAR LIMPIA - PORTAFOLIO IVÁN OLGUÍN
+(Sin variables :root, código directo y fácil de editar)
+========================================================================== */
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f8fafc;
+color: #334155;
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+transition: all 0.3s ease;
+}
+
+/* STREAMING_CHUNK:Definiendo utilidades de maquetación y colores primarios... */
+.container {
+max-width: 1150px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.section {
+padding: 80px 0;
+}
+
+.text-center { text-align: center; }
+.text-primary { color: #2563eb; }
+.text-accent { color: #ff0000; }
+.text-blue { color: #3b82f6; }
+.text-green { color: #10b981; }
+.text-muted { color: #64748b; }
+.text-white { color: #ffffff; }
+
+.bg-white { background-color: #ffffff; }
+.bg-light { background-color: #f1f5f9; }
+.bg-dark { background-color: #0f172a; }
+.bg-darker { background-color: #020617; }
+
+.grid {
+display: grid;
+gap: 30px;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-12 { grid-template-columns: repeat(12, 1fr); }
+
+/* STREAMING_CHUNK:Estilizando botones y elementos interactivos... */
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+padding: 12px 24px;
+border-radius: 12px;
+font-weight: 600;
+cursor: pointer;
+border: none;
+}
+
+.btn-sm { padding: 8px 16px; font-size: 0.9rem; }
+
+.btn-primary {
+background: #2563eb;
+color: #ffffff;
+}
+.btn-primary:hover {
+background: #1d4ed8;
+}
+
+.btn-accent {
+background: #ff0000;
+color: #ffffff;
+}
+.btn-accent:hover {
+background: #cc0000;
+}
+
+.btn-outline {
+background: #ffffff;
+border: 1px solid #e2e8f0;
+color: #334155;
+}
+.btn-outline:hover {
+border-color: #ff0000;
+color: #ff0000;
+}
+
+.btn-dark-outline {
+background: rgba(255, 255, 255, 0.1);
+color: #ffffff;
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.btn-dark-outline:hover {
+background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-block {
+width: 100%;
+display: block;
+text-align: center;
+}
+
+/* STREAMING_CHUNK:Diseñando la cabecera y el menú de navegación... */
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid #e2e8f0;
+z-index: 1000;
+height: 70px;
+display: flex;
+align-items: center;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+.logo {
+font-size: 1.4rem;
+font-weight: 900;
+display: flex;
+align-items: center;
+gap: 8px;
+color: #0f172a;
+}
+
+.logo-badge {
+width: 32px;
+height: 32px;
+background: linear-gradient(135deg, #2563eb, #ff0000);
+color: #ffffff;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.8rem;
+}
+
+.nav-desktop {
+display: flex;
+align-items: center;
+gap: 24px;
+font-size: 0.95rem;
+font-weight: 600;
+}
+
+.nav-desktop a:hover { color: #2563eb; }
+.nav-desktop .link-youtube:hover { color: #ff0000; }
+
+.mobile-menu-btn {
+display: none;
+background: none;
+border: none;
+font-size: 1.5rem;
+color: #0f172a;
+cursor: pointer;
+}
+
+.nav-mobile {
+position: absolute;
+top: 70px;
+left: 0;
+width: 100%;
+background: #ffffff;
+border-bottom: 1px solid #e2e8f0;
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.nav-mobile.hidden { display: none; }
+
+/* STREAMING_CHUNK:Dando estilo a la sección principal Hero... */
+.hero-section {
+padding: 150px 0 90px;
+background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+background-size: 24px 24px;
+}
+
+.badge-status {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+background: #eff6ff;
+border: 1px solid #bfdbfe;
+color: #2563eb;
+padding: 6px 16px;
+border-radius: 50px;
+font-size: 0.85rem;
+font-weight: 600;
+margin-bottom: 25px;
+}
+
+.pulse-dot {
+width: 10px;
+height: 10px;
+background: #10b981;
+border-radius: 50%;
+}
+
+.hero-title {
+font-size: 3rem;
+font-weight: 900;
+line-height: 1.2;
+color: #0f172a;
+margin-bottom: 20px;
+}
+
+.text-gradient {
+background: linear-gradient(90deg, #2563eb, #4f46e5, #ff0000);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+font-size: 1.15rem;
+color: #64748b;
+max-width: 750px;
+margin: 0 auto 30px;
+}
+
+.hero-buttons {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-bottom: 40px;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+.social-links a {
+width: 45px;
+height: 45px;
+background: #ffffff;
+border: 1px solid #e2e8f0;
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #64748b;
+font-size: 1.2rem;
+}
+
+.social-links a:hover {
+color: #2563eb;
+transform: translateY(-3px);
+}
+
+/* STREAMING_CHUNK:Configurando tarjetas de perfil y habilidades... */
+.profile-card {
+background: linear-gradient(145deg, #0f172a, #1e293b);
+color: #ffffff;
+padding: 30px;
+border-radius: 24px;
+}
+
+.profile-card-header {
+display: flex;
+align-items: center;
+gap: 15px;
+margin-bottom: 25px;
+}
+
+.avatar {
+width: 60px;
+height: 60px;
+background: linear-gradient(135deg, #2563eb, #ff0000);
+border-radius: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+font-weight: 900;
+}
+
+.profile-info-list {
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-bottom: 25px;
+}
+
+.info-item {
+background: rgba(255, 255, 255, 0.08);
+padding: 12px 16px;
+border-radius: 12px;
+display: flex;
+justify-content: space-between;
+font-size: 0.9rem;
+}
+
+.profile-card-footer {
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+padding-top: 15px;
+display: flex;
+justify-content: space-between;
+font-size: 0.8rem;
+color: #94a3b8;
+}
+
+.bio-content .tag {
+display: inline-block;
+background: #eff6ff;
+color: #2563eb;
+padding: 4px 12px;
+border-radius: 50px;
+font-size: 0.75rem;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+
+.bio-content h2 {
+font-size: 2rem;
+font-weight: 900;
+color: #0f172a;
+margin-bottom: 20px;
+}
+
+.bio-content p {
+color: #64748b;
+margin-bottom: 15px;
+}
+
+.skills-summary-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+margin-top: 25px;
+}
+
+.skill-box {
+background: #f8fafc;
+border: 1px solid #e2e8f0;
+padding: 15px;
+border-radius: 16px;
+text-align: center;
+}
+
+.skill-box i { font-size: 1.5rem; margin-bottom: 8px; }
+.skill-box h4 { font-size: 0.85rem; font-weight: 700; }
+.skill-box p { font-size: 0.75rem; margin: 0; }
+
+/* STREAMING_CHUNK:Diseñando tarjetas de contenido, vlog y proyectos... */
+.section-title {
+margin-bottom: 40px;
+}
+
+.tag-accent {
+background: rgba(239, 68, 68, 0.1) !important;
+color: #ff0000 !important;
+}
+
+.tag-blue {
+background: #eff6ff !important;
+color: #2563eb !important;
+}
+
+.card {
+padding: 30px;
+border-radius: 24px;
+transition: transform 0.3s ease;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.card-dark {
+background: rgba(255, 255, 255, 0.03);
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-white {
+background: #ffffff;
+border: 1px solid #e2e8f0;
+}
+
+.card-icon {
+width: 50px;
+height: 50px;
+border-radius: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.3rem;
+margin-bottom: 20px;
+}
+
+.card-header-flex {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.status-badge {
+background: #f1f5f9;
+color: #475569;
+padding: 4px 10px;
+border-radius: 50px;
+font-size: 0.75rem;
+font-weight: 600;
+}
+
+.bg-rose-light { background: rgba(244, 63, 94, 0.1); }
+.bg-indigo-light { background: #e0e7ff; }
+.text-indigo { color: #4338ca; }
+.bg-emerald-light { background: #d1fae5; }
+.text-emerald { color: #047857; }
+
+/* STREAMING_CHUNK:Estilizando el bloque interactivo de YouTube... */
+.youtube-banner {
+background: linear-gradient(135deg, #450a0a, #0f172a);
+border: 1px solid rgba(239, 68, 68, 0.3);
+border-radius: 24px;
+padding: 40px;
+align-items: center;
+}
+
+.col-7 { grid-column: span 7; }
+.col-5 { grid-column: span 5; }
+
+.button-group {
+display: flex;
+gap: 15px;
+margin-top: 20px;
+}
+
+.youtube-preview-box {
+background: rgba(0, 0, 0, 0.4);
+border: 1px solid rgba(255, 255, 255, 0.1);
+padding: 25px;
+border-radius: 20px;
+}
+
+.yt-icon-circle {
+width: 60px;
+height: 60px;
+background: #ff0000;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.8rem;
+margin: 0 auto 15px;
+}
+
+/* STREAMING_CHUNK:Estilizando la línea de tiempo de experiencia laboral... */
+.timeline {
+position: relative;
+max-width: 800px;
+margin: 40px auto 0;
+}
+
+.timeline::before {
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+left: 20px;
+width: 2px;
+background: #e2e8f0;
+}
+
+.timeline-item {
+position: relative;
+padding-left: 60px;
+margin-bottom: 30px;
+}
+
+.timeline-dot {
+position: absolute;
+left: 0;
+top: 0;
+width: 42px;
+height: 42px;
+background: #2563eb;
+color: #ffffff;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.timeline-content {
+background: #ffffff;
+border: 1px solid #e2e8f0;
+padding: 20px;
+border-radius: 16px;
+}
+
+.timeline-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 5px;
+}
+
+.date-badge {
+background: #eff6ff;
+color: #2563eb;
+padding: 2px 10px;
+border-radius: 6px;
+font-size: 0.8rem;
+font-weight: 700;
+}
+
+.job-title {
+font-size: 0.8rem;
+font-weight: 700;
+text-transform: uppercase;
+color: #64748b;
+margin-bottom: 10px;
+}
+
+.timeline-content ul {
+padding-left: 20px;
+font-size: 0.9rem;
+color: #64748b;
+}
+
+/* STREAMING_CHUNK:Maquetando la sección de contacto y el pie de página... */
+.contact-desc {
+max-width: 600px;
+margin: 15px auto 30px;
+color: #94a3b8;
+}
+
+.contact-cards {
+max-width: 650px;
+margin: 0 auto 50px;
+}
+
+.contact-card {
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.1);
+padding: 20px;
+border-radius: 16px;
+display: flex;
+align-items: center;
+gap: 15px;
+text-align: left;
+}
+
+.contact-card:hover { background: rgba(255, 255, 255, 0.1); }
+.icon-large { font-size: 1.8rem; color: #2563eb; }
+.card-label { font-size: 0.7rem; text-transform: uppercase; color: #94a3b8; font-weight: 700; }
+
+.footer {
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+padding-top: 30px;
+display: flex;
+justify-content: space-between;
+font-size: 0.85rem;
+color: #64748b;
+}
+
+.footer-links { display: flex; gap: 20px; }
+.footer-links a:hover { color: #ffffff; }
+
+/* STREAMING_CHUNK:Aplicando reglas de diseño responsivo para dispositivos móviles... */
+@media (max-width: 768px) {
+.nav-desktop { display: none; }
+.mobile-menu-btn { display: block; }
+.grid-2, .grid-3, .col-7, .col-5, .skills-summary-grid {
+grid-column: span 12;
+grid-template-columns: 1fr;
+}
+.hero-title { font-size: 2.1rem; }
+.hero-buttons { flex-direction: column; }
+.button-group { flex-direction: column; }
+.footer {
+flex-direction: column;
+gap: 15px;
+text-align: center;
+}
+}
