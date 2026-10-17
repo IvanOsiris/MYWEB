@@ -28,11 +28,12 @@ transition: all 0.3s ease;
 
 .header-container {
   display: flex;
+flex: auto;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 100%;
-  max-width: 1000px; /* Ajusta al ancho máximo que desees */
+  max-width: 100%; /* Ajusta al ancho máximo que desees */
   margin: 20px auto;
 height:1.3em;
   scrollbar-width: none; /* Oculta barra de scroll en Firefox */
@@ -46,14 +47,14 @@ height:1.3em;
 .header-container a {
   flex: 0 0 100%; /* Hace que cada enlace ocupe el 100% del contenedor */
   scroll-snap-align: center;
-  display: block;
+  display: flex;
 }
 
 .header-container img {
   width: 100%;
   height: 350px; /* Ajusta la altura a tu diseño */
   object-fit: cover; /* Recorta la imagen para que no se deforme */
-  display: block;
+  flex:auto;
 }
 
 /* STREAMING_CHUNK:Definiendo utilidades de maquetación y colores primarios... */
