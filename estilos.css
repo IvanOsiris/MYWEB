@@ -33,7 +33,7 @@ transition: all 0.3s ease;
   scroll-behavior: smooth;
   width: 100%;
   max-width: 1000px; /* Ajusta al ancho máximo que desees */
-  margin: 0 auto;
+  margin: 20px auto;
 height:1.3em;
   scrollbar-width: none; /* Oculta barra de scroll en Firefox */
 }
