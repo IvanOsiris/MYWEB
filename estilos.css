@@ -9,6 +9,10 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+a img {
+width:80%;
+height: 1.3em;
+}
 
 body {
 font-family: 'Inter', sans-serif;
