@@ -9,10 +9,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-a img {
-width:80%;
-height: 1.3em;
-}
+
 
 body {
 font-family: 'Inter', sans-serif;
@@ -37,6 +34,7 @@ transition: all 0.3s ease;
   width: 100%;
   max-width: 1000px; /* Ajusta al ancho máximo que desees */
   margin: 0 auto;
+height:1.3em;
   scrollbar-width: none; /* Oculta barra de scroll en Firefox */
 }
 
