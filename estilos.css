@@ -28,6 +28,36 @@ color: inherit;
 transition: all 0.3s ease;
 }
 
+
+.header-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 1000px; /* Ajusta al ancho máximo que desees */
+  margin: 0 auto;
+  scrollbar-width: none; /* Oculta barra de scroll en Firefox */
+}
+
+/* Oculta barra de scroll en Chrome, Safari y móviles */
+.header-container::-webkit-scrollbar {
+  display: none;
+}
+
+.header-container a {
+  flex: 0 0 100%; /* Hace que cada enlace ocupe el 100% del contenedor */
+  scroll-snap-align: center;
+  display: block;
+}
+
+.header-container img {
+  width: 100%;
+  height: 350px; /* Ajusta la altura a tu diseño */
+  object-fit: cover; /* Recorta la imagen para que no se deforme */
+  display: block;
+}
+
 /* STREAMING_CHUNK:Definiendo utilidades de maquetación y colores primarios... */
 .container {
 max-width: 1150px;
