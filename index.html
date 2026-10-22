@@ -5,107 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iván Olguín | Customer Care, Marketing & Creador Digital</title>
     
-    <!-- Favicon (usando enlace directo de imagen) -->
+    <!-- Meta SEO -->
+    <meta name="description" content="Especialista en Customer Care bilingüe (B2B/B2C), Marketing Digital, desarrollo web y creación de contenido en YouTube.">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="https://i.ibb.co/zhcTcfm9/IMG-20260929-WA0041.jpg">
-
-    <!-- Fuentes de Google e Íconos de FontAwesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Librería de Iconos (FontAwesome recomendado para arreglar los <i> vacíos) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Hoja de Estilos CSS Externa Directa -->
-    <link rel="stylesheet" href="estilos.css">
+    <!-- Tus Estilos CSS Propios (Asegúrate de colocar la ruta correcta de tu archivo) -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <!-- Cabecera / Navegación -->
-    <header class="header">
-        <div class="container header-container">
+    <!-- Header / Navegación -->
+    <header>
+        <div class="nav-container">
             <a href="#home" class="logo">
-                <span class="logo-badge">IO</span>
-                Iván<span class="text-primary">Olguín</span>
+                <span>IO</span> Iván<span>Olguín</span>
             </a>
 
-            <!-- Menú de Escritorio -->
-            <nav class="nav-desktop">
+            <nav class="nav-menu">
                 <a href="#about">Sobre Mí</a>
                 <a href="#vlog">Vlog</a>
-                <a href="#youtube" class="link-youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="#youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
                 <a href="#projects">Playhouse & Web</a>
                 <a href="#gallery">Galería</a>
                 <a href="#experience">Experiencia</a>
-                <a href="#contact" class="btn btn-primary btn-sm">Contacto</a>
+                <a href="#contact">Contacto</a>
             </nav>
-
-            <!-- Botón Menú Móvil -->
-            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-
-        <!-- Menú Desplegable Móvil -->
-        <div id="mobile-menu" class="nav-mobile hidden">
-            <a href="#about"><i class="fas fa-user-circle"></i> Sobre Mí</a>
-            <a href="#vlog"><i class="fas fa-video"></i> Vlog & Contenido</a>
-            <a href="#youtube"><i class="fab fa-youtube"></i> YouTube (@osiris7998)</a>
-            <a href="#projects"><i class="fas fa-cubes"></i> Playhouse & Web</a>
-            <a href="#gallery"><i class="fas fa-images"></i> Galería</a>
-            <a href="#experience"><i class="fas fa-briefcase"></i> Experiencia Laboral</a>
-            <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contacto Directo</a>
         </div>
     </header>
 
-    <!-- Sección Principal / Hero -->
+    <!-- Sección Principal (Hero) -->
     <section id="home" class="hero-section">
-        <div class="container text-center">
-            
-            <div class="badge-status">
-                <span class="pulse-dot"></span>
+        <div class="hero-content">
+            <div class="badge">
+                <span class="dot"></span>
                 <span>Reclutamiento Bilingüe (Inglés B2+) | Vacantes Remote & Home Office</span>
             </div>
             
-            <h1 class="hero-title">
-                Especialista en <span class="text-primary">Customer Care</span>, <br />
-                <span class="text-gradient">Marketing & Creador Digital</span>
+            <h1>
+                Especialista en <span>Customer Care</span>, <br>
+                <span>Marketing & Creador Digital</span>
             </h1>
             
-            <p class="hero-subtitle">
+            <p>
                 Soporte bilingüe B2B/B2C para empresas internacionales, creación de contenido en <strong>YouTube</strong>, estrategia de <strong>Marketing Digital</strong> y desarrollo de <strong>páginas web</strong> adaptadas a negocios.
             </p>
             
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">
-                    <i class="fas fa-briefcase"></i> Contratación Remote
+                <a href="#contact" class="btn primary">
+                    <i class="fa-solid fa-paper-plane"></i> Contratación Remote
                 </a>
-                <a href="#youtube" class="btn btn-outline">
-                    <i class="fab fa-youtube text-accent"></i> Ver YouTube & Vlog
+                <a href="#youtube" class="btn secondary">
+                    <i class="fa-brands fa-youtube"></i> Ver YouTube & Vlog
                 </a>
             </div>
 
             <!-- Redes Sociales -->
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/osiris-olgu%C3%ADn-4287121ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61593295815288" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.upwork.com/nx/wm/freelancer/contracts/" target="_blank" rel="noopener noreferrer" aria-label="Upwork"><i class="fas fa-briefcase"></i></a>
+                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/osiris-olguín-4287121ab/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a aria-label="YouTube" href="https://www.youtube.com/@osiris7998" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61593295815288" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a aria-label="Upwork" href="https://www.upwork.com/" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-briefcase"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Mí -->
-    <section id="about" class="section bg-white">
-        <div class="container grid grid-2">
-            
-            <!-- Tarjeta Técnica -->
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="about-section">
+        <div class="container">
             <div class="profile-card">
-                <div class="profile-card-header">
-                    <div class="avatar">IO</div>
+                <div class="profile-header">
+                    <div class="avatar-placeholder">IO</div>
                     <div>
                         <h3>Iván Osiris Olguín</h3>
                         <p>Customer Care & Digital Content Creator</p>
                     </div>
                 </div>
 
-                <div class="profile-info-list">
-                    <div class="info-item">
-                        <span><i class="fas fa-language"></i> Idioma</span>
-                        
+                <div class="profile-details">
+                    <div>
+                        <span><i class="fa-solid fa-language"></i> Idioma:</span> Español (Nativo) / Inglés (B2+)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
