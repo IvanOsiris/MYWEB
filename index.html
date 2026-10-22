@@ -1,102 +1,934 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iván Olguín | Customer Care, Marketing & Creador Digital</title>
-    
-    <!-- Meta SEO -->
-    <meta name="description" content="Especialista en Customer Care bilingüe (B2B/B2C), Marketing Digital, desarrollo web y creación de contenido en YouTube.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/zhcTcfm9/IMG-20260929-WA0041.jpg">
-    
-    <!-- Librería de Iconos (FontAwesome recomendado para arreglar los <i> vacíos) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Tus Estilos CSS Propios (Asegúrate de colocar la ruta correcta de tu archivo) -->
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Header / Navegación -->
-    <header>
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <span>IO</span> Iván<span>Olguín</span>
+  <!-- ==========================================
+       1. METADATOS SEO Y OPEN GRAPH (CONGELADOS)
+       ========================================== -->
+  <title>Iván Olguín | Customer Care, Marketing & Creador Digital</title>
+  <meta name="description" content="Especialista en Customer Care bilingüe (B2B/B2C), Marketing Digital, desarrollo web y creación de contenido en YouTube." />
+  <meta name="author" content="Iván Olguín" />
+  <meta name="theme-color" content="#090d16" />
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Iván Olguín | Customer Care, Marketing & Creador Digital" />
+  <meta property="og:description" content="Especialista en Customer Care bilingüe (B2B/B2C), Marketing Digital, desarrollo web y creación de contenido en YouTube." />
+  <meta property="og:image" content="https://i.ibb.co/zhcTcfm9/IMG-20260929-WA0041.jpg" />
+
+  <!-- Favicon Oficial -->
+  <link rel="icon" type="image/jpeg" href="https://i.ibb.co/zhcTcfm9/IMG-20260929-WA0041.jpg" />
+  <link rel="apple-touch-icon" href="https://i.ibb.co/zhcTcfm9/IMG-20260929-WA0041.jpg" />
+
+  <!-- ==========================================
+       2. TIPOGRAFÍA E ICONOGRAFÍA (CDN)
+       ========================================== -->
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6.5.1 (Íconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ==========================================
+       3. TAILWIND CSS & CONFIGURACIÓN
+       ========================================== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            dark: {
+              950: '#060911',
+              900: '#090d16',
+              800: '#111827',
+              700: '#1e293b',
+            },
+            brand: {
+              cyan: '#06b6d4',
+              indigo: '#6366f1',
+              violet: '#8b5cf6',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- ==========================================
+       4. VARIABLES CSS Y ESTILOS PERSONALIZADOS
+       ========================================== -->
+  <style>
+    :root {
+      --bg-primary: #090d16;
+      --bg-secondary: #0f172a;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent-cyan: #06b6d4;
+      --accent-indigo: #6366f1;
+      --accent-violet: #8b5cf6;
+      --glass-bg: rgba(17, 24, 39, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-border-hover: rgba(99, 102, 241, 0.45);
+      --touch-target: 44px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 5rem;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Efecto Glassmorphism reutilizable */
+    .glass-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.3s ease,
+                  box-shadow 0.3s ease;
+    }
+
+    .glass-card:hover {
+      border-color: var(--glass-border-hover);
+      box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.15);
+      transform: translateY(-4px);
+    }
+
+    /* Navbar Glassmorphism */
+    .glass-nav {
+      background: rgba(9, 13, 22, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    /* Texto con degradado vibrante */
+    .text-gradient {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Botón primario con degradado y brillo */
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-indigo) 0%, var(--accent-violet) 100%);
+      box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 15px 30px -5px rgba(139, 92, 246, 0.6);
+      transform: translateY(-2px);
+    }
+
+    /* Garantía de área táctil mínima de 44px para accesibilidad móvil */
+    .touch-target {
+      min-height: var(--touch-target);
+      min-width: var(--touch-target);
+    }
+
+    /* Animación suave de pulso para el halo de la foto */
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.55; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.04); }
+    }
+
+    .profile-glow {
+      animation: pulse-glow 5s ease-in-out infinite;
+    }
+
+    /* Clases de animación de aparición al hacer scroll */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Respeto a usuarios con preferencia de movimiento reducido */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .profile-glow { animation: none; }
+      .glass-card:hover { transform: none; }
+    }
+  </style>
+</head>
+
+<body class="relative min-h-screen selection:bg-indigo-500 selection:text-white">
+
+  <!-- Luces ambientales de fondo (Decorativas) -->
+  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
+    <div class="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-indigo-600/15 blur-[120px]"></div>
+    <div class="absolute top-1/3 -right-40 h-96 w-96 rounded-full bg-cyan-500/10 blur-[120px]"></div>
+    <div class="absolute -bottom-40 left-1/3 h-96 w-96 rounded-full bg-violet-600/15 blur-[120px]"></div>
+  </div>
+
+  <!-- ==========================================
+        SECCIÓN 1: HEADER / NAVBAR FIJA
+       ========================================== -->
+  <header id="navbar" class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      
+      <!-- Logo / Marca Personal -->
+      <a href="#inicio" class="touch-target flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 rounded-lg" aria-label="Ir al inicio - Iván Olguín">
+        <img 
+          src="https://i.ibb.co/zhcTcfm9/IMG-20260929-WA0041.jpg" 
+          alt="Foto de perfil de Iván Olguín" 
+          class="h-10 w-10 rounded-full object-cover ring-2 ring-indigo-500/50 transition-transform duration-300 group-hover:scale-105"
+        />
+        <div class="flex flex-col">
+          <span class="text-base font-bold tracking-tight text-white group-hover:text-indigo-400 transition-colors">
+            Iván Olguín
+          </span>
+          <span class="text-xs font-medium text-slate-400">
+            Customer Care • Marketing • Dev
+          </span>
+        </div>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <nav class="hidden md:flex md:items-center md:gap-2 lg:gap-4" aria-label="Navegación principal">
+        <a href="#inicio" class="touch-target inline-flex items-center px-3 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          Inicio
+        </a>
+        <a href="#especialidades" class="touch-target inline-flex items-center px-3 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          Especialidades
+        </a>
+        <a href="#hub" class="touch-target inline-flex items-center px-3 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          Contenido & Redes
+        </a>
+        <a href="#contacto" class="touch-target inline-flex items-center px-3 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          Contacto
+        </a>
+        <!-- CTA Rápido en Navbar -->
+        <!-- ENLACE OFICIAL: CONTACTO (WHATSAPP / EMAIL) -->
+        <a 
+          href="[PEGAR_LINK_AQUI]" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="touch-target btn-primary ml-2 inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold text-white"
+          aria-label="Contactar directamente con Iván Olguín"
+        >
+          <span>Hablemos</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <!-- Botón Menú Hamburguesa (Móvil) - Área táctil >= 44px -->
+      <button 
+        id="mobile-menu-btn" 
+        type="button" 
+        class="touch-target inline-flex items-center justify-center rounded-xl border border-white/10 bg-slate-900/80 p-2.5 text-slate-200 hover:bg-slate-800 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 md:hidden" 
+        aria-controls="mobile-menu" 
+        aria-expanded="false" 
+        aria-label="Abrir menú de navegación móvil"
+      >
+        <i id="menu-icon" class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <nav 
+      id="mobile-menu" 
+      class="hidden border-t border-white/10 bg-slate-950/95 px-4 pt-3 pb-6 backdrop-blur-xl md:hidden" 
+      aria-label="Menú de navegación móvil"
+    >
+      <div class="flex flex-col space-y-2">
+        <a href="#inicio" class="mobile-nav-link touch-target flex items-center gap-3 rounded-xl px-4 py-3 text-base font-medium text-slate-200 hover:bg-white/5 hover:text-white transition-colors">
+          <i class="fa-solid fa-house w-5 text-indigo-400" aria-hidden="true"></i>
+          <span>Inicio</span>
+        </a>
+        <a href="#especialidades" class="mobile-nav-link touch-target flex items-center gap-3 rounded-xl px-4 py-3 text-base font-medium text-slate-200 hover:bg-white/5 hover:text-white transition-colors">
+          <i class="fa-solid fa-layer-group w-5 text-cyan-400" aria-hidden="true"></i>
+          <span>Especialidades y Servicios</span>
+        </a>
+        <a href="#hub" class="mobile-nav-link touch-target flex items-center gap-3 rounded-xl px-4 py-3 text-base font-medium text-slate-200 hover:bg-white/5 hover:text-white transition-colors">
+          <i class="fa-solid fa-share-nodes w-5 text-violet-400" aria-hidden="true"></i>
+          <span>Hub de Enlaces y Contenido</span>
+        </a>
+        <a href="#contacto" class="mobile-nav-link touch-target flex items-center gap-3 rounded-xl px-4 py-3 text-base font-medium text-slate-200 hover:bg-white/5 hover:text-white transition-colors">
+          <i class="fa-solid fa-paper-plane w-5 text-emerald-400" aria-hidden="true"></i>
+          <span>Contacto Directo</span>
+        </a>
+        
+        <div class="pt-3">
+          <!-- ENLACE OFICIAL: CONTACTO (WHATSAPP / EMAIL) -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="touch-target btn-primary flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3.5 text-base font-semibold text-white"
+          >
+            <i class="fa-solid fa-comments" aria-hidden="true"></i>
+            <span>Contactar Ahora</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       CONTENIDO PRINCIPAL
+       ========================================== -->
+  <main>
+
+    <!-- ==========================================
+         SECCIÓN 2: HERO SECTION DE ALTO IMPACTO
+         ========================================== -->
+    <section id="inicio" class="relative pt-28 pb-16 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8">
+          
+          <!-- Columna de Texto (Izquierda en Desktop, Abajo en Móvil o Arriba según jerarquía) -->
+          <div class="order-2 flex flex-col items-center text-center lg:order-1 lg:col-span-7 lg:items-start lg:text-left reveal active">
+            
+            <!-- Badge de Disponibilidad e Idiomas -->
+            <div class="mb-6 inline-flex items-center gap-2.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs sm:text-sm font-medium text-indigo-300">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+              </span>
+              <span>Perfil Híbrido Bilingüe (ES / EN) • B2B &amp; B2C</span>
+            </div>
+
+            <!-- Título Principal H1 -->
+            <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl lg:leading-[1.12]">
+              Hola, soy <span class="text-gradient">Iván Olguín</span>.<br />
+              Conecto marcas, personas y tecnología.
+            </h1>
+
+            <!-- Descripción de Propuesta de Valor -->
+            <p class="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg lg:text-xl">
+              Especialista en <strong class="font-semibold text-white">Customer Care bilingüe (B2B/B2C)</strong>, <strong class="font-semibold text-white">Marketing Digital</strong>, <strong class="font-semibold text-white">desarrollo web</strong> y <strong class="font-semibold text-white">creación de contenido en YouTube</strong>. Transformo la atención al cliente y la presencia digital en experiencias memorables de alta conversión.
+            </p>
+
+            <!-- Etiquetas rápidas de competencias -->
+            <div class="mt-6 flex flex-wrap justify-center gap-2 lg:justify-start">
+              <span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300">
+                <i class="fa-solid fa-headset mr-1.5 text-cyan-400" aria-hidden="true"></i>Customer Experience
+              </span>
+              <span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300">
+                <i class="fa-solid fa-bullhorn mr-1.5 text-indigo-400" aria-hidden="true"></i>Growth &amp; Marketing
+              </span>
+              <span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300">
+                <i class="fa-solid fa-code mr-1.5 text-violet-400" aria-hidden="true"></i>Frontend &amp; Web
+              </span>
+              <span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300">
+                <i class="fa-brands fa-youtube mr-1.5 text-rose-500" aria-hidden="true"></i>YouTube Creator
+              </span>
+            </div>
+
+            <!-- Botones de Llamada a la Acción (CTA) -->
+            <div class="mt-9 flex w-full flex-col gap-3.5 sm:w-auto sm:flex-row sm:items-center">
+              <!-- ENLACE OFICIAL: PORTAFOLIO / PROYECTOS -->
+              <a 
+                href="[PEGAR_LINK_AQUI]" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="touch-target btn-primary inline-flex items-center justify-center gap-2.5 rounded-xl px-7 py-3.5 text-base font-semibold text-white"
+                aria-label="Ver portafolio y proyectos de Iván Olguín"
+              >
+                <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                <span>Ver Portafolio / Proyectos</span>
+              </a>
+
+              <!-- ENLACE OFICIAL: CONTACTO (WHATSAPP / EMAIL) -->
+              <a 
+                href="[PEGAR_LINK_AQUI]" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="touch-target glass-card inline-flex items-center justify-center gap-2.5 rounded-xl px-7 py-3.5 text-base font-semibold text-slate-100 hover:bg-white/10"
+                aria-label="Contactar a Iván Olguín por WhatsApp o Email"
+              >
+                <i class="fa-solid fa-envelope-open-text text-indigo-400" aria-hidden="true"></i>
+                <span>Contacto Directo</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna de Fotografía de Perfil (Derecha en Desktop, Arriba en Móvil) -->
+          <div class="order-1 flex justify-center lg:order-2 lg:col-span-5 reveal active">
+            <div class="relative mx-auto w-64 sm:w-80 lg:w-[360px]">
+              <!-- Halo luminoso animado detrás de la imagen -->
+              <div class="profile-glow absolute -inset-3 rounded-3xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-violet-600 blur-2xl" aria-hidden="true"></div>
+
+              <!-- Marco principal con Glassmorphism -->
+              <div class="relative overflow-hidden rounded-3xl border border-white/15 bg-slate-900/90 p-2.5 shadow-2xl">
+                <div class="overflow-hidden rounded-2xl aspect-[4/5] bg-slate-800">
+                  <img 
+                    src="https://i.ibb.co/zhcTcfm9/IMG-20260929-WA0041.jpg" 
+                    alt="Iván Olguín - Especialista en Customer Care bilingüe, Marketing Digital, Desarrollo Web y Creador Digital" 
+                    class="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                    loading="eager"
+                  />
+                </div>
+
+                <!-- Tarjeta flotante inferior dentro del marco -->
+                <div class="mt-2.5 flex items-center justify-between rounded-xl bg-slate-950/90 px-4 py-3 border border-white/10">
+                  <div class="flex items-center gap-2.5">
+                    <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-500/20 text-indigo-400">
+                      <i class="fa-solid fa-globe text-sm" aria-hidden="true"></i>
+                    </span>
+                    <div>
+                      <p class="text-xs font-semibold text-white">Atención Global</p>
+                      <p class="text-[11px] text-slate-400">Español &amp; English</p>
+                    </div>
+                  </div>
+                  <span class="rounded-full bg-emerald-500/15 px-2.5 py-1 text-[11px] font-semibold text-emerald-400 border border-emerald-500/30">
+                    Online
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN 3: ESPECIALIDADES / SERVICIOS (GRID)
+         ========================================== -->
+    <section id="especialidades" class="py-16 sm:py-24 relative">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        
+        <!-- Encabezado de Sección -->
+        <div class="mx-auto max-w-3xl text-center reveal">
+          <span class="inline-block rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-300">
+            Mis Pilares Profesionales
+          </span>
+          <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+            Soluciones integrales para el entorno digital
+          </h2>
+          <p class="mt-4 text-base text-slate-400 sm:text-lg">
+            Combino habilidades de comunicación interpersonal bilingüe con visión estratégica de negocios, código moderno y narrativa audiovisual.
+          </p>
+        </div>
+
+        <!-- Grid Responsivo de 4 Tarjetas -->
+        <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
+          
+          <!-- Especialidad 1: Customer Care Bilingüe (B2B/B2C) -->
+          <article class="glass-card flex flex-col justify-between rounded-2xl p-6 sm:p-8 reveal">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/15 text-cyan-400 border border-cyan-500/30">
+                  <i class="fa-solid fa-headset text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 border border-white/10">
+                  ES / EN • B2B &amp; B2C
+                </span>
+              </div>
+
+              <h3 class="mt-6 text-xl font-bold text-white sm:text-2xl">
+                Customer Care Bilingüe (B2B/B2C)
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
+                Gestión estratégica de soporte y éxito del cliente en inglés y español. Enfoque en resolución ágil en primer contacto, empatía activa, fidelización de cuentas clave y cumplimiento de KPIs internacionales (CSAT, NPS, AHT).
+              </p>
+            </div>
+
+            <ul class="mt-6 space-y-2 border-t border-white/10 pt-5 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400" aria-hidden="true"></i>
+                <span>Comunicación oral y escrita bilingüe de alto nivel</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400" aria-hidden="true"></i>
+                <span>Manejo de plataformas CRM, tickets y canales omnicanal</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400" aria-hidden="true"></i>
+                <span>Retención de usuarios y desescalada efectiva de casos</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Especialidad 2: Estrategia de Marketing Digital -->
+          <article class="glass-card flex flex-col justify-between rounded-2xl p-6 sm:p-8 reveal">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/15 text-indigo-400 border border-indigo-500/30">
+                  <i class="fa-solid fa-chart-line text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 border border-white/10">
+                  Growth &amp; Conversión
+                </span>
+              </div>
+
+              <h3 class="mt-6 text-xl font-bold text-white sm:text-2xl">
+                Estrategia de Marketing Digital
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
+                Diseño e implementación de estrategias orientadas a captar, nutrir y convertir audiencias. Uno los insights reales de los clientes con campañas persuasivas para maximizar el retorno de inversión.
+              </p>
+            </div>
+
+            <ul class="mt-6 space-y-2 border-t border-white/10 pt-5 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-indigo-400" aria-hidden="true"></i>
+                <span>Posicionamiento de marca y Copywriting enfocado a ventas</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-indigo-400" aria-hidden="true"></i>
+                <span>Optimización de embudos de conversión (Funnels)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-indigo-400" aria-hidden="true"></i>
+                <span>Análisis de métricas, comportamiento de usuario y SEO</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Especialidad 3: Desarrollo Web -->
+          <article class="glass-card flex flex-col justify-between rounded-2xl p-6 sm:p-8 reveal">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-500/15 text-violet-400 border border-violet-500/30">
+                  <i class="fa-solid fa-laptop-code text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 border border-white/10">
+                  UI/UX &amp; Frontend
+                </span>
+              </div>
+
+              <h3 class="mt-6 text-xl font-bold text-white sm:text-2xl">
+                Desarrollo Web &amp; Experiencias Digitales
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
+                Construcción de sitios web modernos, landing pages y portafolios digitales de carga ultrarrápida. Diseño adaptable a cualquier pantalla (Mobile-First) con código limpio y accesible.
+              </p>
+            </div>
+
+            <ul class="mt-6 space-y-2 border-t border-white/10 pt-5 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-violet-400" aria-hidden="true"></i>
+                <span>HTML5 semántico, CSS3 moderno (Tailwind) y JavaScript</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-violet-400" aria-hidden="true"></i>
+                <span>Diseño UI/UX intuitivo enfocado en retención y conversión</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-violet-400" aria-hidden="true"></i>
+                <span>Optimización técnica de rendimiento y SEO On-Page</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Especialidad 4: Creación de Contenido en YouTube -->
+          <article class="glass-card flex flex-col justify-between rounded-2xl p-6 sm:p-8 reveal">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-500/15 text-rose-400 border border-rose-500/30">
+                  <i class="fa-brands fa-youtube text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 border border-white/10">
+                  Storytelling &amp; Video
+                </span>
+              </div>
+
+              <h3 class="mt-6 text-xl font-bold text-white sm:text-2xl">
+                Creación de Contenido en YouTube
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
+                Desarrollo integral de contenido audiovisual desde la conceptualización y guionismo hasta la comunicación frente a cámara. Construcción de comunidad auténtica y transmisión clara de ideas complejas.
+              </p>
+            </div>
+
+            <ul class="mt-6 space-y-2 border-t border-white/10 pt-5 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-rose-400" aria-hidden="true"></i>
+                <span>Producción creativa, narrativa digital y retención de audiencia</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-rose-400" aria-hidden="true"></i>
+                <span>Estrategia de crecimiento orgánico y posicionamiento en video</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-rose-400" aria-hidden="true"></i>
+                <span>Comunicación dinámica, cercana y orientada a aportar valor</span>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN 4: HUB DE ENLACES Y CONTENIDO OFICIAL
+         ========================================== -->
+    <section id="hub" class="py-16 sm:py-24 relative">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        
+        <!-- Encabezado del Hub -->
+        <div class="mx-auto max-w-2xl text-center reveal">
+          <span class="inline-block rounded-full border border-violet-500/30 bg-violet-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-violet-300">
+            Ecosistema Digital
+          </span>
+          <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+            Mis Enlaces Oficiales
+          </h2>
+          <p class="mt-4 text-base text-slate-400 sm:text-lg">
+            Conecta conmigo en mis plataformas principales, explora mi canal de YouTube o revisa mis proyectos recientes.
+          </p>
+        </div>
+
+        <!-- Tarjetas Interactivas de Enlaces Oficiales -->
+        <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2">
+
+          <!-- 1. ENLACE OFICIAL: YOUTUBE -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="glass-card touch-target group flex items-center justify-between rounded-2xl p-6 hover:border-rose-500/50 reveal"
+            aria-label="Visitar canal oficial de YouTube de Iván Olguín"
+          >
+            <div class="flex items-center gap-4">
+              <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-rose-500/15 text-rose-500 border border-rose-500/30 transition-transform duration-300 group-hover:scale-110">
+                <i class="fa-brands fa-youtube text-2xl" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white group-hover:text-rose-400 transition-colors">
+                  YouTube
+                </h3>
+                <p class="text-sm text-slate-400">
+                  Suscríbete y mira mi contenido más reciente
+                </p>
+              </div>
+            </div>
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/5 text-slate-400 group-hover:bg-rose-500 group-hover:text-white transition-all">
+              <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <!-- 2. ENLACE OFICIAL: LINKEDIN -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="glass-card touch-target group flex items-center justify-between rounded-2xl p-6 hover:border-sky-500/50 reveal"
+            aria-label="Conectar en LinkedIn con Iván Olguín"
+          >
+            <div class="flex items-center gap-4">
+              <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-sky-500/15 text-sky-400 border border-sky-500/30 transition-transform duration-300 group-hover:scale-110">
+                <i class="fa-brands fa-linkedin-in text-2xl" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">
+                  LinkedIn
+                </h3>
+                <p class="text-sm text-slate-400">
+                  Trayectoria profesional, red B2B y certificaciones
+                </p>
+              </div>
+            </div>
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/5 text-slate-400 group-hover:bg-sky-500 group-hover:text-white transition-all">
+              <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <!-- 3. ENLACE OFICIAL: PORTAFOLIO / PROYECTOS -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="glass-card touch-target group flex items-center justify-between rounded-2xl p-6 hover:border-indigo-500/50 reveal"
+            aria-label="Explorar portafolio y proyectos de Iván Olguín"
+          >
+            <div class="flex items-center gap-4">
+              <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-indigo-500/15 text-indigo-400 border border-indigo-500/30 transition-transform duration-300 group-hover:scale-110">
+                <i class="fa-solid fa-folder-open text-2xl" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white group-hover:text-indigo-400 transition-colors">
+                  Portafolio / Proyectos
+                </h3>
+                <p class="text-sm text-slate-400">
+                  Casos de estudio, desarrollo web y resultados
+                </p>
+              </div>
+            </div>
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/5 text-slate-400 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+              <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <!-- 4. ENLACE OFICIAL: CONTACTO (WHATSAPP / EMAIL) -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="glass-card touch-target group flex items-center justify-between rounded-2xl p-6 hover:border-emerald-500/50 reveal"
+            aria-label="Contactar a Iván Olguín por WhatsApp o Email"
+          >
+            <div class="flex items-center gap-4">
+              <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 transition-transform duration-300 group-hover:scale-110">
+                <i class="fa-brands fa-whatsapp text-2xl" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
+                  Contacto (WhatsApp / Email)
+                </h3>
+                <p class="text-sm text-slate-400">
+                  Respuesta directa para propuestas y proyectos
+                </p>
+              </div>
+            </div>
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/5 text-slate-400 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+              <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN 5: LLAMADO A LA ACCIÓN FINAL (CTA)
+         ========================================== -->
+    <section id="contacto" class="py-16 sm:py-24 relative">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="glass-card relative overflow-hidden rounded-3xl p-8 sm:p-12 lg:p-16 text-center reveal">
+          
+          <!-- Brillo decorativo interno -->
+          <div class="pointer-events-none absolute -top-24 left-1/2 -z-10 h-64 w-64 -translate-x-1/2 rounded-full bg-indigo-500/25 blur-3xl" aria-hidden="true"></div>
+
+          <span class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold text-emerald-300">
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+            <span>Listo para colaborar</span>
+          </span>
+
+          <h2 class="mt-6 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            ¿Buscas impulsar tu atención al cliente o tu presencia digital?
+          </h2>
+
+          <p class="mx-auto mt-4 max-w-2xl text-base text-slate-300 sm:text-lg">
+            Ya sea para integrarme a tu equipo en operaciones de <strong class="text-white">Customer Care Bilingüe (B2B/B2C)</strong>, desarrollar tu sitio web o colaborar en estrategias de <strong class="text-white">Marketing y Contenido</strong>, estoy a un clic de distancia.
+          </p>
+
+          <div class="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <!-- ENLACE OFICIAL: CONTACTO (WHATSAPP / EMAIL) -->
+            <a 
+              href="[PEGAR_LINK_AQUI]" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="touch-target btn-primary inline-flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-xl px-8 py-4 text-base font-bold text-white"
+              aria-label="Enviar mensaje directo a Iván Olguín"
+            >
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              <span>Iniciar Conversación</span>
             </a>
 
-            <nav class="nav-menu">
-                <a href="#about">Sobre Mí</a>
-                <a href="#vlog">Vlog</a>
-                <a href="#youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
-                <a href="#projects">Playhouse & Web</a>
-                <a href="#gallery">Galería</a>
-                <a href="#experience">Experiencia</a>
-                <a href="#contact">Contacto</a>
-            </nav>
-        </div>
-    </header>
+            <!-- ENLACE OFICIAL: LINKEDIN -->
+            <a 
+              href="[PEGAR_LINK_AQUI]" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="touch-target inline-flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/5 px-8 py-4 text-base font-semibold text-white hover:bg-white/10 transition-colors"
+              aria-label="Ver perfil profesional en LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin text-sky-400 text-lg" aria-hidden="true"></i>
+              <span>Conectar en LinkedIn</span>
+            </a>
+          </div>
 
-    <!-- Sección Principal (Hero) -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <div class="badge">
-                <span class="dot"></span>
-                <span>Reclutamiento Bilingüe (Inglés B2+) | Vacantes Remote & Home Office</span>
-            </div>
-            
-            <h1>
-                Especialista en <span>Customer Care</span>, <br>
-                <span>Marketing & Creador Digital</span>
-            </h1>
-            
-            <p>
-                Soporte bilingüe B2B/B2C para empresas internacionales, creación de contenido en <strong>YouTube</strong>, estrategia de <strong>Marketing Digital</strong> y desarrollo de <strong>páginas web</strong> adaptadas a negocios.
-            </p>
-            
-            <div class="hero-buttons">
-                <a href="#contact" class="btn primary">
-                    <i class="fa-solid fa-paper-plane"></i> Contratación Remote
-                </a>
-                <a href="#youtube" class="btn secondary">
-                    <i class="fa-brands fa-youtube"></i> Ver YouTube & Vlog
-                </a>
-            </div>
-
-            <!-- Redes Sociales -->
-            <div class="social-links">
-                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/osiris-olguín-4287121ab/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a aria-label="YouTube" href="https://www.youtube.com/@osiris7998" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61593295815288" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a aria-label="Upwork" href="https://www.upwork.com/" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-briefcase"></i></a>
-            </div>
         </div>
+      </div>
     </section>
 
-    <!-- Sección Sobre Mí -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="profile-card">
-                <div class="profile-header">
-                    <div class="avatar-placeholder">IO</div>
-                    <div>
-                        <h3>Iván Osiris Olguín</h3>
-                        <p>Customer Care & Digital Content Creator</p>
-                    </div>
-                </div>
+  </main>
 
-                <div class="profile-details">
-                    <div>
-                        <span><i class="fa-solid fa-language"></i> Idioma:</span> Español (Nativo) / Inglés (B2+)
-                    </div>
-                </div>
-            </div>
+  <!-- ==========================================
+       FOOTER / PIE DE PÁGINA
+       ========================================== -->
+  <footer class="border-t border-white/10 bg-slate-950/80 py-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+        
+        <!-- Identidad en Footer -->
+        <div class="flex items-center gap-3">
+          <img 
+            src="https://i.ibb.co/zhcTcfm9/IMG-20260929-WA0041.jpg" 
+            alt="Iván Olguín" 
+            class="h-9 w-9 rounded-full object-cover ring-1 ring-white/20"
+            loading="lazy"
+          />
+          <div>
+            <p class="text-sm font-bold text-white">Iván Olguín</p>
+            <p class="text-xs text-slate-400">Customer Care, Marketing &amp; Creador Digital</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Scripts JS -->
-    <script src="./js/main.js"></script>
+        <!-- Accesos rápidos a enlaces oficiales con área táctil >= 44px -->
+        <div class="flex items-center gap-2">
+          <!-- YouTube -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="touch-target inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:border-rose-500/50 hover:text-rose-400 transition-colors"
+            aria-label="YouTube de Iván Olguín"
+          >
+            <i class="fa-brands fa-youtube text-lg" aria-hidden="true"></i>
+          </a>
+          <!-- LinkedIn -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="touch-target inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:border-sky-500/50 hover:text-sky-400 transition-colors"
+            aria-label="LinkedIn de Iván Olguín"
+          >
+            <i class="fa-brands fa-linkedin-in text-lg" aria-hidden="true"></i>
+          </a>
+          <!-- Portafolio / Proyectos -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="touch-target inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:border-indigo-500/50 hover:text-indigo-400 transition-colors"
+            aria-label="Portafolio y Proyectos de Iván Olguín"
+          >
+            <i class="fa-solid fa-briefcase text-lg" aria-hidden="true"></i>
+          </a>
+          <!-- Contacto -->
+          <a 
+            href="[PEGAR_LINK_AQUI]" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="touch-target inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-colors"
+            aria-label="Contacto directo con Iván Olguín"
+          >
+            <i class="fa-solid fa-envelope text-lg" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Copyright dinámico -->
+        <p class="text-xs text-slate-400 text-center sm:text-right">
+          &copy; <span id="current-year">2026</span> Iván Olguín. Todos los derechos reservados.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       5. JAVASCRIPT: INTERACTIVIDAD Y ACCESIBILIDAD
+       ========================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Actualizar año automáticamente en el footer
+      const yearSpan = document.getElementById('current-year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // 2. Lógica del Menú Móvil (Hamburguesa)
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleMobileMenu() {
+        const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+        mobileMenuBtn.setAttribute('aria-expanded', String(!isExpanded));
+        mobileMenu.classList.toggle('hidden');
+
+        // Alternar ícono entre barras y 'X'
+        if (!isExpanded) {
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-xmark');
+          mobileMenuBtn.setAttribute('aria-label', 'Cerrar menú de navegación móvil');
+        } else {
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+          mobileMenuBtn.setAttribute('aria-label', 'Abrir menú de navegación móvil');
+        }
+      }
+
+      function closeMobileMenu() {
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+        mobileMenuBtn.setAttribute('aria-label', 'Abrir menú de navegación móvil');
+      }
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // Cerrar menú automáticamente al tocar cualquier enlace de sección
+        mobileNavLinks.forEach(link => {
+          link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Cerrar menú al presionar la tecla Escape (Accesibilidad)
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && mobileMenuBtn.getAttribute('aria-expanded') === 'true') {
+            closeMobileMenu();
+            mobileMenuBtn.focus();
+          }
+        });
+      }
+
+      // 3. Efecto visual en la barra de navegación al hacer scroll
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+          navbar.classList.add('shadow-lg', 'shadow-black/40');
+        } else {
+          navbar.classList.remove('shadow-lg', 'shadow-black/40');
+        }
+      }, { passive: true });
+
+      // 4. Animaciones suaves al hacer scroll (Intersection Observer)
+      const revealElements = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+      } else {
+        // Fallback para navegadores antiguos
+        revealElements.forEach(el => el.classList.add('active'));
+      }
+    });
+  </script>
 </body>
 </html>
-
