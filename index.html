@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iván Olguín | Customer Care Bilingüe, Colaborador PlayHouse (Upwork) &amp; Creador Digital</title>
+  <meta name="description" content="Portafolio oficial de Iván Osiris Olguín Becerra: Especialista en Customer Care Bilingüe (ES/EN B2+), Gestión de Cuentas B2B, Colaborador del proyecto Productive Playhouse a través de Upwork y Creador Digital en YouTube (@osiris7998)." />
+  <meta name="author" content="Iván Osiris Olguín Becerra" />
+
+  <!-- Favicon & Apple Touch Icon usando la imagen oficial de i.ibb.co -->
+  <link rel="icon" type="image/jpeg" href="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" />
+  <link rel="apple-touch-icon" href="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Iván Olguín | Customer Care Bilingüe, Colaborador PlayHouse (Upwork) &amp; Creador Digital" />
+  <meta property="og:description" content="Especialista en Customer Experience (CX) Bilingüe B2+, Gestión de Cuentas B2B, Colaborador del proyecto Productive Playhouse vía Upwork y Creador Digital (@osiris7998)." />
+  <meta property="og:image" content="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" />
+  <meta property="og:url" content="https://ivanosiris.github.io/MYWEB/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS 3.4.17 -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            dark: {
+              950: '#050811',
+              900: '#0b1120',
+              800: '#111827',
+              700: '#1e293b',
+            },
+            brand: {
+              400: '#38bdf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #050811;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.74);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(56, 189, 248, 0.38);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-glow {
+      background:
+        radial-gradient(circle at 18% 12%, rgba(99, 102, 241, 0.20) 0%, transparent 45%),
+        radial-gradient(circle at 82% 22%, rgba(56, 189, 248, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(168, 85, 247, 0.10) 0%, transparent 50%);
+    }
+    .profile-ring {
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.4), 0 20px 50px -10px rgba(99, 102, 241, 0.35);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Ambient Background Glow -->
+  <div class="fixed inset-0 pointer-events-none bg-glow z-0" aria-hidden="true"></div>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" role="status" aria-live="polite" class="fixed bottom-6 right-6 z-50 hidden items-center gap-3 px-4 py-3 rounded-xl bg-slate-900/95 border border-sky-500/40 text-slate-100 shadow-2xl transition-all duration-300">
+    <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+    <span id="toast-message" class="text-sm font-medium">Acción completada</span>
+  </div>
+
+  <!-- Case Study Detail Modal -->
+  <div id="case-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="glass-card rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-sky-500/30 shadow-2xl relative">
+      <button id="close-modal-btn" type="button" class="absolute top-4 right-4 w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Cerrar ventana de detalles">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" alt="Iván Olguín" width="44" height="44" class="w-11 h-11 rounded-xl object-cover border border-sky-400/40 max-w-full h-auto" />
+        <div>
+          <span id="modal-badge" class="text-xs font-bold uppercase tracking-wider text-sky-400">Caso Destacado</span>
+          <h3 id="modal-title" class="text-lg sm:text-xl font-extrabold text-white">Título del Proyecto</h3>
+        </div>
+      </div>
+      <p id="modal-desc" class="text-sm text-slate-300 leading-relaxed mb-4"></p>
+      <div class="bg-slate-900/90 rounded-2xl p-4 border border-white/10 mb-5">
+        <p class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-2" data-i18n="modal_highlights_title">Logros y Enfoque Clave</p>
+        <ul id="modal-list" class="space-y-2 text-xs sm:text-sm text-slate-200"></ul>
+      </div>
+      <div class="flex items-center justify-end gap-3">
+        <a id="modal-external-link" href="#contacto" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-gradient-to-r from-indigo-600 to-sky-500 text-white">
+          <span id="modal-link-text">Ver más</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Sticky Navigation -->
+  <header class="sticky top-0 z-40">
+    <nav id="navbar" class="glass-card border-b border-white/10 transition-all duration-300" aria-label="Navegación principal">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <!-- Brand Logo with Real Icon Image -->
+        <a href="#inicio" class="flex items-center gap-2.5 text-lg sm:text-xl font-extrabold tracking-tight text-white focus:outline-none">
+          <img
+            src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+            alt="Icono de Iván Olguín"
+            width="36"
+            height="36"
+            class="w-9 h-9 rounded-xl object-cover border border-sky-400/50 shadow-md shadow-indigo-500/20 max-w-full h-auto"
+          />
+          <span>Iván <span class="text-gradient">Olguín</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-300">
+          <a href="#inicio" class="hover:text-sky-400 transition-colors" data-i18n="nav_home">Inicio</a>
+          <a href="#sobre-mi" class="hover:text-sky-400 transition-colors" data-i18n="nav_about">Sobre Mí</a>
+          <a href="#especialidades" class="hover:text-sky-400 transition-colors" data-i18n="nav_specialties">Especialidades</a>
+          <a href="#experiencia" class="hover:text-sky-400 transition-colors" data-i18n="nav_experience">Experiencia</a>
+          <a href="#portafolio" class="hover:text-sky-400 transition-colors" data-i18n="nav_portfolio">Portafolio</a>
+          <a href="#hub" class="hover:text-sky-400 transition-colors" data-i18n="nav_hub">Hub Oficial</a>
+          <a href="#contacto" class="hover:text-sky-400 transition-colors" data-i18n="nav_contact">Contacto</a>
+        </div>
+
+        <!-- Desktop Right Controls: Language Switcher + WhatsApp CTA -->
+        <div class="hidden md:flex items-center gap-2.5">
+          <button id="lang-toggle-desktop" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-white/10 transition-colors" aria-label="Cambiar idioma entre Español e Inglés">
+            <i class="fa-solid fa-earth-americas text-sky-400"></i>
+            <span id="lang-label-desktop">ES · EN</span>
+          </button>
+
+          <a href="https://wa.me/525663656095?text=Hola%20Iv%C3%A1n%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-gradient-to-r from-indigo-600 to-sky-500 hover:from-indigo-500 hover:to-sky-400 text-white shadow-lg shadow-indigo-500/25 transition-all">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span data-i18n="nav_cta">Conversar</span>
+          </a>
+        </div>
+
+        <!-- Mobile Right Controls -->
+        <div class="flex md:hidden items-center gap-2">
+          <button id="lang-toggle-mobile" type="button" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800/90 text-slate-200 border border-white/10" aria-label="Cambiar idioma">
+            <i class="fa-solid fa-earth-americas text-sky-400"></i>
+            <span id="lang-label-mobile">ES</span>
+          </button>
+          <button id="mobile-menu-btn" type="button" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú de navegación">
+            <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-slate-950/95 px-4 pt-3 pb-5 space-y-1.5">
+        <a href="#inicio" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/10" data-i18n="nav_home">Inicio</a>
+        <a href="#sobre-mi" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/10" data-i18n="nav_about">Sobre Mí</a>
+        <a href="#especialidades" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/10" data-i18n="nav_specialties">Especialidades</a>
+        <a href="#experiencia" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/10" data-i18n="nav_experience">Experiencia</a>
+        <a href="#portafolio" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/10" data-i18n="nav_portfolio">Portafolio</a>
+        <a href="#hub" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/10" data-i18n="nav_hub">Hub Oficial</a>
+        <a href="#contacto" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/10" data-i18n="nav_contact">Contacto</a>
+        <div class="pt-2">
+          <a href="https://wa.me/525663656095?text=Hola%20Iv%C3%A1n%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-indigo-600 to-sky-500 text-white">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span data-i18n="nav_cta_mobile">Conversar por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative z-10">
+    <!-- 1. HERO SECTION -->
+    <section id="inicio" class="pt-10 pb-16 sm:pt-16 sm:pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Column: Executive Pitch & CTAs -->
+        <div class="lg:col-span-7 space-y-6 reveal active">
+          <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-sky-300 text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span data-i18n="hero_badge">Disponible para Proyectos Globales · Colaborador en PlayHouse (Upwork) · Bilingüe (ES / EN B2+)</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            Iván <span class="text-gradient">Olguín</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl font-bold text-slate-100" data-i18n="hero_subtitle">
+            Especialista en Customer Experience (CX) Bilingüe | Colaborador del Proyecto PlayHouse vía Upwork &amp; Creador Digital
+          </p>
+
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl" data-i18n="hero_desc">
+            Transformo cada interacción en confianza, retención y resultados medibles. Cuento con más de 4 años de trayectoria liderando soporte al cliente de alto nivel, gestión de cuentas corporativas B2B y ventas consultivas para firmas globales como AT&amp;T Small Business, Uber Eats (Concentrix) y Cox Communications. Actualmente soy colaborador del proyecto Productive Playhouse a través de la plataforma Upwork y creador de contenido digital en YouTube (@osiris7998).
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-1">
+            <a href="#portafolio" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-gradient-to-r from-indigo-600 to-sky-500 hover:from-indigo-500 hover:to-sky-400 text-white shadow-lg shadow-indigo-500/25 transition-all">
+              <i class="fa-solid fa-layer-group"></i>
+              <span data-i18n="hero_btn_portfolio">Explorar Portafolio</span>
+            </a>
+
+            <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold glass-card text-white hover:bg-red-500/15 hover:border-red-400/40 transition-all">
+              <i class="fa-brands fa-youtube text-red-500 text-base"></i>
+              <span data-i18n="hero_btn_youtube">YouTube @osiris7998</span>
+            </a>
+
+            <a href="#contacto" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold glass-card text-slate-200 hover:text-white transition-all">
+              <i class="fa-regular fa-paper-plane text-sky-400"></i>
+              <span data-i18n="hero_btn_contact">Contacto Directo</span>
+            </a>
+          </div>
+
+          <!-- 4 Key Metrics Cards -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4">
+            <div class="glass-card p-3.5 rounded-2xl">
+              <p class="text-xl sm:text-2xl font-extrabold text-sky-400">99%</p>
+              <p class="text-xs text-slate-300 mt-0.5" data-i18n="metric_1">Calidad y enfoque CSAT</p>
+            </div>
+            <div class="glass-card p-3.5 rounded-2xl">
+              <p class="text-xl sm:text-2xl font-extrabold text-indigo-400">+4 Años</p>
+              <p class="text-xs text-slate-300 mt-0.5" data-i18n="metric_2">Experiencia B2B / B2C</p>
+            </div>
+            <div class="glass-card p-3.5 rounded-2xl">
+              <p class="text-xl sm:text-2xl font-extrabold text-emerald-400">Upwork</p>
+              <p class="text-xs text-slate-300 mt-0.5" data-i18n="metric_3">Proyecto PlayHouse</p>
+            </div>
+            <div class="glass-card p-3.5 rounded-2xl">
+              <p class="text-xl sm:text-2xl font-extrabold text-purple-400">ES / EN</p>
+              <p class="text-xs text-slate-300 mt-0.5" data-i18n="metric_4">Inglés Avanzado B2+</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero Profile Card with Real Image from i.ibb.co -->
+        <div class="lg:col-span-5 reveal active">
+          <div class="glass-card rounded-3xl p-5 sm:p-6 border border-white/10 profile-ring relative overflow-hidden">
+            <div class="relative rounded-2xl overflow-hidden bg-slate-900 border border-white/10 aspect-square flex items-center justify-center">
+              <img
+                src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+                alt="Foto e icono oficial de Iván Osiris Olguín Becerra"
+                width="600"
+                height="600"
+                class="w-full h-full object-cover max-w-full h-auto transition-transform duration-500 hover:scale-105"
+              />
+              <!-- Floating Top Badge -->
+              <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-slate-950/85 backdrop-blur-md border border-emerald-400/30 text-[11px] font-semibold text-emerald-300 flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <span data-i18n="hero_card_top_badge">PlayHouse Collaborator · Upwork</span>
+              </div>
+
+              <!-- Floating Bottom Bar -->
+              <div class="absolute bottom-3 left-3 right-3 glass-card rounded-xl p-3 flex items-center justify-between">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <img
+                    src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+                    alt="Miniatura Iván Olguín"
+                    width="36"
+                    height="36"
+                    class="w-9 h-9 rounded-lg object-cover border border-sky-400/50 shrink-0 max-w-full h-auto"
+                  />
+                  <div class="truncate">
+                    <p class="text-xs font-bold text-white truncate">Iván Osiris Olguín Becerra</p>
+                    <p class="text-[11px] text-sky-300 truncate" data-i18n="card_role">CX Specialist · PlayHouse (Upwork) · @osiris7998</p>
+                  </div>
+                </div>
+                <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-red-600 hover:bg-red-500 text-white flex items-center justify-center shrink-0 transition-colors" aria-label="Visitar canal de YouTube @osiris7998">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Action Bar under Hero Image -->
+            <div class="mt-4 grid grid-cols-2 gap-2.5 text-xs">
+              <a href="https://wa.me/525663656095?text=Hola%20Iv%C3%A1n%2C%20vi%20tu%20portafolio%20web%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-400/30 text-emerald-300 font-semibold transition-colors">
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+                <span>WhatsApp Directo</span>
+              </a>
+              <button id="copy-email-hero" type="button" class="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-white/10 text-slate-200 font-semibold transition-colors" aria-label="Copiar correo electrónico ivanolguin333@gmail.com">
+                <i class="fa-regular fa-copy text-sky-400"></i>
+                <span data-i18n="btn_copy_email">Copiar Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SOBRE MÍ & MATRIZ DE COMPETENCIAS -->
+    <section id="sobre-mi" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-white/10 reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Profile Summary + Avatar -->
+          <div class="lg:col-span-7 space-y-4">
+            <div class="flex items-center gap-3.5">
+              <img
+                src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+                alt="Retrato de Iván Olguín"
+                width="56"
+                height="56"
+                class="w-14 h-14 rounded-2xl object-cover border-2 border-sky-400/50 shadow-lg max-w-full h-auto"
+              />
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-sky-400" data-i18n="about_kicker">Perfil Ejecutivo</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white" data-i18n="about_title">Sobre Mí y Propuesta de Valor</h2>
+              </div>
+            </div>
+
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed" data-i18n="about_p1">
+              Soy un profesional dinámico, autodidacta y orientado a la resolución de problemas complejos. A lo largo de mi carrera he gestionado cuentas empresariales, soporte técnico bilingüe, retención de clientes y operaciones de cobranza en sectores de telecomunicaciones, plataformas de entrega y servicios financieros.
+            </p>
+
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed" data-i18n="about_p2">
+              Actualmente combino mi experiencia en Customer Experience con mi trabajo como colaborador del proyecto Productive Playhouse a través de la plataforma Upwork, además de desarrollar proyectos web modernos y producir contenido audiovisual para mi canal de YouTube (@osiris7998).
+            </p>
+
+            <!-- 4 Core Pillar Badges -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 text-center">
+                <i class="fa-solid fa-comments text-sky-400 text-lg mb-1"></i>
+                <p class="text-xs font-semibold text-white" data-i18n="pillar_1">Comunicación Estratégica</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 text-center">
+                <i class="fa-solid fa-bolt text-indigo-400 text-lg mb-1"></i>
+                <p class="text-xs font-semibold text-white" data-i18n="pillar_2">Resolución Ágil</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 text-center">
+                <i class="fa-solid fa-shield-halved text-emerald-400 text-lg mb-1"></i>
+                <p class="text-xs font-semibold text-white" data-i18n="pillar_3">Alta Tolerancia a Presión</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 text-center">
+                <i class="fa-solid fa-laptop-code text-purple-400 text-lg mb-1"></i>
+                <p class="text-xs font-semibold text-white" data-i18n="pillar_4">Enfoque Tecnológico</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Competency Matrix -->
+          <div class="lg:col-span-5 bg-slate-900/80 rounded-2xl p-5 sm:p-6 border border-white/10 space-y-4">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-sky-400" data-i18n="skills_matrix_title">Dominio de Competencias y Stack</h3>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1">
+                <span class="text-slate-200" data-i18n="skill_bar_1">Customer Care B2B/B2C &amp; Retención</span>
+                <span class="text-sky-400">98%</span>
+              </div>
+              <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-indigo-500 to-sky-400 rounded-full" style="width: 98%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1">
+                <span class="text-slate-200" data-i18n="skill_bar_2">Comunicación Bilingüe (Español / Inglés B2+)</span>
+                <span class="text-indigo-400">92%</span>
+              </div>
+              <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-sky-400 to-indigo-500 rounded-full" style="width: 92%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1">
+                <span class="text-slate-200" data-i18n="skill_bar_3">Colaboración Remota (PlayHouse · Upwork)</span>
+                <span class="text-emerald-400">96%</span>
+              </div>
+              <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full" style="width: 96%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1">
+                <span class="text-slate-200" data-i18n="skill_bar_4">Creación Digital, CapCut &amp; Desarrollo Web</span>
+                <span class="text-purple-400">90%</span>
+              </div>
+              <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ESPECIALIDADES Y SERVICIOS -->
+    <section id="especialidades" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-sky-400" data-i18n="spec_kicker">Soluciones Profesionales</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2" data-i18n="spec_title">Especialidades y Áreas de Impacto</h2>
+        <p class="text-sm sm:text-base text-slate-300 mt-3" data-i18n="spec_subtitle">
+          Experiencia multidisciplinaria que une atención al cliente bilingüe, estrategia comercial, colaboración en proyectos internacionales en Upwork y creación digital.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
+        <!-- Card 1 -->
+        <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/15 border border-sky-400/30 flex items-center justify-center text-sky-400 text-xl mb-4">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white" data-i18n="spec_1_title">Customer Care &amp; Soporte Bilingüe (ES/EN B2+)</h3>
+          <p class="text-sm text-slate-300 mt-2 leading-relaxed" data-i18n="spec_1_desc">
+            Atención especializada para cuentas corporativas (B2B) y usuarios finales (B2C) en español e inglés avanzado. Manejo experto de objeciones, desescalada de casos críticos y cumplimiento sobresaliente de SLA, FCR y CSAT.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">Bilingual CX (B2+)</span>
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">De-escalation</span>
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">Omnichannel Support</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/15 border border-indigo-400/30 flex items-center justify-center text-indigo-400 text-xl mb-4">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white" data-i18n="spec_2_title">Gestión de Cuentas B2B, Ventas &amp; Marketing</h3>
+          <p class="text-sm text-slate-300 mt-2 leading-relaxed" data-i18n="spec_2_desc">
+            Administración estratégica de carteras de clientes, presentación clara de atributos técnicos y beneficios comerciales, ventas consultivas, retención de cuentas y negociación efectiva.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">Account Management</span>
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">B2B Sales Growth</span>
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">Client Retention</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-400/30 flex items-center justify-center text-emerald-400 text-xl mb-4">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white" data-i18n="spec_3_title">Colaborador del Proyecto PlayHouse vía Upwork</h3>
+          <p class="text-sm text-slate-300 mt-2 leading-relaxed" data-i18n="spec_3_desc">
+            Colaborador activo en el proyecto de Productive Playhouse a través de la plataforma Upwork, ejecutando tareas remotas con precisión lingüística, análisis detallado y cumplimiento puntual de entregables internacionales.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-400/20">Productive Playhouse</span>
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-400/20">Upwork Verified</span>
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">Remote Operations</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-red-500/15 border border-red-400/30 flex items-center justify-center text-red-400 text-xl mb-4">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white" data-i18n="spec_4_title">Creación Digital (@osiris7998) &amp; Desarrollo Web</h3>
+          <p class="text-sm text-slate-300 mt-2 leading-relaxed" data-i18n="spec_4_desc">
+            Producción y edición de video dinámico con CapCut para YouTube (@osiris7998), storytelling visual, además de diseño y desarrollo de páginas web responsivas con HTML5, Tailwind CSS y JavaScript.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">YouTube @osiris7998</span>
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">CapCut Editing</span>
+            <span class="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-slate-300 border border-white/10">HTML5 / Tailwind / JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. EXPERIENCIA PROFESIONAL DETALLADA -->
+    <section id="experiencia" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-indigo-400" data-i18n="exp_kicker">Trayectoria Profesional</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2" data-i18n="exp_title">Experiencia Laboral y Proyectos</h2>
+        <p class="text-sm sm:text-base text-slate-300 mt-3" data-i18n="exp_subtitle">
+          Recorrido sólido en empresas internacionales de telecomunicaciones, tecnología, comercio y colaboración remota.
+        </p>
+      </div>
+
+      <div class="space-y-4 max-w-4xl mx-auto reveal">
+        <!-- Role 1: Productive Playhouse via Upwork -->
+        <div class="glass-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-400">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-white" data-i18n="exp_1_role">Colaborador del Proyecto PlayHouse (a través de Upwork)</h3>
+              <p class="text-sm font-semibold text-emerald-400">Productive Playhouse · Plataforma Upwork</p>
+            </div>
+            <span class="inline-flex items-center self-start sm:self-auto px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-300 border border-emerald-400/20" data-i18n="exp_1_date">2026 – Presente</span>
+          </div>
+          <p class="text-sm text-slate-300 mt-3 leading-relaxed" data-i18n="exp_1_desc">
+            Colaborador independiente verificado en el proyecto de Productive Playhouse gestionado a través de la plataforma Upwork. Ejecución de flujos de trabajo remotos, evaluación de calidad y comunicación efectiva bajo estándares internacionales.
+          </p>
+        </div>
+
+        <!-- Role 2: AT&T Small Business -->
+        <div class="glass-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-sky-400">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-white" data-i18n="exp_2_role">Customer Care Service &amp; Sales (B2B)</h3>
+              <p class="text-sm font-semibold text-sky-400">AT&amp;T Small Business</p>
+            </div>
+            <span class="inline-flex items-center self-start sm:self-auto px-3 py-1 rounded-full text-xs font-medium bg-sky-500/10 text-sky-300 border border-sky-400/20" data-i18n="exp_2_date">Feb 2025 – Ago 2025</span>
+          </div>
+          <p class="text-sm text-slate-300 mt-3 leading-relaxed" data-i18n="exp_2_desc">
+            Gestión de cuentas de clientes de nivel empresarial (B2B), enfocándome en la excelencia del servicio y el crecimiento de ventas. Explicación consultiva de atributos técnicos de productos y beneficios comerciales para impulsar la satisfacción y retención.
+          </p>
+        </div>
+
+        <!-- Role 3: Digital Creator & Web Dev -->
+        <div class="glass-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-red-400">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-white" data-i18n="exp_3_role">Creador de Contenido Digital &amp; Desarrollador Web</h3>
+              <p class="text-sm font-semibold text-red-400">YouTube (@osiris7998) · GitHub (@IvanOsiris)</p>
+            </div>
+            <span class="inline-flex items-center self-start sm:self-auto px-3 py-1 rounded-full text-xs font-medium bg-red-500/10 text-red-300 border border-red-400/20" data-i18n="exp_3_date">2024 – Presente</span>
+          </div>
+          <p class="text-sm text-slate-300 mt-3 leading-relaxed" data-i18n="exp_3_desc">
+            Dirección, edición de video con CapCut y publicación continua en mi canal de YouTube (@osiris7998), junto con el diseño y programación de sitios web modernos e interactivos en HTML5, Tailwind CSS y JavaScript.
+          </p>
+        </div>
+
+        <!-- Role 4: Concentrix (Uber Eats) -->
+        <div class="glass-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-indigo-400">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-white" data-i18n="exp_4_role">Customer Service Representative</h3>
+              <p class="text-sm font-semibold text-indigo-400">Concentrix (Uber Eats)</p>
+            </div>
+            <span class="inline-flex items-center self-start sm:self-auto px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-400/20" data-i18n="exp_4_date">Nov 2022 – Nov 2023</span>
+          </div>
+          <p class="text-sm text-slate-300 mt-3 leading-relaxed" data-i18n="exp_4_desc">
+            Soporte de alto nivel para usuarios y socios de Uber Eats, resolviendo incidencias operativas con sentido de urgencia y manteniendo métricas sobresalientes de desempeño en un entorno de ritmo acelerado.
+          </p>
+        </div>
+
+        <!-- Role 5: Cox Communications & Coppel -->
+        <div class="glass-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-purple-400">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-white" data-i18n="exp_5_role">Account Manager Executive &amp; Ejecutivo CAT</h3>
+              <p class="text-sm font-semibold text-purple-400">Cox Communications (2021–2022) · Coppel (2021)</p>
+            </div>
+            <span class="inline-flex items-center self-start sm:self-auto px-3 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-300 border border-purple-400/20" data-i18n="exp_5_date">Feb 2021 – Abr 2022</span>
+          </div>
+          <p class="text-sm text-slate-300 mt-3 leading-relaxed" data-i18n="exp_5_desc">
+            Supervisión de cuentas y punto de contacto principal para estrategia de servicio en Cox Communications, así como asistencia al cliente y negociación efectiva en entornos financieros de alta presión en Coppel.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PORTAFOLIO Y CASOS DE ÉXITO CON VISTA DE DETALLE -->
+    <section id="portafolio" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-8 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-sky-400" data-i18n="port_kicker">Portafolio Interactivo</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2" data-i18n="port_title">Proyectos y Casos de Éxito</h2>
+        <p class="text-sm sm:text-base text-slate-300 mt-3" data-i18n="port_subtitle">
+          Filtra por área o haz clic en cada tarjeta para abrir el desglose completo del proyecto.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-8 reveal" role="tablist" aria-label="Filtrar proyectos por categoría">
+        <button type="button" data-filter="all" class="portfolio-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-600 text-white shadow-md transition-all">
+          <span data-i18n="tab_all">Todos</span>
+        </button>
+        <button type="button" data-filter="cx" class="portfolio-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+          <span data-i18n="tab_cx">Customer Care &amp; Ventas</span>
+        </button>
+        <button type="button" data-filter="content" class="portfolio-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+          <span data-i18n="tab_content">YouTube &amp; Contenido</span>
+        </button>
+        <button type="button" data-filter="web" class="portfolio-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-card text-slate-300 hover:text-white transition-all">
+          <span data-i18n="tab_web">Web &amp; IA</span>
+        </button>
+      </div>
+
+      <!-- Portfolio Cards Grid (Using real icon image on visual headers) -->
+      <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+        <!-- Card 1: Productive Playhouse via Upwork -->
+        <article data-category="web" class="portfolio-card glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-36 bg-gradient-to-br from-emerald-900/60 via-slate-900 to-indigo-950 p-4 flex items-center justify-between border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" alt="Iván Olguín - PlayHouse Upwork" width="48" height="48" class="w-12 h-12 rounded-xl object-cover border border-emerald-400/50 max-w-full h-auto" />
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400">Upwork Global</span>
+                  <p class="text-sm font-bold text-white">Productive Playhouse</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">Activo</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white" data-i18n="proj_1_title">Colaborador en Proyecto PlayHouse (Upwork)</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed" data-i18n="proj_1_desc">
+                Colaboración remota verificada en el proyecto de Productive Playhouse a través de la plataforma Upwork, aportando análisis bilingüe y ejecución de alta precisión.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between">
+            <button type="button" data-case="playhouse" class="open-case-btn inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+              <i class="fa-solid fa-circle-info"></i>
+              <span data-i18n="btn_case_details">Ver detalles del proyecto</span>
+            </button>
+            <a href="https://www.productiveplayhouse.com/" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-400 hover:text-white" aria-label="Sitio web de Productive Playhouse">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2: YouTube Channel @osiris7998 -->
+        <article data-category="content" class="portfolio-card glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-36 bg-gradient-to-br from-red-900/60 via-slate-900 to-indigo-950 p-4 flex items-center justify-between border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" alt="Canal de YouTube @osiris7998" width="48" height="48" class="w-12 h-12 rounded-xl object-cover border border-red-400/50 max-w-full h-auto" />
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-red-400">YouTube · CapCut</span>
+                  <p class="text-sm font-bold text-white">@osiris7998</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-red-500/20 text-red-300 border border-red-400/30">Canal Oficial</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white" data-i18n="proj_2_title">Creación Digital en YouTube (@osiris7998)</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed" data-i18n="proj_2_desc">
+                Producción audiovisual, edición rítmica en CapCut, narrativa visual y crecimiento orgánico de comunidad en mi canal oficial de YouTube.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between">
+            <button type="button" data-case="youtube" class="open-case-btn inline-flex items-center gap-1.5 text-xs font-semibold text-sky-400 hover:text-sky-300">
+              <i class="fa-solid fa-circle-info"></i>
+              <span data-i18n="btn_case_details">Ver detalles del proyecto</span>
+            </button>
+            <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-400 hover:text-white" aria-label="Abrir canal de YouTube @osiris7998">
+              <i class="fa-brands fa-youtube text-sm text-red-400"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 3: B2B Customer Care & Web Architecture -->
+        <article data-category="cx" class="portfolio-card glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-36 bg-gradient-to-br from-sky-900/60 via-slate-900 to-indigo-950 p-4 flex items-center justify-between border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" alt="Iván Olguín Customer Experience B2B" width="48" height="48" class="w-12 h-12 rounded-xl object-cover border border-sky-400/50 max-w-full h-auto" />
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-sky-400">AT&amp;T · Uber Eats · Cox</span>
+                  <p class="text-sm font-bold text-white">B2B &amp; B2C CX</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-sky-500/20 text-sky-300 border border-sky-400/30">ES / EN B2+</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white" data-i18n="proj_3_title">Gestión de Cuentas B2B &amp; Portafolio MYWEB</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed" data-i18n="proj_3_desc">
+                Estrategia de retención, ventas consultivas y soporte bilingüe de alto volumen combinados con el desarrollo de mi ecosistema digital en GitHub.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between">
+            <button type="button" data-case="cx" class="open-case-btn inline-flex items-center gap-1.5 text-xs font-semibold text-sky-400 hover:text-sky-300">
+              <i class="fa-solid fa-circle-info"></i>
+              <span data-i18n="btn_case_details">Ver detalles del proyecto</span>
+            </button>
+            <a href="https://github.com/IvanOsiris/MYWEB" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-400 hover:text-white" aria-label="Abrir repositorio MYWEB en GitHub">
+              <i class="fa-brands fa-github text-sm"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. HUB OFICIAL DE ENLACES -->
+    <section id="hub" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <img
+          src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+          alt="Icono de perfil de Iván Olguín"
+          width="64"
+          height="64"
+          class="w-16 h-16 rounded-2xl object-cover mx-auto mb-3 border-2 border-sky-400/50 shadow-lg max-w-full h-auto"
+        />
+        <span class="text-xs font-bold uppercase tracking-widest text-sky-400" data-i18n="hub_kicker">Ecosistema Digital</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1" data-i18n="hub_title">Hub de Canales Oficiales</h2>
+        <p class="text-sm sm:text-base text-slate-300 mt-2" data-i18n="hub_subtitle">
+          Accede directamente a mis plataformas de trabajo, canal de contenido y contacto inmediato.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 reveal">
+        <!-- Hub 1: PlayHouse via Upwork (Full Width Highlight) -->
+        <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer" class="sm:col-span-2 glass-card rounded-2xl p-5 flex items-center justify-between group hover:-translate-y-0.5 transition-all border border-emerald-500/30">
+          <div class="flex items-center gap-4">
+            <img src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" alt="Iván Olguín Upwork PlayHouse" width="48" height="48" class="w-12 h-12 rounded-xl object-cover border border-emerald-400/50 shrink-0 max-w-full h-auto" />
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400">Upwork · Productive Playhouse</span>
+              <h3 class="text-base font-bold text-white group-hover:text-emerald-300 transition-colors" data-i18n="hub_upwork_title">Colaborador del Proyecto PlayHouse a través de Upwork</h3>
+              <p class="text-xs text-slate-400" data-i18n="hub_upwork_sub">Colaboración remota verificada en Productive Playhouse mediante la plataforma Upwork</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-white transition-colors"></i>
+        </a>
+
+        <!-- Hub 2: YouTube -->
+        <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-5 flex items-center justify-between group hover:-translate-y-0.5 transition-all">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-red-500/15 border border-red-500/30 flex items-center justify-center text-red-500 text-2xl shrink-0">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition-colors" data-i18n="hub_yt_title">Canal Oficial de YouTube</h3>
+              <p class="text-xs text-slate-400">@osiris7998 · Contenido digital y edición</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-white transition-colors"></i>
+        </a>
+
+        <!-- Hub 3: WhatsApp -->
+        <a href="https://wa.me/525663656095?text=Hola%20Iv%C3%A1n%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-5 flex items-center justify-between group hover:-translate-y-0.5 transition-all">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl shrink-0">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition-colors" data-i18n="hub_wa_title">Contacto Directo WhatsApp</h3>
+              <p class="text-xs text-slate-400">+52 56 6365 6095 · Respuesta inmediata</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-white transition-colors"></i>
+        </a>
+
+        <!-- Hub 4: GitHub -->
+        <a href="https://github.com/IvanOsiris/MYWEB" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-5 flex items-center justify-between group hover:-translate-y-0.5 transition-all">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/15 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl shrink-0">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition-colors" data-i18n="hub_gh_title">GitHub &amp; Código Web</h3>
+              <p class="text-xs text-slate-400">github.com/IvanOsiris/MYWEB</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-white transition-colors"></i>
+        </a>
+
+        <!-- Hub 5: Correo Electrónico Directo -->
+        <a href="mailto:ivanolguin333@gmail.com?subject=Contacto%20desde%20Portafolio%20Web%20-%20Iv%C3%A1n%20Olgu%C3%ADn" class="glass-card rounded-2xl p-5 flex items-center justify-between group hover:-translate-y-0.5 transition-all">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400 text-2xl shrink-0">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition-colors" data-i18n="hub_mail_title">Correo Electrónico</h3>
+              <p class="text-xs text-slate-400">ivanolguin333@gmail.com</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-paper-plane text-slate-400 group-hover:text-white transition-colors"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- 7. PREGUNTAS FRECUENTES (FAQ INTERACTIVO) -->
+    <section id="faq" class="py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-8 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-indigo-400" data-i18n="faq_kicker">Resolución de Dudas</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2" data-i18n="faq_title">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="space-y-3 reveal">
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-bold text-white hover:text-sky-400 transition-colors" aria-expanded="false">
+            <span data-i18n="faq_q1">¿En qué consiste tu colaboración en el proyecto PlayHouse?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n="faq_a1">
+            Soy colaborador activo del proyecto de Productive Playhouse a través de la plataforma Upwork, participando en flujos de trabajo remotos donde aplico análisis bilingüe, criterio lingüístico y cumplimiento riguroso de estándares de calidad.
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-bold text-white hover:text-sky-400 transition-colors" aria-expanded="false">
+            <span data-i18n="faq_q2">¿Qué nivel de inglés manejas y en qué modalidades trabajas?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n="faq_a2">
+            Cuento con inglés avanzado (nivel B2+) tanto hablado como escrito, probado en atención a cuentas empresariales (AT&amp;T Small Business) y soporte internacional. Estoy disponible para proyectos remotos, híbridos o presenciales en CDMX y área metropolitana.
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-bold text-white hover:text-sky-400 transition-colors" aria-expanded="false">
+            <span data-i18n="faq_q3">¿Qué tipo de proyectos digitales y de contenido realizas?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n="faq_a3">
+            Produzco y edito contenido audiovisual dinámico con CapCut para mi canal de YouTube (@osiris7998), además de diseñar páginas web modernas y responsivas enfocadas en conversión y marca personal.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. SECCIÓN DE CONTACTO INTERACTIVA CON PLANTILLAS RÁPIDAS -->
+    <section id="contacto" class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-indigo-500/30 shadow-2xl reveal">
+        <div class="text-center max-w-xl mx-auto mb-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-sky-400" data-i18n="contact_kicker">Contacto Inmediato</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2" data-i18n="contact_title">Iniciemos una Conversación</h2>
+          <p class="text-sm text-slate-300 mt-2" data-i18n="contact_subtitle">
+            Elige una plantilla rápida o escribe tu mensaje personalizado para enviarlo directamente a mi WhatsApp o correo electrónico.
+          </p>
+        </div>
+
+        <!-- Quick Preset Chips -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+          <button type="button" data-preset="recruiter" class="preset-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-indigo-600/30 text-slate-200 border border-white/10 transition-colors">
+            <i class="fa-solid fa-briefcase text-sky-400 mr-1"></i>
+            <span data-i18n="preset_1">Propuesta Laboral / CX</span>
+          </button>
+          <button type="button" data-preset="upwork" class="preset-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-emerald-600/30 text-slate-200 border border-white/10 transition-colors">
+            <i class="fa-solid fa-globe text-emerald-400 mr-1"></i>
+            <span data-i18n="preset_2">Proyecto Remoto / Upwork</span>
+          </button>
+          <button type="button" data-preset="content" class="preset-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-red-600/30 text-slate-200 border border-white/10 transition-colors">
+            <i class="fa-brands fa-youtube text-red-400 mr-1"></i>
+            <span data-i18n="preset_3">Colaboración Digital / Web</span>
+          </button>
+        </div>
+
+        <form id="contact-form" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="visitor-name" class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="form_name_label">Tu nombre o empresa</label>
+              <input id="visitor-name" type="text" required placeholder="Ej. Ana García / Tech Corp" class="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-white/10 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-400" />
+            </div>
+            <div>
+              <label for="visitor-topic" class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="form_topic_label">Motivo de contacto</label>
+              <select id="visitor-topic" class="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-white/10 text-sm text-white focus:outline-none focus:border-sky-400">
+                <option value="Oportunidad Laboral / Customer Care Bilingüe">Oportunidad Laboral / Customer Care Bilingüe</option>
+                <option value="Proyecto Remoto / Colaboración vía Upwork">Proyecto Remoto / Colaboración vía Upwork</option>
+                <option value="Colaboración YouTube (@osiris7998) / Contenido">Colaboración YouTube (@osiris7998) / Contenido</option>
+                <option value="Proyecto de Marketing / Desarrollo Web">Proyecto de Marketing / Desarrollo Web</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="visitor-message" class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="form_msg_label">Mensaje</label>
+            <textarea id="visitor-message" rows="3" required placeholder="Hola Iván, revisé tu portafolio web y me gustaría conversar contigo sobre..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-white/10 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-400"></textarea>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <button type="submit" id="send-wa-btn" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white shadow-lg shadow-emerald-600/20 transition-all">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span data-i18n="form_btn_wa">Enviar por WhatsApp</span>
+            </button>
+
+            <button type="button" id="send-email-btn" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/20 transition-all">
+              <i class="fa-regular fa-envelope"></i>
+              <span data-i18n="form_btn_email">Abrir en Correo</span>
+            </button>
+
+            <button type="button" id="copy-email-btn" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold glass-card text-slate-200 hover:text-white transition-all">
+              <i class="fa-regular fa-copy text-sky-400"></i>
+              <span>ivanolguin333@gmail.com</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-slate-950/80 py-10 px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3 text-center sm:text-left">
+        <img
+          src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+          alt="Icono de Iván Olguín"
+          width="40"
+          height="40"
+          class="w-10 h-10 rounded-xl object-cover border border-sky-400/40 max-w-full h-auto"
+        />
+        <div>
+          <a href="#inicio" class="text-lg font-extrabold text-white">Iván <span class="text-gradient">Olguín</span></a>
+          <p class="text-xs text-slate-400 mt-0.5" data-i18n="footer_tagline">
+            Customer Care Bilingüe · Colaborador PlayHouse (Upwork) · YouTube (@osiris7998)
+          </p>
+        </div>
+      </div>
+
+      <!-- Social Icons with Descriptive ARIA Labels -->
+      <div class="flex items-center gap-3">
+        <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" aria-label="Canal de YouTube de Iván Olguín (@osiris7998)" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-red-500 transition-colors">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer" aria-label="Colaboración en Upwork - Productive Playhouse" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-colors">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="https://github.com/IvanOsiris/MYWEB" target="_blank" rel="noopener noreferrer" aria-label="Repositorio de GitHub de Iván Olguín" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-white transition-colors">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://wa.me/525663656095?text=Hola%20Iv%C3%A1n%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensaje por WhatsApp a Iván Olguín" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-colors">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="mailto:ivanolguin333@gmail.com" aria-label="Enviar correo electrónico a ivanolguin333@gmail.com" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-sky-400 transition-colors">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-6 pt-6 border-t border-white/5 text-center text-xs text-slate-500">
+      <p>&copy; <span id="current-year">2026</span> Iván Osiris Olguín Becerra. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+    </div>
+  </footer>
+
+  <!-- Interactive Application Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var currentLang = 'es';
+
+      // 1. Dynamic Current Year
+      var yearEl = document.getElementById('current-year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // 2. Toast Helper
+      var toastTimer = null;
+      function showToast(message) {
+        var toast = document.getElementById('toast-notification');
+        var msgEl = document.getElementById('toast-message');
+        if (!toast || !msgEl) return;
+        msgEl.textContent = message;
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 3200);
+      }
+
+      // 3. Copy Email Helper with Fallback
+      function copyEmailAddress() {
+        var email = 'ivanolguin333@gmail.com';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(function () {
+            showToast(currentLang === 'es' ? 'Correo copiado: ' + email : 'Email copied: ' + email);
+          }).catch(function () {
+            fallbackCopy(email);
+          });
+        } else {
+          fallbackCopy(email);
+        }
+      }
+
+      function fallbackCopy(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast(currentLang === 'es' ? 'Correo copiado: ' + text : 'Email copied: ' + text);
+        } catch (err) {
+          showToast(text);
+        }
+        document.body.removeChild(ta);
+      }
+
+      var copyHeroBtn = document.getElementById('copy-email-hero');
+      var copyFormBtn = document.getElementById('copy-email-btn');
+      if (copyHeroBtn) copyHeroBtn.addEventListener('click', copyEmailAddress);
+      if (copyFormBtn) copyFormBtn.addEventListener('click', copyEmailAddress);
+
+      // 4. Mobile Menu Drawer Control
+      var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      var mobileMenu = document.getElementById('mobile-menu');
+      var mobileMenuIcon = document.getElementById('mobile-menu-icon');
+
+      function closeMobileMenu() {
+        if (!mobileMenu || !mobileMenuBtn || !mobileMenuIcon) return;
+        mobileMenu.classList.add('hidden');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenuIcon.classList.remove('fa-xmark');
+        mobileMenuIcon.classList.add('fa-bars');
+      }
+
+      function toggleMobileMenu() {
+        if (!mobileMenu || !mobileMenuBtn || !mobileMenuIcon) return;
+        var isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'true');
+          mobileMenuIcon.classList.remove('fa-bars');
+          mobileMenuIcon.classList.add('fa-xmark');
+        } else {
+          closeMobileMenu();
+        }
+      }
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+      }
+
+      var mobileLinks = document.querySelectorAll('.mobile-nav-link');
+      mobileLinks.forEach(function (link) {
+        link.addEventListener('click', closeMobileMenu);
+      });
+
+      // 5. Case Study Detail Modal
+      var caseModal = document.getElementById('case-modal');
+      var closeModalBtn = document.getElementById('close-modal-btn');
+      var modalBadge = document.getElementById('modal-badge');
+      var modalTitle = document.getElementById('modal-title');
+      var modalDesc = document.getElementById('modal-desc');
+      var modalList = document.getElementById('modal-list');
+      var modalExternalLink = document.getElementById('modal-external-link');
+      var modalLinkText = document.getElementById('modal-link-text');
+
+      var caseData = {
+        playhouse: {
+          es: {
+            badge: 'Productive Playhouse · Upwork',
+            title: 'Colaborador del Proyecto PlayHouse vía Upwork',
+            desc: 'Colaboración remota verificada con Productive Playhouse gestionada íntegramente a través de la plataforma Upwork.',
+            bullets: [
+              'Ejecución de tareas especializadas en español latinoamericano e inglés (B2+).',
+              'Cumplimiento estricto de lineamientos de calidad, confidencialidad y entregas en tiempo.',
+              'Gestión profesional de contrato y entregables mediante Upwork Global.'
+            ],
+            linkUrl: 'https://www.productiveplayhouse.com/',
+            linkText: 'Visitar Productive Playhouse'
+          },
+          en: {
+            badge: 'Productive Playhouse · Upwork',
+            title: 'PlayHouse Project Collaborator via Upwork',
+            desc: 'Verified remote collaboration with Productive Playhouse managed through the Upwork platform.',
+            bullets: [
+              'Execution of specialized bilingual workflows in Latin American Spanish and English (B2+).',
+              'Strict adherence to quality benchmarks, confidentiality, and turnaround times.',
+              'Professional contract and milestone coordination via Upwork Global.'
+            ],
+            linkUrl: 'https://www.productiveplayhouse.com/',
+            linkText: 'Visit Productive Playhouse'
+          }
+        },
+        youtube: {
+          es: {
+            badge: 'YouTube Oficial · @osiris7998',
+            title: 'Creación y Edición de Contenido Digital',
+            desc: 'Dirección creativa, edición de video y gestión de comunidad en mi canal oficial de YouTube (@osiris7998).',
+            bullets: [
+              'Edición dinámica con CapCut enfocada en retención de audiencia y ritmo visual.',
+              'Optimización de títulos, descripciones y diseño visual para formatos largos y Shorts.',
+              'Storytelling digital adaptable a marcas y proyectos creativos.'
+            ],
+            linkUrl: 'https://www.youtube.com/@osiris7998',
+            linkText: 'Abrir Canal @osiris7998'
+          },
+          en: {
+            badge: 'Official YouTube · @osiris7998',
+            title: 'Digital Content Creation & Video Editing',
+            desc: 'Creative direction, video production, and community growth on my official YouTube channel (@osiris7998).',
+            bullets: [
+              'High-retention video editing using CapCut with dynamic visual pacing.',
+              'Metadata, thumbnail, and format optimization across videos and Shorts.',
+              'Engaging digital storytelling adaptable to brand campaigns.'
+            ],
+            linkUrl: 'https://www.youtube.com/@osiris7998',
+            linkText: 'Open @osiris7998 Channel'
+          }
+        },
+        cx: {
+          es: {
+            badge: 'AT&T · Uber Eats · Cox · GitHub',
+            title: 'Gestión de Cuentas B2B, CX Bilingüe & Web MYWEB',
+            desc: 'Más de 4 años resolviendo casos complejos, impulsando ventas consultivas y construyendo presencia digital.',
+            bullets: [
+              'AT&T Small Business (2025): Atención y ventas consultivas para cuentas empresariales.',
+              'Concentrix / Uber Eats & Cox Communications: Soporte ágil y retención de clientes.',
+              'Desarrollo del portafolio interactivo MYWEB con HTML5, Tailwind CSS y JavaScript.'
+            ],
+            linkUrl: 'https://github.com/IvanOsiris/MYWEB',
+            linkText: 'Ver Repositorio en GitHub'
+          },
+          en: {
+            badge: 'AT&T · Uber Eats · Cox · GitHub',
+            title: 'B2B Account Management, Bilingual CX & MYWEB',
+            desc: 'Over 4 years resolving complex client issues, driving consultative sales, and building web solutions.',
+            bullets: [
+              'AT&T Small Business (2025): Business-tier account care and consultative sales growth.',
+              'Concentrix / Uber Eats & Cox Communications: Fast-paced support and account strategy.',
+              'Development of the interactive bilingual MYWEB portfolio using Tailwind CSS & JS.'
+            ],
+            linkUrl: 'https://github.com/IvanOsiris/MYWEB',
+            linkText: 'View GitHub Repository'
+          }
+        }
+      };
+
+      function openCaseModal(caseKey) {
+        var entry = caseData[caseKey];
+        if (!entry || !caseModal) return;
+        var content = entry[currentLang] || entry.es;
+        if (modalBadge) modalBadge.textContent = content.badge;
+        if (modalTitle) modalTitle.textContent = content.title;
+        if (modalDesc) modalDesc.textContent = content.desc;
+        if (modalList) {
+          modalList.innerHTML = '';
+          content.bullets.forEach(function (item) {
+            var li = document.createElement('li');
+            li.className = 'flex items-start gap-2';
+            li.innerHTML = '<i class="fa-solid fa-check text-emerald-400 mt-1"></i><span></span>';
+            li.querySelector('span').textContent = item;
+            modalList.appendChild(li);
+          });
+        }
+        if (modalExternalLink) modalExternalLink.setAttribute('href', content.linkUrl);
+        if (modalLinkText) modalLinkText.textContent = content.linkText;
+        caseModal.classList.remove('hidden');
+        caseModal.classList.add('flex');
+      }
+
+      function closeCaseModal() {
+        if (!caseModal) return;
+        caseModal.classList.add('hidden');
+        caseModal.classList.remove('flex');
+      }
+
+      var openCaseBtns = document.querySelectorAll('.open-case-btn');
+      openCaseBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          openCaseModal(btn.getAttribute('data-case'));
+        });
+      });
+
+      if (closeModalBtn) closeModalBtn.addEventListener('click', closeCaseModal);
+      if (caseModal) {
+        caseModal.addEventListener('click', function (e) {
+          if (e.target === caseModal) closeCaseModal();
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          closeMobileMenu();
+          closeCaseModal();
+        }
+      });
+
+      // 6. FAQ Accordion
+      var faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var content = btn.nextElementSibling;
+          var icon = btn.querySelector('i');
+          if (!content) return;
+          var isHidden = content.classList.contains('hidden');
+          if (isHidden) {
+            content.classList.remove('hidden');
+            btn.setAttribute('aria-expanded', 'true');
+            if (icon) icon.classList.add('rotate-180');
+          } else {
+            content.classList.add('hidden');
+            btn.setAttribute('aria-expanded', 'false');
+            if (icon) icon.classList.remove('rotate-180');
+          }
+        });
+      });
+
+      // 7. Navbar Shadow on Scroll
+      var navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function () {
+        if (!navbar) return;
+        if (window.scrollY > 20) {
+          navbar.classList.add('shadow-lg', 'shadow-black/50');
+        } else {
+          navbar.classList.remove('shadow-lg', 'shadow-black/50');
+        }
+      }, { passive: true });
+
+      // 8. Scroll Reveal Animation
+      var revealElements = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+            }
+          });
+        }, { threshold: 0.10 });
+        revealElements.forEach(function (el) { observer.observe(el); });
+      } else {
+        revealElements.forEach(function (el) { el.classList.add('active'); });
+      }
+
+      // 9. Portfolio Category Filter Tabs
+      var filterTabs = document.querySelectorAll('.portfolio-tab');
+      var portfolioCards = document.querySelectorAll('.portfolio-card');
+
+      filterTabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var selected = tab.getAttribute('data-filter');
+          filterTabs.forEach(function (t) {
+            t.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
+            t.classList.add('glass-card', 'text-slate-300');
+          });
+          tab.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
+          tab.classList.remove('glass-card', 'text-slate-300');
+
+          portfolioCards.forEach(function (card) {
+            var cat = card.getAttribute('data-category');
+            if (selected === 'all' || cat === selected) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // 10. Quick Message Presets & Interactive Contact Form
+      var presetBtns = document.querySelectorAll('.preset-btn');
+      var topicSelect = document.getElementById('visitor-topic');
+      var msgTextarea = document.getElementById('visitor-message');
+
+      var presets = {
+        recruiter: {
+          es: 'Hola Iván, revisé tu portafolio web y tu experiencia en Customer Care Bilingüe (AT&T / Uber Eats). Nos gustaría conversar contigo sobre una vacante.',
+          en: 'Hi Iván, I reviewed your portfolio and your Bilingual Customer Care background (AT&T / Uber Eats). We would love to discuss an open role with you.',
+          topicIndex: 0
+        },
+        upwork: {
+          es: 'Hola Iván, vi que eres colaborador del proyecto PlayHouse a través de Upwork y me gustaría invitarte a colaborar en un proyecto remoto.',
+          en: 'Hi Iván, I saw that you are a PlayHouse project collaborator via Upwork and would like to invite you to a remote project.',
+          topicIndex: 1
+        },
+        content: {
+          es: 'Hola Iván, vi tu canal de YouTube (@osiris7998) y tu página web. Me gustaría platicar sobre un proyecto de contenido digital / web.',
+          en: 'Hi Iván, I checked out your YouTube channel (@osiris7998) and website. I would like to discuss a digital content / web project.',
+          topicIndex: 2
+        }
+      };
+
+      presetBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var key = btn.getAttribute('data-preset');
+          var item = presets[key];
+          if (!item) return;
+          if (topicSelect && topicSelect.options[item.topicIndex]) {
+            topicSelect.selectedIndex = item.topicIndex;
+          }
+          if (msgTextarea) {
+            msgTextarea.value = item[currentLang] || item.es;
+            msgTextarea.focus();
+          }
+          showToast(currentLang === 'es' ? 'Plantilla cargada en el mensaje' : 'Template loaded into message');
+        });
+      });
+
+      var contactForm = document.getElementById('contact-form');
+      var sendEmailBtn = document.getElementById('send-email-btn');
+
+      function getFormPayload() {
+        var nameInput = document.getElementById('visitor-name');
+        var name = (nameInput && nameInput.value.trim()) ? nameInput.value.trim() : 'Visitante Web';
+        var topic = (topicSelect && topicSelect.value) ? topicSelect.value : 'Contacto desde Portafolio Web';
+        var msg = (msgTextarea && msgTextarea.value.trim()) ? msgTextarea.value.trim() : 'Hola Iván, vi tu portafolio web y me gustaría conversar contigo.';
+        return { name: name, topic: topic, msg: msg };
+      }
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var data = getFormPayload();
+          var text = 'Hola Iván, soy ' + data.name + ' (' + data.topic + '). ' + data.msg;
+          var waUrl = 'https://wa.me/525663656095?text=' + encodeURIComponent(text);
+          window.open(waUrl, '_blank', 'noopener,noreferrer');
+          showToast(currentLang === 'es' ? 'Abriendo conversación en WhatsApp...' : 'Opening WhatsApp chat...');
+        });
+      }
+
+      if (sendEmailBtn) {
+        sendEmailBtn.addEventListener('click', function () {
+          var data = getFormPayload();
+          var subject = data.topic + ' - ' + data.name;
+          var body = 'Hola Iván,\n\nSoy ' + data.name + '.\n\n' + data.msg + '\n\nSaludos.';
+          var mailUrl = 'mailto:ivanolguin333@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+          window.location.href = mailUrl;
+          showToast(currentLang === 'es' ? 'Abriendo cliente de correo...' : 'Opening email client...');
+        });
+      }
+
+      // 11. Bilingual Language Switcher (ES / EN)
+      var translations = {
+        es: {
+          nav_home: 'Inicio',
+          nav_about: 'Sobre Mí',
+          nav_specialties: 'Especialidades',
+          nav_experience: 'Experiencia',
+          nav_portfolio: 'Portafolio',
+          nav_hub: 'Hub Oficial',
+          nav_contact: 'Contacto',
+          nav_cta: 'Conversar',
+          nav_cta_mobile: 'Conversar por WhatsApp',
+          hero_badge: 'Disponible para Proyectos Globales · Colaborador en PlayHouse (Upwork) · Bilingüe (ES / EN B2+)',
+          hero_subtitle: 'Especialista en Customer Experience (CX) Bilingüe | Colaborador del Proyecto PlayHouse vía Upwork & Creador Digital',
+          hero_desc: 'Transformo cada interacción en confianza, retención y resultados medibles. Cuento con más de 4 años de trayectoria liderando soporte al cliente de alto nivel, gestión de cuentas corporativas B2B y ventas consultivas para firmas globales como AT&T Small Business, Uber Eats (Concentrix) y Cox Communications. Actualmente soy colaborador del proyecto Productive Playhouse a través de la plataforma Upwork y creador de contenido digital en YouTube (@osiris7998).',
+          hero_btn_portfolio: 'Explorar Portafolio',
+          hero_btn_youtube: 'YouTube @osiris7998',
+          hero_btn_contact: 'Contacto Directo',
+          metric_1: 'Calidad y enfoque CSAT',
+          metric_2: 'Experiencia B2B / B2C',
+          metric_3: 'Proyecto PlayHouse',
+          metric_4: 'Inglés Avanzado B2+',
+          hero_card_top_badge: 'PlayHouse Collaborator · Upwork',
+          card_role: 'CX Specialist · PlayHouse (Upwork) · @osiris7998',
+          btn_copy_email: 'Copiar Email',
+          about_kicker: 'Perfil Ejecutivo',
+          about_title: 'Sobre Mí y Propuesta de Valor',
+          about_p1: 'Soy un profesional dinámico, autodidacta y orientado a la resolución de problemas complejos. A lo largo de mi carrera he gestionado cuentas empresariales, soporte técnico bilingüe, retención de clientes y operaciones de cobranza en sectores de telecomunicaciones, plataformas de entrega y servicios financieros.',
+          about_p2: 'Actualmente combino mi experiencia en Customer Experience con mi trabajo como colaborador del proyecto Productive Playhouse a través de la plataforma Upwork, además de desarrollar proyectos web modernos y producir contenido audiovisual para mi canal de YouTube (@osiris7998).',
+          pillar_1: 'Comunicación Estratégica',
+          pillar_2: 'Resolución Ágil',
+          pillar_3: 'Alta Tolerancia a Presión',
+          pillar_4: 'Enfoque Tecnológico',
+          skills_matrix_title: 'Dominio de Competencias y Stack',
+          skill_bar_1: 'Customer Care B2B/B2C & Retención',
+          skill_bar_2: 'Comunicación Bilingüe (Español / Inglés B2+)',
+          skill_bar_3: 'Colaboración Remota (PlayHouse · Upwork)',
+          skill_bar_4: 'Creación Digital, CapCut & Desarrollo Web',
+          spec_kicker: 'Soluciones Profesionales',
+          spec_title: 'Especialidades y Áreas de Impacto',
+          spec_subtitle: 'Experiencia multidisciplinaria que une atención al cliente bilingüe, estrategia comercial, colaboración en proyectos internacionales en Upwork y creación digital.',
+          spec_1_title: 'Customer Care & Soporte Bilingüe (ES/EN B2+)',
+          spec_1_desc: 'Atención especializada para cuentas corporativas (B2B) y usuarios finales (B2C) en español e inglés avanzado. Manejo experto de objeciones, desescalada de casos críticos y cumplimiento sobresaliente de SLA, FCR y CSAT.',
+          spec_2_title: 'Gestión de Cuentas B2B, Ventas & Marketing',
+          spec_2_desc: 'Administración estratégica de carteras de clientes, presentación clara de atributos técnicos y beneficios comerciales, ventas consultivas, retención de cuentas y negociación efectiva.',
+          spec_3_title: 'Colaborador del Proyecto PlayHouse vía Upwork',
+          spec_3_desc: 'Colaborador activo en el proyecto de Productive Playhouse a través de la plataforma Upwork, ejecutando tareas remotas con precisión lingüística, análisis detallado y cumplimiento puntual de entregables internacionales.',
+          spec_4_title: 'Creación Digital (@osiris7998) & Desarrollo Web',
+          spec_4_desc: 'Producción y edición de video dinámico con CapCut para YouTube (@osiris7998), storytelling visual, además de diseño y desarrollo de páginas web responsivas con HTML5, Tailwind CSS y JavaScript.',
+          exp_kicker: 'Trayectoria Profesional',
+          exp_title: 'Experiencia Laboral y Proyectos',
+          exp_subtitle: 'Recorrido sólido en empresas internacionales de telecomunicaciones, tecnología, comercio y colaboración remota.',
+          exp_1_role: 'Colaborador del Proyecto PlayHouse (a través de Upwork)',
+          exp_1_date: '2026 – Presente',
+          exp_1_desc: 'Colaborador independiente verificado en el proyecto de Productive Playhouse gestionado a través de la plataforma Upwork. Ejecución de flujos de trabajo remotos, evaluación de calidad y comunicación efectiva bajo estándares internacionales.',
+          exp_2_role: 'Customer Care Service & Sales (B2B)',
+          exp_2_date: 'Feb 2025 – Ago 2025',
+          exp_2_desc: 'Gestión de cuentas de clientes de nivel empresarial (B2B), enfocándome en la excelencia del servicio y el crecimiento de ventas. Explicación consultiva de atributos técnicos de productos y beneficios comerciales para impulsar la satisfacción y retención.',
+          exp_3_role: 'Creador de Contenido Digital & Desarrollador Web',
+          exp_3_date: '2024 – Presente',
+          exp_3_desc: 'Dirección, edición de video con CapCut y publicación continua en mi canal de YouTube (@osiris7998), junto con el diseño y programación de sitios web modernos e interactivos en HTML5, Tailwind CSS y JavaScript.',
+          exp_4_role: 'Customer Service Representative',
+          exp_4_date: 'Nov 2022 – Nov 2023',
+          exp_4_desc: 'Soporte de alto nivel para usuarios y socios de Uber Eats, resolviendo incidencias operativas con sentido de urgencia y manteniendo métricas sobresalientes de desempeño en un entorno de ritmo acelerado.',
+          exp_5_role: 'Account Manager Executive & Ejecutivo CAT',
+          exp_5_date: 'Feb 2021 – Abr 2022',
+          exp_5_desc: 'Supervisión de cuentas y punto de contacto principal para estrategia de servicio en Cox Communications, así como asistencia al cliente y negociación efectiva en entornos financieros de alta presión en Coppel.',
+          port_kicker: 'Portafolio Interactivo',
+          port_title: 'Proyectos y Casos de Éxito',
+          port_subtitle: 'Filtra por área o haz clic en cada tarjeta para abrir el desglose completo del proyecto.',
+          tab_all: 'Todos',
+          tab_cx: 'Customer Care & Ventas',
+          tab_web: 'Web & IA',
+          tab_content: 'YouTube & Contenido',
+          proj_1_title: 'Colaborador en Proyecto PlayHouse (Upwork)',
+          proj_1_desc: 'Colaboración remota verificada en el proyecto de Productive Playhouse a través de la plataforma Upwork, aportando análisis bilingüe y ejecución de alta precisión.',
+          proj_2_title: 'Creación Digital en YouTube (@osiris7998)',
+          proj_2_desc: 'Producción audiovisual, edición rítmica en CapCut, narrativa visual y crecimiento orgánico de comunidad en mi canal oficial de YouTube.',
+          proj_3_title: 'Gestión de Cuentas B2B & Portafolio MYWEB',
+          proj_3_desc: 'Estrategia de retención, ventas consultivas y soporte bilingüe de alto volumen combinados con el desarrollo de mi ecosistema digital en GitHub.',
+          btn_case_details: 'Ver detalles del proyecto',
+          modal_highlights_title: 'Logros y Enfoque Clave',
+          hub_kicker: 'Ecosistema Digital',
+          hub_title: 'Hub de Canales Oficiales',
+          hub_subtitle: 'Accede directamente a mis plataformas de trabajo, canal de contenido y contacto inmediato.',
+          hub_upwork_title: 'Colaborador del Proyecto PlayHouse a través de Upwork',
+          hub_upwork_sub: 'Colaboración remota verificada en Productive Playhouse mediante la plataforma Upwork',
+          hub_yt_title: 'Canal Oficial de YouTube',
+          hub_wa_title: 'Contacto Directo WhatsApp',
+          hub_gh_title: 'GitHub & Código Web',
+          hub_mail_title: 'Correo Electrónico',
+          faq_kicker: 'Resolución de Dudas',
+          faq_title: 'Preguntas Frecuentes',
+          faq_q1: '¿En qué consiste tu colaboración en el proyecto PlayHouse?',
+          faq_a1: 'Soy colaborador activo del proyecto de Productive Playhouse a través de la plataforma Upwork, participando en flujos de trabajo remotos donde aplico análisis bilingüe, criterio lingüístico y cumplimiento riguroso de estándares de calidad.',
+          faq_q2: '¿Qué nivel de inglés manejas y en qué modalidades trabajas?',
+          faq_a2: 'Cuento con inglés avanzado (nivel B2+) tanto hablado como escrito, probado en atención a cuentas empresariales (AT&T Small Business) y soporte internacional. Estoy disponible para proyectos remotos, híbridos o presenciales en CDMX y área metropolitana.',
+          faq_q3: '¿Qué tipo de proyectos digitales y de contenido realizas?',
+          faq_a3: 'Produzco y edito contenido audiovisual dinámico con CapCut para mi canal de YouTube (@osiris7998), además de diseñar páginas web modernas y responsivas enfocadas en conversión y marca personal.',
+          contact_kicker: 'Contacto Inmediato',
+          contact_title: 'Iniciemos una Conversación',
+          contact_subtitle: 'Elige una plantilla rápida o escribe tu mensaje personalizado para enviarlo directamente a mi WhatsApp o correo electrónico.',
+          preset_1: 'Propuesta Laboral / CX',
+          preset_2: 'Proyecto Remoto / Upwork',
+          preset_3: 'Colaboración Digital / Web',
+          form_name_label: 'Tu nombre o empresa',
+          form_topic_label: 'Motivo de contacto',
+          form_msg_label: 'Mensaje',
+          form_btn_wa: 'Enviar por WhatsApp',
+          form_btn_email: 'Abrir en Correo',
+          footer_tagline: 'Customer Care Bilingüe · Colaborador PlayHouse (Upwork) · YouTube (@osiris7998)',
+          footer_rights: 'Todos los derechos reservados.'
+        },
+        en: {
+          nav_home: 'Home',
+          nav_about: 'About Me',
+          nav_specialties: 'Specialties',
+          nav_experience: 'Experience',
+          nav_portfolio: 'Portfolio',
+          nav_hub: 'Official Hub',
+          nav_contact: 'Contact',
+          nav_cta: 'Let’s Talk',
+          nav_cta_mobile: 'Chat on WhatsApp',
+          hero_badge: 'Available for Global Projects · PlayHouse Collaborator (Upwork) · Bilingual (ES / EN B2+)',
+          hero_subtitle: 'Bilingual Customer Experience (CX) Specialist | PlayHouse Project Collaborator via Upwork & Digital Creator',
+          hero_desc: 'Turning every interaction into trust, retention, and measurable impact. Over 4 years of experience leading high-level customer support, B2B corporate account management, and consultative sales for global brands including AT&T Small Business, Uber Eats (Concentrix), and Cox Communications. Currently collaborating on the Productive Playhouse project via the Upwork platform and creating digital content on YouTube (@osiris7998).',
+          hero_btn_portfolio: 'Explore Portfolio',
+          hero_btn_youtube: 'YouTube @osiris7998',
+          hero_btn_contact: 'Direct Contact',
+          metric_1: 'Quality & CSAT Focus',
+          metric_2: 'B2B / B2C Track Record',
+          metric_3: 'PlayHouse Project',
+          metric_4: 'Advanced English B2+',
+          hero_card_top_badge: 'PlayHouse Collaborator · Upwork',
+          card_role: 'CX Specialist · PlayHouse (Upwork) · @osiris7998',
+          btn_copy_email: 'Copy Email',
+          about_kicker: 'Executive Profile',
+          about_title: 'About Me & Value Proposition',
+          about_p1: 'I am a dynamic, self-taught professional focused on solving complex client challenges. Throughout my career I have managed business-tier accounts, bilingual technical support, client retention, and collections operations across telecom, delivery platforms, and financial services.',
+          about_p2: 'Today I combine my Customer Experience background with my work as a collaborator on the Productive Playhouse project through the Upwork platform, while building modern web experiences and producing video content for my YouTube channel (@osiris7998).',
+          pillar_1: 'Strategic Communication',
+          pillar_2: 'Agile Problem Solving',
+          pillar_3: 'High-Pressure Resilience',
+          pillar_4: 'Tech-Driven Mindset',
+          skills_matrix_title: 'Core Competencies & Stack',
+          skill_bar_1: 'B2B/B2C Customer Care & Retention',
+          skill_bar_2: 'Bilingual Communication (Spanish / English B2+)',
+          skill_bar_3: 'Remote Collaboration (PlayHouse · Upwork)',
+          skill_bar_4: 'Digital Creation, CapCut & Web Development',
+          spec_kicker: 'Professional Solutions',
+          spec_title: 'Specialties & Areas of Impact',
+          spec_subtitle: 'Multidisciplinary expertise combining bilingual customer support, commercial strategy, international Upwork project collaboration, and digital media.',
+          spec_1_title: 'Bilingual Customer Care & Support (ES/EN B2+)',
+          spec_1_desc: 'Dedicated support for business-tier (B2B) and consumer (B2C) accounts in Spanish and Advanced English. Expert objection handling, critical issue de-escalation, and strong SLA, FCR, and CSAT execution.',
+          spec_2_title: 'B2B Account Management, Sales & Marketing',
+          spec_2_desc: 'Strategic portfolio oversight, clear communication of technical product attributes and commercial value, consultative upselling, client retention, and effective negotiation.',
+          spec_3_title: 'PlayHouse Project Collaborator via Upwork',
+          spec_3_desc: 'Active collaborator on the Productive Playhouse project through the Upwork platform, delivering remote workflows with linguistic precision, analytical rigor, and reliable turnaround.',
+          spec_4_title: 'Digital Creation (@osiris7998) & Web Development',
+          spec_4_desc: 'Dynamic video production and editing with CapCut for YouTube (@osiris7998), visual storytelling, and responsive modern web development using HTML5, Tailwind CSS, and JavaScript.',
+          exp_kicker: 'Career Track Record',
+          exp_title: 'Work Experience & Projects',
+          exp_subtitle: 'Proven trajectory across international telecommunications, tech platforms, retail finance, and remote collaboration.',
+          exp_1_role: 'PlayHouse Project Collaborator (via Upwork)',
+          exp_1_date: '2026 – Present',
+          exp_1_desc: 'Verified independent collaborator on the Productive Playhouse project managed through the Upwork platform. Executing remote workflows, quality evaluation, and effective bilingual communication under international standards.',
+          exp_2_role: 'Customer Care Service & Sales (B2B)',
+          exp_2_date: 'Feb 2025 – Aug 2025',
+          exp_2_desc: 'Managed business-tier customer accounts focusing on service excellence and sales growth. Explained technical product attributes and commercial benefits to drive client satisfaction and retention.',
+          exp_3_role: 'Digital Content Creator & Web Developer',
+          exp_3_date: '2024 – Present',
+          exp_3_desc: 'Video direction, CapCut editing, and continuous publishing on my official YouTube channel (@osiris7998), alongside designing and coding responsive web interfaces on GitHub (@IvanOsiris).',
+          exp_4_role: 'Customer Service Representative',
+          exp_4_date: 'Nov 2022 – Nov 2023',
+          exp_4_desc: 'Provided high-level support for Uber Eats users and partners, resolving operational issues with urgency and maintaining high performance metrics in a fast-paced environment.',
+          exp_5_role: 'Account Manager Executive & CAT Specialist',
+          exp_5_date: 'Feb 2021 – Apr 2022',
+          exp_5_desc: 'Oversaw client accounts and served as primary point of contact for service strategy at Cox Communications, and handled customer assistance and credit negotiations at Coppel.',
+          port_kicker: 'Interactive Portfolio',
+          port_title: 'Featured Projects & Case Studies',
+          port_subtitle: 'Filter by category or click any card to inspect the full project breakdown.',
+          tab_all: 'All',
+          tab_cx: 'Customer Care & Ventas',
+          tab_web: 'Web & IA',
+          tab_content: 'YouTube & Media',
+          proj_1_title: 'PlayHouse Project Collaborator (Upwork)',
+          proj_1_desc: 'Verified remote collaboration on the Productive Playhouse project via the Upwork platform, delivering bilingual analysis and high-precision execution.',
+          proj_2_title: 'YouTube Digital Creation (@osiris7998)',
+          proj_2_desc: 'Video production, rhythmic CapCut editing, visual storytelling, and organic community growth on my official YouTube channel.',
+          proj_3_title: 'B2B Account Management & MYWEB Portfolio',
+          proj_3_desc: 'Client retention strategy, consultative sales, and high-volume bilingual support paired with building my web ecosystem on GitHub.',
+          btn_case_details: 'View project details',
+          modal_highlights_title: 'Key Achievements & Focus',
+          hub_kicker: 'Digital Ecosystem',
+          hub_title: 'Official Channels Hub',
+          hub_subtitle: 'Direct access to my work platforms, content channel, and immediate contact.',
+          hub_upwork_title: 'PlayHouse Project Collaborator via Upwork',
+          hub_upwork_sub: 'Verified remote collaboration with Productive Playhouse through the Upwork platform',
+          hub_yt_title: 'Official YouTube Channel',
+          hub_wa_title: 'Direct WhatsApp Chat',
+          hub_gh_title: 'GitHub & Web Source Code',
+          hub_mail_title: 'Direct Email',
+          faq_kicker: 'Quick Answers',
+          faq_title: 'Frequently Asked Questions',
+          faq_q1: 'What does your collaboration on the PlayHouse project involve?',
+          faq_a1: 'I am an active collaborator on the Productive Playhouse project through the Upwork platform, participating in remote workflows where I apply bilingual analysis, linguistic accuracy, and strict quality standards.',
+          faq_q2: 'What is your English proficiency and work availability?',
+          faq_a2: 'I speak and write Advanced English (B2+), proven in business-tier account management (AT&T Small Business) and international support. I am available for remote, hybrid, or on-site roles.',
+          faq_q3: 'What digital media and web projects do you build?',
+          faq_a3: 'I produce and edit dynamic video content with CapCut for my YouTube channel (@osiris7998), and design modern responsive websites focused on personal branding and conversion.',
+          contact_kicker: 'Immediate Contact',
+          contact_title: 'Let’s Start a Conversation',
+          contact_subtitle: 'Pick a quick template or write a custom message to send straight to my WhatsApp or email.',
+          preset_1: 'Job Opportunity / CX',
+          preset_2: 'Remote Project / Upwork',
+          preset_3: 'Digital / Web Collaboration',
+          form_name_label: 'Your name or company',
+          form_topic_label: 'Reason for reaching out',
+          form_msg_label: 'Message',
+          form_btn_wa: 'Send via WhatsApp',
+          form_btn_email: 'Open in Email',
+          footer_tagline: 'Bilingual Customer Care · PlayHouse Collaborator (Upwork) · YouTube (@osiris7998)',
+          footer_rights: 'All rights reserved.'
+        }
+      };
+
+      try {
+        var saved = localStorage.getItem('ivan_portfolio_lang');
+        if (saved === 'en' || saved === 'es') currentLang = saved;
+      } catch (e) {}
+
+      function applyLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        var dict = translations[lang] || translations.es;
+        var nodes = document.querySelectorAll('[data-i18n]');
+        nodes.forEach(function (node) {
+          var key = node.getAttribute('data-i18n');
+          if (dict[key]) {
+            node.textContent = dict[key];
+          }
+        });
+        var labelDesktop = document.getElementById('lang-label-desktop');
+        var labelMobile = document.getElementById('lang-label-mobile');
+        if (labelDesktop) labelDesktop.textContent = lang === 'es' ? 'ES · Switch to EN' : 'EN · Cambiar a ES';
+        if (labelMobile) labelMobile.textContent = lang.toUpperCase();
+        try {
+          localStorage.setItem('ivan_portfolio_lang', lang);
+        } catch (e) {}
+      }
+
+      function toggleLanguage() {
+        var next = currentLang === 'es' ? 'en' : 'es';
+        applyLanguage(next);
+        showToast(next === 'es' ? 'Idioma cambiado a Español' : 'Language switched to English');
+      }
+
+      var langBtnDesktop = document.getElementById('lang-toggle-desktop');
+      var langBtnMobile = document.getElementById('lang-toggle-mobile');
+      if (langBtnDesktop) langBtnDesktop.addEventListener('click', toggleLanguage);
+      if (langBtnMobile) langBtnMobile.addEventListener('click', toggleLanguage);
+
+      applyLanguage(currentLang);
+    });
+  </script>
+</body>
+</html>
