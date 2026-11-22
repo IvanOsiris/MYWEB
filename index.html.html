@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iván Olguín | Customer Care Bilingüe, Colaborador PlayHouse (Upwork) & Creador Digital</title>
+  <meta name="description" content="Portafolio oficial de Iván Osiris Olguín Becerra: Especialista en Customer Care Bilingüe (ES/EN B2+), Gestión de Cuentas B2B, Colaborador del proyecto Productive Playhouse a través de Upwork y Creador Digital en YouTube (@osiris7998)." />
+  <meta name="author" content="Iván Osiris Olguín Becerra" />
+
+  <!-- Favicon & Apple Touch Icon -->
+  <link rel="icon" type="image/jpeg" href="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" />
+  <link rel="apple-touch-icon" href="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Iván Olguín | Customer Care Bilingüe, Colaborador PlayHouse (Upwork) & Creador Digital" />
+  <meta property="og:description" content="Especialista en Customer Experience (CX) Bilingüe B2+, Gestión de Cuentas B2B, Colaborador del proyecto Productive Playhouse vía Upwork y Creador Digital (@osiris7998)." />
+  <meta property="og:image" content="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" />
+  <meta property="og:url" content="https://ivanosiris.github.io/MYWEB/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" />
+
+  <!-- Google Fonts: Montserrat & Barlow Condensed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS 3.4.17 -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'system-ui', 'sans-serif'],
+            num: ['"Barlow Condensed"', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --bg-main: #ffffff;
+      --bg-alt: #f4f7fb;
+      --bg-card: #ffffff;
+      --bg-dock: rgba(255, 255, 255, 0.86);
+      --bg-capsule: #eff3f9;
+      --nav-active-bg: #ffffff;
+      --text-main: #141526;
+      --text-num: #3e4357;
+      --text-body: #4a4e62;
+      --text-muted: #7e8499;
+      --border-line: #e3e8f2;
+      --border-circle: #c5cad8;
+      --pill-bg: #dde2ec;
+      --pill-knob: #ffffff;
+      --grid-dot: rgba(20, 21, 38, 0.075);
+      --radar-line: rgba(0, 149, 255, 0.11);
+      --st-cyan: #00cfbe;
+      --st-blue: #0095ff;
+      --st-link: #0077d4;
+      --st-purple: #a855f7;
+      --st-gold: #b8a300;
+      --shadow-soft: 0 14px 36px -12px rgba(20, 21, 38, 0.08);
+      --shadow-dock: 0 14px 40px -10px rgba(20, 21, 38, 0.10);
+      --shadow-portal: 0 28px 65px -16px rgba(0, 119, 212, 0.14);
+    }
+
+    html.dark-theme {
+      --bg-main: #111322;
+      --bg-alt: #0c0e1a;
+      --bg-card: #181b30;
+      --bg-dock: rgba(20, 23, 41, 0.86);
+      --bg-capsule: #111322;
+      --nav-active-bg: #232744;
+      --text-main: #f8fafc;
+      --text-num: #eef2ff;
+      --text-body: #c0c6dc;
+      --text-muted: #8a91ab;
+      --border-line: #272b47;
+      --border-circle: #41476b;
+      --pill-bg: #262a45;
+      --pill-knob: #00cfbe;
+      --grid-dot: rgba(255, 255, 255, 0.065);
+      --radar-line: rgba(0, 207, 190, 0.12);
+      --st-link: #38bdf8;
+      --shadow-soft: 0 16px 40px -10px rgba(0, 0, 0, 0.45);
+      --shadow-dock: 0 18px 44px -10px rgba(0, 0, 0, 0.55);
+      --shadow-portal: 0 28px 65px -16px rgba(0, 0, 0, 0.65);
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .st-surface-alt { background-color: var(--bg-alt); }
+    .st-muted { color: var(--text-muted); }
+    .st-body { color: var(--text-body); }
+    .st-link { color: var(--st-link); }
+    .st-divider { border-color: var(--border-line); }
+
+    .st-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-line);
+      box-shadow: var(--shadow-soft);
+      transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.3s ease;
+    }
+    .st-card:hover {
+      border-color: rgba(0, 149, 255, 0.42);
+    }
+
+    /* Gradiente de texto con los colores Speedtest */
+    .st-text-gradient {
+      background: linear-gradient(92deg, #00b8a9 0%, #0088ff 52%, #9333ea 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    html.dark-theme .st-text-gradient {
+      background: linear-gradient(92deg, #00dfd0 0%, #38bdf8 52%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Barra superior de progreso de lectura */
+    #scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      z-index: 60;
+      background: linear-gradient(90deg, #9b51e0 0%, #0095ff 50%, #00dfd0 100%);
+      transition: width 0.08s linear;
+    }
+
+    /* NUEVO MENÚ COMMAND DOCK FLOTANTE */
+    .st-dock {
+      background: var(--bg-dock);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--border-line);
+      box-shadow: var(--shadow-dock);
+      transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .st-nav-capsule {
+      background: var(--bg-capsule);
+      border: 1px solid var(--border-line);
+    }
+
+    .nav-spy-link {
+      position: relative;
+      color: var(--text-muted);
+      transition: all 0.22s ease;
+    }
+    .nav-spy-link:hover {
+      color: var(--text-main);
+    }
+    .nav-spy-link.active {
+      background: var(--nav-active-bg);
+      color: var(--text-main);
+      box-shadow: 0 2px 10px rgba(20, 21, 38, 0.08);
+    }
+    .nav-spy-link.active::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 9999px;
+      background: var(--st-cyan);
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    /* Selector de idioma segmentado ES | EN */
+    .lang-seg-btn {
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+    .lang-seg-btn.active {
+      background: var(--nav-active-bg);
+      color: var(--text-main);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Switch Sol / Luna */
+    .theme-pill {
+      width: 62px;
+      height: 30px;
+      border-radius: 9999px;
+      background: var(--pill-bg);
+      padding: 3px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+    .theme-knob {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 24px;
+      height: 24px;
+      border-radius: 9999px;
+      background: var(--pill-knob);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+      transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease;
+    }
+    html.dark-theme .theme-knob {
+      transform: translateX(32px);
+    }
+
+    /* ESCENARIO ARQUITECTÓNICO DEL HERO (#inicio) */
+    .hero-stage-bg {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-stage-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(var(--grid-dot) 1.25px, transparent 1.25px);
+      background-size: 24px 24px;
+      mask-image: radial-gradient(ellipse 80% 75% at 50% 45%, #000 55%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 75% at 50% 45%, #000 55%, transparent 100%);
+      pointer-events: none;
+    }
+    .hero-ambient-orb {
+      position: absolute;
+      right: -6%;
+      top: 6%;
+      width: 520px;
+      height: 520px;
+      border-radius: 9999px;
+      background: radial-gradient(circle, rgba(0, 207, 190, 0.13) 0%, rgba(0, 149, 255, 0.08) 45%, transparent 72%);
+      filter: blur(24px);
+      pointer-events: none;
+    }
+
+    /* Tarjeta Derecha de Telemetría (Portal del Botón) */
+    .hero-portal-card {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--border-line);
+      box-shadow: var(--shadow-portal);
+      overflow: hidden;
+    }
+    .hero-portal-topbar {
+      height: 4px;
+      background: linear-gradient(90deg, #9b51e0 0%, #0095ff 50%, #00dfd0 100%);
+    }
+
+    /* Números gigantes delgados estilo Speedtest */
+    .st-hero-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 200;
+      font-size: clamp(2.8rem, 5.2vw, 4.15rem);
+      line-height: 0.92;
+      letter-spacing: -0.01em;
+      color: var(--text-num);
+    }
+
+    .st-stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.01em;
+    }
+
+    /* Iconos circulares pequeños de métricas */
+    .st-mini-circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 9999px;
+      border: 1.6px solid currentColor;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+      flex-shrink: 0;
+    }
+
+    /* Iconos circulares de nodos */
+    .st-node-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 9999px;
+      border: 1.5px solid var(--border-circle);
+      color: var(--text-num);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    }
+    .st-node-group:hover .st-node-circle {
+      border-color: var(--st-blue);
+      color: var(--st-blue);
+      transform: scale(1.05);
+    }
+
+    /* BOTÓN CENTRAL "CONTACTO" INTACTO (100% transparente, sin icono WhatsApp, doble aro fluido) */
+    .st-go-btn {
+      position: relative;
+      width: clamp(164px, 40vw, 190px);
+      height: clamp(164px, 40vw, 190px);
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--text-main);
+      text-decoration: none;
+      isolation: isolate;
+      cursor: pointer;
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.35s ease;
+    }
+
+    .st-go-ring {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .st-go-btn::before {
+      content: "";
+      position: absolute;
+      inset: -14px;
+      border-radius: 9999px;
+      border: 2px solid rgba(0, 195, 220, 0.32);
+      pointer-events: none;
+      will-change: transform, opacity;
+      animation: stBreath 3.2s ease-in-out infinite;
+    }
+
+    .st-go-btn::after {
+      content: "";
+      position: absolute;
+      inset: -14px;
+      border-radius: 9999px;
+      border: 1.5px solid rgba(0, 165, 255, 0.36);
+      pointer-events: none;
+      will-change: transform, opacity;
+      animation: stWave 3.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    }
+
+    .st-go-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.02rem, 2.2vw, 1.24rem);
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      padding-left: 0.14em;
+      color: var(--text-main);
+      transition: letter-spacing 0.3s ease, color 0.3s ease;
+    }
+
+    .st-go-btn:hover,
+    .st-go-btn:focus-visible {
+      transform: scale(1.045);
+      background: radial-gradient(circle, rgba(0, 207, 190, 0.09) 0%, rgba(0, 149, 255, 0.03) 70%, transparent 100%);
+      outline: none;
+    }
+
+    .st-go-btn:hover .st-go-text,
+    .st-go-btn:focus-visible .st-go-text {
+      color: var(--st-link);
+      letter-spacing: 0.17em;
+      padding-left: 0.17em;
+    }
+
+    .st-go-btn:active {
+      transform: scale(0.97);
+    }
+
+    @keyframes stBreath {
+      0%, 100% { transform: scale(0.965); opacity: 0.38; }
+      50% { transform: scale(1.035); opacity: 0.88; }
+    }
+
+    @keyframes stWave {
+      0% { transform: scale(0.98); opacity: 0; }
+      20% { opacity: 0.46; }
+      100% { transform: scale(1.34); opacity: 0; }
+    }
+
+    /* Inputs */
+    .st-input {
+      background-color: var(--bg-alt);
+      border: 1px solid var(--border-line);
+      color: var(--text-main);
+      transition: border-color 0.2s ease, background-color 0.3s ease;
+    }
+    .st-input:focus {
+      outline: none;
+      border-color: var(--st-blue);
+      background-color: var(--bg-card);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .st-go-btn::before,
+      .st-go-btn::after { animation: none; }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Barra de Progreso Superior -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" role="status" aria-live="polite" class="fixed bottom-6 right-6 z-50 hidden items-center gap-3 px-4 py-3 rounded-2xl st-card shadow-xl">
+    <span class="st-mini-circle" style="color: var(--st-cyan);">
+      <i class="fa-solid fa-check"></i>
+    </span>
+    <span id="toast-message" class="text-xs sm:text-sm font-medium">Acción completada</span>
+  </div>
+
+  <!-- Case Study Detail Modal -->
+  <div id="case-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm">
+    <div class="st-card rounded-3xl max-w-lg w-full p-6 sm:p-8 relative">
+      <button id="close-modal-btn" type="button" class="absolute top-4 right-4 w-9 h-9 rounded-full border st-divider st-muted hover:text-sky-500 flex items-center justify-center transition-colors" aria-label="Cerrar ventana de detalles">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" alt="Iván Olguín" width="44" height="44" class="w-11 h-11 rounded-full object-cover border st-divider shrink-0" />
+        <div>
+          <span id="modal-badge" class="text-[11px] font-semibold uppercase tracking-widest" style="color: var(--st-cyan);">Caso Destacado</span>
+          <h3 id="modal-title" class="text-lg sm:text-xl font-bold">Título del Proyecto</h3>
+        </div>
+      </div>
+      <p id="modal-desc" class="text-sm st-body leading-relaxed mb-4"></p>
+      <div class="st-surface-alt rounded-2xl p-4 border st-divider mb-5">
+        <p class="text-[11px] font-bold uppercase tracking-widest mb-2.5" style="color: var(--st-purple);" data-i18n="modal_highlights_title">Logros y Enfoque Clave</p>
+        <ul id="modal-list" class="space-y-2 text-xs sm:text-sm st-body"></ul>
+      </div>
+      <div class="flex items-center justify-end">
+        <a id="modal-external-link" href="#contacto" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-white transition-opacity hover:opacity-90" style="background: linear-gradient(90deg, var(--st-cyan), var(--st-blue));">
+          <span id="modal-link-text">Ver más</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Fullscreen Lightbox Modal -->
+  <div id="cert-lightbox" role="dialog" aria-modal="true" aria-labelledby="cert-lightbox-title" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/75 backdrop-blur-md">
+    <div class="st-card rounded-3xl max-w-4xl w-full p-4 sm:p-6 relative">
+      <div class="flex items-center justify-between gap-3 mb-3">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-widest" style="color: var(--st-cyan);">Google Actívate · IAB Europe · The Open University</span>
+          <h3 id="cert-lightbox-title" class="text-sm sm:text-lg font-bold">Fundamentos de Marketing Digital — ID: FHL W57 T6K</h3>
+        </div>
+        <button id="close-cert-lightbox" type="button" class="w-9 h-9 rounded-full border st-divider st-muted hover:text-sky-500 flex items-center justify-center transition-colors shrink-0" aria-label="Cerrar vista ampliada del certificado">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="rounded-2xl overflow-hidden border st-divider bg-white flex items-center justify-center">
+        <div id="cert-lightbox-img" class="w-full"></div>
+      </div>
+      <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs st-muted">
+        <span><i class="fa-solid fa-circle-check mr-1.5" style="color: var(--st-cyan);"></i><span data-i18n="cert_lightbox_meta">Acreditado: 40 horas (26 módulos) · 6 de diciembre de 2021</span></span>
+        <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-semibold st-link hover:underline">
+          <span data-i18n="cert_verify_btn">Verificar Registro Digital</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NUEVO HEADER FLOTANTE TIPO COMMAND DOCK -->
+  <header class="sticky top-0 z-40 px-3 sm:px-6 pt-3 pb-2">
+    <nav id="navbar" class="st-dock max-w-6xl mx-auto rounded-2xl px-3.5 sm:px-5 h-16 flex items-center justify-between gap-3" aria-label="Navegación principal">
+      
+      <!-- Identidad con Avatar y Pulso Activo -->
+      <a href="#inicio" class="flex items-center gap-3 shrink-0 focus:outline-none group">
+        <div class="relative">
+          <img
+            src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+            alt="Iván Olguín"
+            width="38"
+            height="38"
+            class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl object-cover border st-divider group-hover:border-[#00cfbe] transition-colors"
+          />
+          <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-[#00cfbe] ring-2 ring-white dark:ring-slate-900"></span>
+        </div>
+        <div class="leading-tight">
+          <span class="block text-xs sm:text-sm font-extrabold tracking-[0.1em] uppercase">IVÁN OLGUÍN</span>
+          <span class="hidden sm:block text-[10px] font-semibold tracking-wider st-muted">CX B2B · UPWORK · WEB</span>
+        </div>
+      </a>
+
+      <!-- Cápsula Central con Scroll-Spy -->
+      <div class="hidden xl:flex items-center st-nav-capsule rounded-full p-1 gap-0.5">
+        <a href="#inicio" class="nav-spy-link active px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wide" data-i18n="nav_home">Inicio</a>
+        <a href="#sobre-mi" class="nav-spy-link px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wide" data-i18n="nav_about">Perfil</a>
+        <a href="#especialidades" class="nav-spy-link px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wide" data-i18n="nav_specialties">Servicios</a>
+        <a href="#experiencia" class="nav-spy-link px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wide" data-i18n="nav_experience">Trayectoria</a>
+        <a href="#certificaciones" class="nav-spy-link px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wide" data-i18n="nav_certs">Certificados</a>
+        <a href="#portafolio" class="nav-spy-link px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wide" data-i18n="nav_portfolio">Portafolio</a>
+        <a href="#hub" class="nav-spy-link px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wide" data-i18n="nav_hub">Hub</a>
+      </div>
+
+      <!-- Controles Derechos: Idioma ES|EN + Sol/Luna + CTA Rápido + Menú Móvil -->
+      <div class="flex items-center gap-2 sm:gap-2.5">
+        <!-- Segmented Language Pill -->
+        <div class="st-nav-capsule rounded-full p-0.5 inline-flex items-center text-[11px] font-bold" role="group" aria-label="Selector de idioma">
+          <button type="button" data-lang-btn="es" class="lang-seg-btn active px-2.5 py-1 rounded-full">ES</button>
+          <button type="button" data-lang-btn="en" class="lang-seg-btn px-2.5 py-1 rounded-full">EN</button>
+        </div>
+
+        <!-- Switch Sol / Luna -->
+        <button id="theme-toggle-btn" type="button" class="theme-pill shrink-0" aria-label="Cambiar entre modo claro y modo oscuro">
+          <span class="theme-knob" aria-hidden="true"></span>
+          <span class="relative z-10 w-5 h-5 flex items-center justify-center text-[11px] text-slate-800">
+            <i class="fa-regular fa-sun"></i>
+          </span>
+          <span class="relative z-10 w-5 h-5 flex items-center justify-center text-[11px] text-slate-500">
+            <i class="fa-solid fa-moon"></i>
+          </span>
+        </button>
+
+        <!-- Botón Acción en Header (Desktop/Tablet) -->
+        <a
+          href="#contacto"
+          class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider text-white transition-transform hover:scale-[1.03]"
+          style="background: linear-gradient(90deg, var(--st-cyan), var(--st-blue));"
+        >
+          <span data-i18n="nav_cta">Hablemos</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+        </a>
+
+        <!-- Botón Menú Móvil / Laptop Compacta -->
+        <button id="mobile-menu-btn" type="button" class="xl:hidden w-9 h-9 rounded-xl st-nav-capsule flex items-center justify-center st-muted hover:text-[#0095ff] focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+          <i id="mobile-menu-icon" class="fa-solid fa-bars text-sm"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Drawer Desplegable Flotante para Móvil / Tablet -->
+    <div id="mobile-menu" class="hidden xl:hidden max-w-6xl mx-auto mt-2 st-dock rounded-2xl p-4">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-semibold">
+        <a href="#inicio" class="mobile-nav-link px-3.5 py-2.5 rounded-xl st-surface-alt hover:text-[#0095ff] flex items-center gap-2">
+          <i class="fa-solid fa-gauge-high text-[11px]" style="color: var(--st-cyan);"></i>
+          <span data-i18n="nav_home">Inicio</span>
+        </a>
+        <a href="#sobre-mi" class="mobile-nav-link px-3.5 py-2.5 rounded-xl st-surface-alt hover:text-[#0095ff] flex items-center gap-2">
+          <i class="fa-regular fa-user text-[11px]" style="color: var(--st-blue);"></i>
+          <span data-i18n="nav_about">Perfil</span>
+        </a>
+        <a href="#especialidades" class="mobile-nav-link px-3.5 py-2.5 rounded-xl st-surface-alt hover:text-[#0095ff] flex items-center gap-2">
+          <i class="fa-solid fa-layer-group text-[11px]" style="color: var(--st-purple);"></i>
+          <span data-i18n="nav_specialties">Servicios</span>
+        </a>
+        <a href="#experiencia" class="mobile-nav-link px-3.5 py-2.5 rounded-xl st-surface-alt hover:text-[#0095ff] flex items-center gap-2">
+          <i class="fa-solid fa-briefcase text-[11px]" style="color: var(--st-gold);"></i>
+          <span data-i18n="nav_experience">Trayectoria</span>
+        </a>
+        <a href="#certificaciones" class="mobile-nav-link px-3.5 py-2.5 rounded-xl st-surface-alt hover:text-[#0095ff] flex items-center gap-2">
+          <i class="fa-solid fa-award text-[11px]" style="color: var(--st-cyan);"></i>
+          <span data-i18n="nav_certs">Certificados</span>
+        </a>
+        <a href="#portafolio" class="mobile-nav-link px-3.5 py-2.5 rounded-xl st-surface-alt hover:text-[#0095ff] flex items-center gap-2">
+          <i class="fa-solid fa-folder-open text-[11px]" style="color: var(--st-blue);"></i>
+          <span data-i18n="nav_portfolio">Portafolio</span>
+        </a>
+        <a href="#hub" class="mobile-nav-link px-3.5 py-2.5 rounded-xl st-surface-alt hover:text-[#0095ff] flex items-center gap-2">
+          <i class="fa-solid fa-globe text-[11px]" style="color: var(--st-purple);"></i>
+          <span data-i18n="nav_hub">Hub</span>
+        </a>
+        <a href="#contacto" class="mobile-nav-link px-3.5 py-2.5 rounded-xl text-white flex items-center justify-center gap-2" style="background: linear-gradient(90deg, var(--st-cyan), var(--st-blue));">
+          <span data-i18n="nav_contact">Contacto</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. NUEVO HERO DE ALTO IMPACTO (#inicio) -->
+    <section id="inicio" class="hero-stage-bg pt-6 pb-14 sm:pt-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
+      <div class="hero-ambient-orb" aria-hidden="true"></div>
+
+      <div class="max-w-6xl mx-auto relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center reveal active">
+          
+          <!-- COLUMNA IZQUIERDA (7 cols): Identidad Editorial + Medidores de Trazo Fino -->
+          <div class="lg:col-span-7 space-y-6 text-left">
+            <!-- Insignia de Estado en Vivo -->
+            <div class="inline-flex flex-wrap items-center gap-2.5 px-3.5 py-1.5 rounded-full st-card text-[11px] font-bold uppercase tracking-[0.1em]">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00cfbe] opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00cfbe]"></span>
+              </span>
+              <span data-i18n="hero_live_badge">Disponible Global · Colaborador PlayHouse (Upwork)</span>
+            </div>
+
+            <!-- Titular de Alto Impacto -->
+            <div class="space-y-2">
+              <p class="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] st-muted" data-i18n="hero_kicker">
+                Iván Osiris Olguín Becerra · ES / EN B2+
+              </p>
+              <h1 class="text-3xl sm:text-5xl lg:text-[3.35rem] font-extrabold tracking-tight leading-[1.08]">
+                <span data-i18n="hero_h1_part1">Customer Experience</span>
+                <span class="st-text-gradient block mt-1" data-i18n="hero_h1_part2">Bilingüe & Gestión B2B.</span>
+              </h1>
+            </div>
+
+            <!-- Descripción Ejecutiva -->
+            <p class="text-sm sm:text-base st-body leading-relaxed max-w-xl" data-i18n="hero_desc">
+              Transformo soporte crítico y cuentas empresariales en retención medible. Más de 4 años impulsando operaciones para AT&T Small Business, Uber Eats (Concentrix) y Cox Communications, colaborando actualmente en Productive Playhouse vía Upwork y creando contenido en YouTube (@osiris7998).
+            </p>
+
+            <!-- Tres Medidores Estilo Speedtest (Trazo ExtraLight 200) -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-2 pb-1 border-y st-divider py-5 max-w-xl">
+              <!-- Medidor 1 -->
+              <div>
+                <div class="inline-flex items-center gap-1.5 mb-1">
+                  <span class="st-mini-circle" style="color: var(--st-cyan);" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </span>
+                  <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider" data-i18n="gauge_1_label">CALIDAD</span>
+                </div>
+                <div class="flex items-baseline gap-1">
+                  <span id="counter-csat" class="st-hero-num">99.0</span>
+                  <span class="text-xs font-semibold st-muted">%</span>
+                </div>
+                <p class="text-[11px] st-muted mt-0.5" data-i18n="gauge_1_sub">Enfoque CSAT / SLA</p>
+              </div>
+
+              <!-- Medidor 2 -->
+              <div class="border-l st-divider pl-3 sm:pl-6">
+                <div class="inline-flex items-center gap-1.5 mb-1">
+                  <span class="st-mini-circle" style="color: var(--st-purple);" aria-hidden="true">
+                    <i class="fa-solid fa-arrow-up"></i>
+                  </span>
+                  <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider" data-i18n="gauge_2_label">TRAYECTORIA</span>
+                </div>
+                <div class="flex items-baseline gap-1">
+                  <span id="counter-exp" class="st-hero-num">+4.0</span>
+                  <span class="text-xs font-semibold st-muted" data-i18n="gauge_2_unit">Años</span>
+                </div>
+                <p class="text-[11px] st-muted mt-0.5">B2B & B2C Global</p>
+              </div>
+
+              <!-- Medidor 3 -->
+              <div class="border-l st-divider pl-3 sm:pl-6">
+                <div class="inline-flex items-center gap-1.5 mb-1">
+                  <span class="st-mini-circle" style="color: var(--st-gold);" aria-hidden="true">
+                    <i class="fa-solid fa-right-left"></i>
+                  </span>
+                  <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider" data-i18n="gauge_3_label">IDIOMAS</span>
+                </div>
+                <div class="flex items-baseline gap-1">
+                  <span class="st-hero-num">B2+</span>
+                </div>
+                <p class="text-[11px] st-muted mt-0.5">Español · English</p>
+              </div>
+            </div>
+
+            <!-- Botones Secundarios de Exploración -->
+            <div class="flex flex-wrap items-center gap-3 pt-1">
+              <a
+                href="#portafolio"
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-md transition-transform hover:scale-[1.02]"
+                style="background: linear-gradient(90deg, var(--st-cyan), var(--st-blue));"
+              >
+                <span data-i18n="hero_btn_portfolio">Explorar Portafolio</span>
+                <i class="fa-solid fa-arrow-down text-[10px]"></i>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@osiris7998"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs font-bold st-card hover:text-[#0095ff]"
+              >
+                <i class="fa-brands fa-youtube text-red-500 text-sm"></i>
+                <span>@osiris7998</span>
+              </a>
+
+              <button
+                id="copy-email-hero"
+                type="button"
+                class="inline-flex items-center gap-2 px-4 py-3 rounded-full text-xs font-semibold st-surface-alt border st-divider hover:border-[#00cfbe] transition-colors"
+                aria-label="Copiar correo ivanolguin333@gmail.com"
+              >
+                <i class="fa-regular fa-copy" style="color: var(--st-cyan);"></i>
+                <span data-i18n="btn_copy_email">Copiar Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- COLUMNA DERECHA (5 cols): Consola Radar con Tu Botón "CONTACTO" Intacto -->
+          <div class="lg:col-span-5">
+            <div class="hero-portal-card rounded-[2rem]">
+              <div class="hero-portal-topbar"></div>
+
+              <!-- Cabecera de Telemetría del Portal -->
+              <div class="px-6 pt-5 pb-3 flex items-center justify-between border-b st-divider">
+                <div class="flex items-center gap-3 min-w-0">
+                  <img
+                    src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+                    alt="Foto oficial de Iván Olguín"
+                    width="42"
+                    height="42"
+                    class="w-10 h-10 rounded-full object-cover ring-2 ring-[#00cfbe]/50 shrink-0"
+                  />
+                  <div class="min-w-0">
+                    <p class="text-xs font-bold truncate">Iván Olguín</p>
+                    <p class="text-[11px] st-muted truncate">PlayHouse · Upwork Verified</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full st-surface-alt border st-divider text-[10px] font-bold uppercase tracking-wider" style="color: var(--st-cyan);">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00cfbe]"></span>
+                  <span data-i18n="portal_status">En Línea</span>
+                </span>
+              </div>
+
+              <!-- Escenario Central con Dial Radar Sutil + BOTÓN CONTACTO INTACTO -->
+              <div class="relative py-12 sm:py-14 px-6 flex flex-col items-center justify-center">
+                <!-- Anillos arquitectónicos de radar detrás del botón -->
+                <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 360 300" aria-hidden="true">
+                  <circle cx="180" cy="150" r="118" fill="none" stroke="var(--radar-line)" stroke-width="1" stroke-dasharray="4 6" />
+                  <circle cx="180" cy="150" r="142" fill="none" stroke="var(--radar-line)" stroke-width="1" opacity="0.6" />
+                  <line x1="24" y1="150" x2="52" y2="150" stroke="var(--radar-line)" stroke-width="1" />
+                  <line x1="308" y1="150" x2="336" y2="150" stroke="var(--radar-line)" stroke-width="1" />
+                </svg>
+
+                <!-- TU BOTÓN CIRCULAR EXACTO (Sin icono WhatsApp, 100% transparente, envía a tu chat) -->
+                <a
+                  href="https://wa.me/525663656095?text=Hola%20Iv%C3%A1n%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20conversar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="st-go-btn z-10"
+                  aria-label="Contactar a Iván Olguín directamente"
+                >
+                  <svg class="st-go-ring" viewBox="0 0 200 200" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="stCircleGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+                        <stop offset="0%" stop-color="#00dfd0" />
+                        <stop offset="100%" stop-color="#0095ff" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="97.5" fill="none" stroke="url(#stCircleGrad)" stroke-width="2.2" />
+                  </svg>
+                  <span class="st-go-text uppercase" data-i18n="hero_go_btn">CONTACTO</span>
+                </a>
+
+                <p class="mt-6 text-[11px] font-medium st-muted tracking-wide relative z-10" data-i18n="portal_hint">
+                  Clic para iniciar conversación directa inmediata
+                </p>
+              </div>
+
+              <!-- Pie de Consola con Nodos Laterales Estilo Speedtest -->
+              <div class="px-6 py-4 st-surface-alt border-t st-divider grid grid-cols-2 gap-3 items-center">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <span class="st-node-circle !w-9 !h-9" aria-hidden="true">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="8" r="4"/>
+                      <path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/>
+                    </svg>
+                  </span>
+                  <div class="min-w-0">
+                    <p class="text-xs font-bold truncate" data-i18n="portal_node1_title">Línea Directa</p>
+                    <p class="text-[11px] st-muted truncate">+52 56 6365 6095</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-end gap-2.5 min-w-0 text-right">
+                  <div class="min-w-0">
+                    <p class="text-xs font-bold truncate">CDMX · Global</p>
+                    <a href="#contacto" class="text-[11px] font-semibold st-link hover:underline block truncate" data-i18n="portal_node2_link">
+                      Abrir formulario
+                    </a>
+                  </div>
+                  <a href="#contacto" class="st-node-circle !w-9 !h-9" aria-label="Ir al formulario de contacto">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="3" width="6" height="5" rx="1"/>
+                      <rect x="4" y="15" width="6" height="5" rx="1"/>
+                      <rect x="14" y="15" width="6" height="5" rx="1"/>
+                      <path d="M12 8v4m-5 3v-3h10v3"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Franja Inferior de Respaldo y Trayectoria Corporativa -->
+        <div class="mt-12 pt-7 border-t st-divider reveal active">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+            <div class="st-card rounded-2xl px-4 py-3.5 flex items-center gap-3">
+              <span class="st-mini-circle" style="color: var(--st-cyan);"><i class="fa-solid fa-check"></i></span>
+              <div class="min-w-0">
+                <p class="text-xs font-bold truncate">Productive Playhouse</p>
+                <p class="text-[11px] st-muted truncate" data-i18n="trust_1">Colaborador vía Upwork</p>
+              </div>
+            </div>
+
+            <div class="st-card rounded-2xl px-4 py-3.5 flex items-center gap-3">
+              <span class="st-mini-circle" style="color: var(--st-blue);"><i class="fa-solid fa-building"></i></span>
+              <div class="min-w-0">
+                <p class="text-xs font-bold truncate">AT&T Small Business</p>
+                <p class="text-[11px] st-muted truncate" data-i18n="trust_2">Cuentas B2B & Ventas</p>
+              </div>
+            </div>
+
+            <div class="st-card rounded-2xl px-4 py-3.5 flex items-center gap-3">
+              <span class="st-mini-circle" style="color: var(--st-purple);"><i class="fa-solid fa-bolt"></i></span>
+              <div class="min-w-0">
+                <p class="text-xs font-bold truncate">Uber Eats · Cox</p>
+                <p class="text-[11px] st-muted truncate" data-i18n="trust_3">Soporte & Retención CX</p>
+              </div>
+            </div>
+
+            <a href="#certificaciones" class="st-card rounded-2xl px-4 py-3.5 flex items-center gap-3">
+              <span class="st-mini-circle" style="color: var(--st-gold);"><i class="fa-solid fa-award"></i></span>
+              <div class="min-w-0">
+                <p class="text-xs font-bold truncate">Google Actívate</p>
+                <p class="text-[11px] st-link font-semibold truncate">ID: FHL W57 T6K</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SOBRE MÍ & MATRIZ DE RENDIMIENTO -->
+    <section id="sobre-mi" class="st-surface-alt py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-y st-divider">
+      <div class="max-w-6xl mx-auto reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Columna Izquierda: Perfil -->
+          <div class="lg:col-span-7 space-y-5">
+            <div class="flex items-center gap-4">
+              <img
+                src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg"
+                alt="Retrato oficial de Iván Osiris Olguín Becerra"
+                width="64"
+                height="64"
+                class="w-16 h-16 rounded-full object-cover border-2 border-[#00cfbe] shrink-0"
+              />
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-[0.14em]" style="color: var(--st-cyan);" data-i18n="about_kicker">Perfil Ejecutivo</span>
+                <h2 class="text-2xl sm:text-3xl font-bold mt-0.5" data-i18n="about_title">Sobre Mí y Propuesta de Valor</h2>
+              </div>
+            </div>
+
+            <p class="text-sm sm:text-base st-body leading-relaxed" data-i18n="about_p1">
+              Soy un profesional dinámico, autodidacta y orientado a la resolución de problemas complejos. A lo largo de mi carrera he gestionado cuentas empresariales, soporte técnico bilingüe, retención de clientes y operaciones de cobranza en sectores de telecomunicaciones, plataformas de entrega y servicios financieros.
+            </p>
+
+            <p class="text-sm sm:text-base st-body leading-relaxed" data-i18n="about_p2">
+              Actualmente combino mi experiencia en Customer Experience con mi trabajo como colaborador del proyecto Productive Playhouse a través de la plataforma Upwork, además de desarrollar proyectos web modernos y producir contenido audiovisual para mi canal de YouTube (@osiris7998).
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+              <div class="st-card rounded-2xl p-3.5 text-center">
+                <span class="st-mini-circle mx-auto mb-2" style="color: var(--st-cyan);"><i class="fa-solid fa-check"></i></span>
+                <p class="text-xs font-semibold" data-i18n="pillar_1">Comunicación Estratégica</p>
+              </div>
+              <div class="st-card rounded-2xl p-3.5 text-center">
+                <span class="st-mini-circle mx-auto mb-2" style="color: var(--st-blue);"><i class="fa-solid fa-bolt"></i></span>
+                <p class="text-xs font-semibold" data-i18n="pillar_2">Resolución Ágil</p>
+              </div>
+              <div class="st-card rounded-2xl p-3.5 text-center">
+                <span class="st-mini-circle mx-auto mb-2" style="color: var(--st-purple);"><i class="fa-solid fa-shield-halved"></i></span>
+                <p class="text-xs font-semibold" data-i18n="pillar_3">Alta Tolerancia a Presión</p>
+              </div>
+              <div class="st-card rounded-2xl p-3.5 text-center">
+                <span class="st-mini-circle mx-auto mb-2" style="color: var(--st-gold);"><i class="fa-solid fa-code"></i></span>
+                <p class="text-xs font-semibold" data-i18n="pillar_4">Enfoque Tecnológico</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Telemetría de Competencias -->
+          <div class="lg:col-span-5 st-card rounded-3xl p-6 sm:p-7 space-y-5">
+            <div class="flex items-center justify-between border-b st-divider pb-3">
+              <h3 class="text-xs font-bold uppercase tracking-[0.14em] st-muted" data-i18n="skills_matrix_title">Dominio de Competencias</h3>
+              <span class="text-xs font-semibold st-link">ES / EN B2+</span>
+            </div>
+
+            <div>
+              <div class="flex items-baseline justify-between mb-1.5">
+                <span class="text-xs font-semibold" data-i18n="skill_bar_1">Customer Care B2B/B2C & Retención</span>
+                <span class="st-stat-num text-2xl font-light" style="color: var(--st-cyan);">98%</span>
+              </div>
+              <div class="w-full h-1.5 rounded-full st-surface-alt overflow-hidden">
+                <div class="h-full rounded-full" style="width: 98%; background: linear-gradient(90deg, #00cfbe, #0095ff);"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-baseline justify-between mb-1.5">
+                <span class="text-xs font-semibold" data-i18n="skill_bar_2">Comunicación Bilingüe (Español / Inglés B2+)</span>
+                <span class="st-stat-num text-2xl font-light" style="color: var(--st-blue);">92%</span>
+              </div>
+              <div class="w-full h-1.5 rounded-full st-surface-alt overflow-hidden">
+                <div class="h-full rounded-full" style="width: 92%; background: var(--st-blue);"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-baseline justify-between mb-1.5">
+                <span class="text-xs font-semibold" data-i18n="skill_bar_3">Colaboración Remota (PlayHouse · Upwork)</span>
+                <span class="st-stat-num text-2xl font-light" style="color: var(--st-purple);">96%</span>
+              </div>
+              <div class="w-full h-1.5 rounded-full st-surface-alt overflow-hidden">
+                <div class="h-full rounded-full" style="width: 96%; background: var(--st-purple);"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-baseline justify-between mb-1.5">
+                <span class="text-xs font-semibold" data-i18n="skill_bar_4">Creación Digital, CapCut & Desarrollo Web</span>
+                <span class="st-stat-num text-2xl font-light" style="color: var(--st-gold);">90%</span>
+              </div>
+              <div class="w-full h-1.5 rounded-full st-surface-alt overflow-hidden">
+                <div class="h-full rounded-full" style="width: 90%; background: var(--st-gold);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ESPECIALIDADES Y ÁREAS DE IMPACTO -->
+    <section id="especialidades" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="text-[11px] font-bold uppercase tracking-[0.14em]" style="color: var(--st-cyan);" data-i18n="spec_kicker">Soluciones Profesionales</span>
+        <h2 class="text-2xl sm:text-3xl font-bold mt-2" data-i18n="spec_title">Especialidades y Áreas de Impacto</h2>
+        <p class="text-sm st-muted mt-2.5" data-i18n="spec_subtitle">
+          Atención al cliente bilingüe, estrategia comercial, proyectos internacionales en Upwork y creación digital.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
+        <div class="st-card rounded-3xl p-6 sm:p-7 hover:-translate-y-0.5">
+          <div class="flex items-center gap-3.5 mb-4">
+            <span class="st-node-circle" style="border-color: var(--st-cyan); color: var(--st-cyan);">
+              <i class="fa-solid fa-headset text-lg"></i>
+            </span>
+            <h3 class="text-base sm:text-lg font-bold" data-i18n="spec_1_title">Customer Care & Soporte Bilingüe (ES/EN B2+)</h3>
+          </div>
+          <p class="text-sm st-body leading-relaxed" data-i18n="spec_1_desc">
+            Atención especializada para cuentas corporativas (B2B) y usuarios finales (B2C) en español e inglés avanzado. Manejo experto de objeciones, desescalada de casos críticos y cumplimiento sobresaliente de SLA, FCR y CSAT.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">Bilingual CX (B2+)</span>
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">De-escalation</span>
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">Omnichannel</span>
+          </div>
+        </div>
+
+        <div class="st-card rounded-3xl p-6 sm:p-7 hover:-translate-y-0.5">
+          <div class="flex items-center gap-3.5 mb-4">
+            <span class="st-node-circle" style="border-color: var(--st-blue); color: var(--st-blue);">
+              <i class="fa-solid fa-chart-line text-lg"></i>
+            </span>
+            <h3 class="text-base sm:text-lg font-bold" data-i18n="spec_2_title">Gestión de Cuentas B2B, Ventas & Marketing</h3>
+          </div>
+          <p class="text-sm st-body leading-relaxed" data-i18n="spec_2_desc">
+            Administración estratégica de carteras de clientes, presentación clara de atributos técnicos y beneficios comerciales, ventas consultivas, retención de cuentas y negociación efectiva.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">Account Management</span>
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">B2B Sales Growth</span>
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">Retention</span>
+          </div>
+        </div>
+
+        <div class="st-card rounded-3xl p-6 sm:p-7 hover:-translate-y-0.5">
+          <div class="flex items-center gap-3.5 mb-4">
+            <span class="st-node-circle" style="border-color: var(--st-purple); color: var(--st-purple);">
+              <i class="fa-solid fa-globe text-lg"></i>
+            </span>
+            <h3 class="text-base sm:text-lg font-bold" data-i18n="spec_3_title">Colaborador del Proyecto PlayHouse vía Upwork</h3>
+          </div>
+          <p class="text-sm st-body leading-relaxed" data-i18n="spec_3_desc">
+            Colaborador activo en el proyecto de Productive Playhouse a través de la plataforma Upwork, ejecutando tareas remotas con precisión lingüística, análisis detallado y cumplimiento puntual de entregables internacionales.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">Productive Playhouse</span>
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">Upwork Verified</span>
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">Remote Ops</span>
+          </div>
+        </div>
+
+        <div class="st-card rounded-3xl p-6 sm:p-7 hover:-translate-y-0.5">
+          <div class="flex items-center gap-3.5 mb-4">
+            <span class="st-node-circle" style="border-color: var(--st-gold); color: var(--st-gold);">
+              <i class="fa-solid fa-play text-base"></i>
+            </span>
+            <h3 class="text-base sm:text-lg font-bold" data-i18n="spec_4_title">Creación Digital (@osiris7998) & Desarrollo Web</h3>
+          </div>
+          <p class="text-sm st-body leading-relaxed" data-i18n="spec_4_desc">
+            Producción y edición de video dinámico con CapCut para YouTube (@osiris7998), storytelling visual, además de diseño y desarrollo de páginas web responsivas con HTML5, Tailwind CSS y JavaScript.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">YouTube @osiris7998</span>
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">CapCut</span>
+            <span class="text-[11px] font-medium px-3 py-1 rounded-full st-surface-alt border st-divider st-muted">HTML5 · Tailwind · JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. EXPERIENCIA PROFESIONAL -->
+    <section id="experiencia" class="st-surface-alt py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-y st-divider">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <span class="text-[11px] font-bold uppercase tracking-[0.14em]" style="color: var(--st-purple);" data-i18n="exp_kicker">Trayectoria Profesional</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2" data-i18n="exp_title">Experiencia Laboral y Proyectos</h2>
+          <p class="text-sm st-muted mt-2.5" data-i18n="exp_subtitle">
+            Recorrido sólido en empresas internacionales de telecomunicaciones, tecnología, comercio y colaboración remota.
+          </p>
+        </div>
+
+        <div class="space-y-4 reveal">
+          <div class="st-card rounded-2xl p-5 sm:p-6 border-l-4" style="border-left-color: var(--st-cyan);">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold" data-i18n="exp_1_role">Colaborador del Proyecto PlayHouse (a través de Upwork)</h3>
+                <p class="text-xs sm:text-sm font-semibold" style="color: var(--st-cyan);">Productive Playhouse · Plataforma Upwork</p>
+              </div>
+              <span class="st-stat-num text-lg font-normal st-muted" data-i18n="exp_1_date">2026 – Presente</span>
+            </div>
+            <p class="text-sm st-body mt-2.5 leading-relaxed" data-i18n="exp_1_desc">
+              Colaborador independiente verificado en el proyecto de Productive Playhouse gestionado a través de la plataforma Upwork. Ejecución de flujos de trabajo remotos, evaluación de calidad y comunicación efectiva bajo estándares internacionales.
+            </p>
+          </div>
+
+          <div class="st-card rounded-2xl p-5 sm:p-6 border-l-4" style="border-left-color: var(--st-blue);">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold" data-i18n="exp_2_role">Customer Care Service & Sales (B2B)</h3>
+                <p class="text-xs sm:text-sm font-semibold" style="color: var(--st-blue);">AT&T Small Business</p>
+              </div>
+              <span class="st-stat-num text-lg font-normal st-muted" data-i18n="exp_2_date">Feb 2025 – Ago 2025</span>
+            </div>
+            <p class="text-sm st-body mt-2.5 leading-relaxed" data-i18n="exp_2_desc">
+              Gestión de cuentas de clientes de nivel empresarial (B2B), enfocándome en la excelencia del servicio y el crecimiento de ventas. Explicación consultiva de atributos técnicos de productos y beneficios comerciales para impulsar la satisfacción y retención.
+            </p>
+          </div>
+
+          <div class="st-card rounded-2xl p-5 sm:p-6 border-l-4" style="border-left-color: var(--st-purple);">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold" data-i18n="exp_3_role">Creador de Contenido Digital & Desarrollador Web</h3>
+                <p class="text-xs sm:text-sm font-semibold" style="color: var(--st-purple);">YouTube (@osiris7998) · GitHub (@IvanOsiris)</p>
+              </div>
+              <span class="st-stat-num text-lg font-normal st-muted" data-i18n="exp_3_date">2024 – Presente</span>
+            </div>
+            <p class="text-sm st-body mt-2.5 leading-relaxed" data-i18n="exp_3_desc">
+              Dirección, edición de video con CapCut y publicación continua en mi canal de YouTube (@osiris7998), junto con el diseño y programación de sitios web modernos e interactivos en HTML5, Tailwind CSS y JavaScript.
+            </p>
+          </div>
+
+          <div class="st-card rounded-2xl p-5 sm:p-6 border-l-4" style="border-left-color: var(--st-gold);">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold" data-i18n="exp_4_role">Customer Service Representative</h3>
+                <p class="text-xs sm:text-sm font-semibold" style="color: var(--st-gold);">Concentrix (Uber Eats)</p>
+              </div>
+              <span class="st-stat-num text-lg font-normal st-muted" data-i18n="exp_4_date">Nov 2022 – Nov 2023</span>
+            </div>
+            <p class="text-sm st-body mt-2.5 leading-relaxed" data-i18n="exp_4_desc">
+              Soporte de alto nivel para usuarios y socios de Uber Eats, resolviendo incidencias operativas con sentido de urgencia y manteniendo métricas sobresalientes de desempeño en un entorno de ritmo acelerado.
+            </p>
+          </div>
+
+          <div class="st-card rounded-2xl p-5 sm:p-6 border-l-4" style="border-left-color: var(--st-cyan);">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold" data-i18n="exp_5_role">Account Manager Executive & Ejecutivo CAT</h3>
+                <p class="text-xs sm:text-sm font-semibold" style="color: var(--st-cyan);">Cox Communications (2021–2022) · Coppel (2021)</p>
+              </div>
+              <span class="st-stat-num text-lg font-normal st-muted" data-i18n="exp_5_date">Feb 2021 – Abr 2022</span>
+            </div>
+            <p class="text-sm st-body mt-2.5 leading-relaxed" data-i18n="exp_5_desc">
+              Supervisión de cuentas y punto de contacto principal para estrategia de servicio en Cox Communications, así como asistencia al cliente y negociación efectiva en entornos financieros de alta presión en Coppel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CERTIFICACIONES OFICIALES -->
+    <section id="certificaciones" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <span class="text-[11px] font-bold uppercase tracking-[0.14em]" style="color: var(--st-cyan);" data-i18n="cert_kicker">Credenciales Verificadas</span>
+        <h2 class="text-2xl sm:text-3xl font-bold mt-2" data-i18n="cert_title">Certificaciones Oficiales</h2>
+        <p class="text-sm st-muted mt-2.5" data-i18n="cert_subtitle">
+          Formación acreditada por Google Actívate, IAB Europe y The Open University en estrategia digital y marketing.
+        </p>
+      </div>
+
+      <div class="st-card rounded-3xl p-6 sm:p-8 reveal">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 mb-6 border-b st-divider">
+          <div class="space-y-1">
+            <span class="text-[11px] font-bold uppercase tracking-widest" style="color: var(--st-blue);">
+              Google Actívate · Grow with Google · IAB Europe · The Open University
+            </span>
+            <h3 class="text-xl sm:text-2xl font-bold" data-i18n="cert_course_name">Fundamentos de Marketing Digital</h3>
+            <p class="text-xs sm:text-sm st-muted" data-i18n="cert_course_meta">
+              Otorgado a Iván Osiris Olguín Becerra · Duración acreditada: 40 horas (26 módulos completados) · 6 de diciembre de 2021
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 shrink-0">
+            <button type="button" id="copy-cert-id-btn" class="inline-flex items-center gap-2 px-4 py-2 rounded-full st-surface-alt border st-divider text-xs font-semibold hover:border-sky-400 transition-colors" aria-label="Copiar ID del certificado FHL W57 T6K">
+              <i class="fa-solid fa-fingerprint" style="color: var(--st-cyan);"></i>
+              <span>ID: FHL W57 T6K</span>
+              <i class="fa-regular fa-copy st-muted"></i>
+            </button>
+            <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-white transition-opacity hover:opacity-90" style="background: linear-gradient(90deg, var(--st-cyan), var(--st-blue));">
+              <span data-i18n="cert_verify_btn">Verificar Registro Digital</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="st-surface-alt rounded-2xl p-4 border st-divider flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="font-bold" style="color: var(--st-blue);" data-i18n="cert_card1_label">1. Certificado Oficial de Finalización</span>
+                <span class="text-[11px] st-muted">Google Actívate</span>
+              </div>
+              <div class="rounded-xl overflow-hidden border st-divider bg-white aspect-[16/9] flex items-center justify-center">
+                <svg id="cert-card-img-1" viewBox="0 0 1000 536" class="w-full h-full bg-white" role="img" aria-label="Certificado Oficial Google Actívate">
+                  <rect width="1000" height="536" fill="#ffffff"/>
+                  <rect x="0" y="0" width="250" height="12" fill="#4285F4"/>
+                  <rect x="250" y="0" width="250" height="12" fill="#EA4335"/>
+                  <rect x="500" y="0" width="250" height="12" fill="#FBBC05"/>
+                  <rect x="750" y="0" width="250" height="12" fill="#34A853"/>
+                  <text x="54" y="88" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="700"><tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan><tspan fill="#202124"> Actívate</tspan></text>
+                  <text x="940" y="70" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-size="15" font-weight="600" fill="#5f6368">IAB Europe · The Open University</text>
+                  <text x="940" y="90" text-anchor="end" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="600" fill="#5f6368">Grow with Google</text>
+                  <text x="54" y="148" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="2" fill="#80868b">CERTIFICADO OFICIAL DE FINALIZACIÓN</text>
+                  <text x="54" y="202" font-family="Montserrat, Arial, sans-serif" font-size="38" font-weight="700" fill="#202124">Iván Osiris Olguín Becerra</text>
+                  <line x1="54" y1="230" x2="940" y2="230" stroke="#e8eaed" stroke-width="2"/>
+                  <text x="54" y="266" font-family="Montserrat, Arial, sans-serif" font-size="16" fill="#5f6368">Se otorga el presente reconocimiento por haber completado y aprobado el examen final del curso:</text>
+                  <text x="54" y="314" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="700" fill="#1a73e8">Fundamentos de Marketing Digital</text>
+                  <text x="54" y="348" font-family="Montserrat, Arial, sans-serif" font-size="15" font-weight="600" fill="#5f6368">Duración acreditada: 40 horas (26 módulos completados)</text>
+                  <line x1="54" y1="395" x2="940" y2="395" stroke="#e8eaed" stroke-width="2"/>
+                  <text x="54" y="432" font-family="Montserrat, Arial, sans-serif" font-size="14" fill="#3c4043"><tspan font-weight="700">Fecha de finalización:</tspan> 6 de diciembre de 2021</text>
+                  <text x="54" y="456" font-family="Montserrat, Arial, sans-serif" font-size="14" fill="#3c4043"><tspan font-weight="700">Correo registrado:</tspan> ivanolguin333@gmail.com</text>
+                  <text x="54" y="480" font-family="Montserrat, Arial, sans-serif" font-size="14" fill="#3c4043"><tspan font-weight="700">Registro digital:</tspan> https://learndigital.withgoogle.com/link/1nur091p2ww</text>
+                  <rect x="768" y="418" width="172" height="68" rx="10" fill="#f8f9fa" stroke="#dadce0" stroke-width="1.5"/>
+                  <text x="854" y="442" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1" fill="#80868b">ID DEL CERTIFICADO</text>
+                  <text x="854" y="468" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="1.5" fill="#202124">FHL W57 T6K</text>
+                </svg>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-[11px] st-muted">ID: FHL W57 T6K</span>
+              <button type="button" data-cert-view="primary" class="open-cert-btn inline-flex items-center gap-1.5 text-xs font-semibold st-link hover:underline">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span data-i18n="cert_zoom_btn">Ampliar certificado</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="st-surface-alt rounded-2xl p-4 border st-divider flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="font-bold" style="color: var(--st-purple);" data-i18n="cert_card2_label">2. Ficha de Acreditación y Huella Digital</span>
+                <span class="text-[11px] st-muted">IAB Europe · Open University</span>
+              </div>
+              <div class="rounded-xl overflow-hidden border st-divider bg-white aspect-[16/9] flex items-center justify-center">
+                <svg id="cert-card-img-2" viewBox="0 0 1000 612" class="w-full h-full bg-white" role="img" aria-label="Ficha de Acreditación Google Actívate">
+                  <rect width="1000" height="612" fill="#ffffff"/>
+                  <rect x="36" y="16" width="928" height="580" fill="#ffffff" stroke="#dadce0" stroke-width="2"/>
+                  <rect x="36" y="16" width="928" height="8" fill="#1a73e8"/>
+                  <text x="500" y="88" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="700"><tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan><tspan fill="#202124"> Actívate</tspan></text>
+                  <text x="500" y="122" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#5f6368">GROW WITH GOOGLE · IAB EUROPE · THE OPEN UNIVERSITY</text>
+                  <text x="500" y="168" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#1a73e8">CERTIFICADO DE FINALIZACIÓN</text>
+                  <text x="500" y="204" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="16" fill="#5f6368">Se otorga el presente reconocimiento a:</text>
+                  <text x="500" y="256" text-anchor="middle" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#202124">Iván Osiris Olguín Becerra</text>
+                  <line x1="160" y1="278" x2="840" y2="278" stroke="#dadce0" stroke-width="1.5"/>
+                  <text x="500" y="314" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="15" fill="#3c4043">Por haber completado satisfactoriamente los 26 módulos y aprobado el examen final del curso:</text>
+                  <text x="500" y="362" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="700" fill="#1a73e8">Fundamentos de Marketing Digital</text>
+                  <text x="500" y="396" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="15" font-weight="700" fill="#3c4043">Duración acreditada: 40 horas</text>
+                  <rect x="96" y="424" width="808" height="106" fill="#f8f9fa" stroke="#dadce0" stroke-width="1.5"/>
+                  <line x1="96" y1="478" x2="904" y2="478" stroke="#dadce0" stroke-width="1.5"/>
+                  <line x1="250" y1="424" x2="250" y2="530" stroke="#dadce0" stroke-width="1.5"/>
+                  <line x1="418" y1="424" x2="418" y2="530" stroke="#dadce0" stroke-width="1.5"/>
+                  <line x1="590" y1="424" x2="590" y2="530" stroke="#dadce0" stroke-width="1.5"/>
+                  <text x="112" y="452" font-family="Montserrat, Arial, sans-serif" font-size="11" font-weight="700" fill="#5f6368">ID DEL CERTIFICADO</text>
+                  <text x="266" y="452" font-family="Montserrat, Arial, sans-serif" font-size="11" font-weight="700" fill="#5f6368">FECHA DE FINALIZACIÓN</text>
+                  <text x="434" y="452" font-family="Montserrat, Arial, sans-serif" font-size="11" font-weight="700" fill="#5f6368">CUENTA ACREDITADA</text>
+                  <text x="606" y="452" font-family="Montserrat, Arial, sans-serif" font-size="11" font-weight="700" fill="#5f6368">HUELLA DIGITAL REGISTRADA</text>
+                  <text x="112" y="510" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="700" fill="#202124">FHL W57 T6K</text>
+                  <text x="266" y="510" font-family="Montserrat, Arial, sans-serif" font-size="13" fill="#202124">6 de diciembre de 2021</text>
+                  <text x="434" y="510" font-family="Montserrat, Arial, sans-serif" font-size="13" fill="#202124">ivanolguin333@gmail.com</text>
+                  <text x="606" y="510" font-family="Montserrat, Arial, sans-serif" font-size="12" fill="#202124">https://learndigital.withgoogle.com/link/1nur091p2ww</text>
+                  <text x="500" y="566" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="12" fill="#5f6368">Datos oficiales verificados en el historial de certificación de Google Actívate (IAB Europe & The Open University).</text>
+                </svg>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-[11px] st-muted">ivanolguin333@gmail.com</span>
+              <button type="button" data-cert-view="audit" class="open-cert-btn inline-flex items-center gap-1.5 text-xs font-semibold st-link hover:underline">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span data-i18n="cert_zoom_btn">Ampliar certificado</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PORTAFOLIO INTERACTIVO -->
+    <section id="portafolio" class="st-surface-alt py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-y st-divider">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 reveal">
+          <span class="text-[11px] font-bold uppercase tracking-[0.14em]" style="color: var(--st-blue);" data-i18n="port_kicker">Portafolio Interactivo</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2" data-i18n="port_title">Proyectos y Casos de Éxito</h2>
+          <p class="text-sm st-muted mt-2.5" data-i18n="port_subtitle">
+            Filtra por área o haz clic en cada tarjeta para abrir el desglose completo del proyecto.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-2 mb-10 reveal" role="tablist" aria-label="Filtrar proyectos por categoría">
+          <button type="button" data-filter="all" class="portfolio-tab px-4 py-2 rounded-full text-xs font-semibold text-white transition-all" style="background: linear-gradient(90deg, var(--st-cyan), var(--st-blue));">
+            <span data-i18n="tab_all">Todos</span>
+          </button>
+          <button type="button" data-filter="cx" class="portfolio-tab px-4 py-2 rounded-full text-xs font-semibold st-card st-muted hover:text-[#0095ff] transition-all">
+            <span data-i18n="tab_cx">Customer Care & Ventas</span>
+          </button>
+          <button type="button" data-filter="content" class="portfolio-tab px-4 py-2 rounded-full text-xs font-semibold st-card st-muted hover:text-[#0095ff] transition-all">
+            <span data-i18n="tab_content">YouTube & Contenido</span>
+          </button>
+          <button type="button" data-filter="web" class="portfolio-tab px-4 py-2 rounded-full text-xs font-semibold st-card st-muted hover:text-[#0095ff] transition-all">
+            <span data-i18n="tab_web">Web & IA</span>
+          </button>
+        </div>
+
+        <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+          <article data-category="web" class="portfolio-card st-card rounded-3xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="st-node-circle" style="border-color: var(--st-cyan); color: var(--st-cyan);">
+                  <i class="fa-solid fa-globe"></i>
+                </span>
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full st-surface-alt border st-divider" style="color: var(--st-cyan);" data-i18n="badge_active">Activo</span>
+              </div>
+              <span class="text-[11px] font-semibold uppercase tracking-widest st-muted">Upwork Global</span>
+              <h3 class="text-lg font-bold mt-1" data-i18n="proj_1_title">Colaborador en Proyecto PlayHouse (Upwork)</h3>
+              <p class="text-sm st-body mt-2.5 leading-relaxed" data-i18n="proj_1_desc">
+                Colaboración remota verificada en el proyecto de Productive Playhouse a través de la plataforma Upwork, aportando análisis bilingüe y ejecución de alta precisión.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t st-divider flex items-center justify-between">
+              <button type="button" data-case="playhouse" class="open-case-btn text-xs font-semibold st-link hover:underline">
+                <span data-i18n="btn_case_details">Ver detalles del proyecto</span>
+              </button>
+              <a href="https://www.productiveplayhouse.com/" target="_blank" rel="noopener noreferrer" class="st-muted hover:text-[#0095ff]" aria-label="Productive Playhouse">
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+              </a>
+            </div>
+          </article>
+
+          <article data-category="content" class="portfolio-card st-card rounded-3xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="st-node-circle" style="border-color: var(--st-purple); color: var(--st-purple);">
+                  <i class="fa-brands fa-youtube"></i>
+                </span>
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full st-surface-alt border st-divider" style="color: var(--st-purple);" data-i18n="badge_channel">Canal Oficial</span>
+              </div>
+              <span class="text-[11px] font-semibold uppercase tracking-widest st-muted">YouTube · CapCut</span>
+              <h3 class="text-lg font-bold mt-1" data-i18n="proj_2_title">Creación Digital en YouTube (@osiris7998)</h3>
+              <p class="text-sm st-body mt-2.5 leading-relaxed" data-i18n="proj_2_desc">
+                Producción audiovisual, edición rítmica en CapCut, narrativa visual y crecimiento orgánico de comunidad en mi canal oficial de YouTube.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t st-divider flex items-center justify-between">
+              <button type="button" data-case="youtube" class="open-case-btn text-xs font-semibold st-link hover:underline">
+                <span data-i18n="btn_case_details">Ver detalles del proyecto</span>
+              </button>
+              <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" class="st-muted hover:text-[#0095ff]" aria-label="Canal de YouTube @osiris7998">
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+              </a>
+            </div>
+          </article>
+
+          <article data-category="cx" class="portfolio-card st-card rounded-3xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="st-node-circle" style="border-color: var(--st-blue); color: var(--st-blue);">
+                  <i class="fa-solid fa-headset"></i>
+                </span>
+                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full st-surface-alt border st-divider" style="color: var(--st-blue);">ES / EN B2+</span>
+              </div>
+              <span class="text-[11px] font-semibold uppercase tracking-widest st-muted">AT&T · Uber Eats · Cox</span>
+              <h3 class="text-lg font-bold mt-1" data-i18n="proj_3_title">Gestión de Cuentas B2B & Portafolio MYWEB</h3>
+              <p class="text-sm st-body mt-2.5 leading-relaxed" data-i18n="proj_3_desc">
+                Estrategia de retención, ventas consultivas y soporte bilingüe de alto volumen combinados con el desarrollo de mi ecosistema digital en GitHub.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t st-divider flex items-center justify-between">
+              <button type="button" data-case="cx" class="open-case-btn text-xs font-semibold st-link hover:underline">
+                <span data-i18n="btn_case_details">Ver detalles del proyecto</span>
+              </button>
+              <a href="https://github.com/IvanOsiris/MYWEB" target="_blank" rel="noopener noreferrer" class="st-muted hover:text-[#0095ff]" aria-label="GitHub MYWEB">
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. HUB DE CANALES OFICIALES -->
+    <section id="hub" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <span class="text-[11px] font-bold uppercase tracking-[0.14em]" style="color: var(--st-cyan);" data-i18n="hub_kicker">Ecosistema Digital</span>
+        <h2 class="text-2xl sm:text-3xl font-bold mt-2" data-i18n="hub_title">Hub de Canales Oficiales</h2>
+        <p class="text-sm st-muted mt-2" data-i18n="hub_subtitle">
+          Accede directamente a mis plataformas de trabajo, canal de contenido y mensajería inmediata.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 reveal">
+        <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer" class="sm:col-span-2 st-card rounded-2xl p-5 flex items-center justify-between st-node-group">
+          <div class="flex items-center gap-4">
+            <span class="st-node-circle">
+              <i class="fa-solid fa-globe"></i>
+            </span>
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-widest" style="color: var(--st-cyan);">Upwork · Productive Playhouse</span>
+              <h3 class="text-sm sm:text-base font-bold mt-0.5" data-i18n="hub_upwork_title">Colaborador del Proyecto PlayHouse a través de Upwork</h3>
+              <p class="text-xs st-muted" data-i18n="hub_upwork_sub">Colaboración remota verificada en Productive Playhouse mediante la plataforma Upwork</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs st-muted"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" class="st-card rounded-2xl p-5 flex items-center justify-between st-node-group">
+          <div class="flex items-center gap-4">
+            <span class="st-node-circle">
+              <i class="fa-brands fa-youtube"></i>
+            </span>
+            <div>
+              <h3 class="text-sm sm:text-base font-bold" data-i18n="hub_yt_title">Canal Oficial de YouTube</h3>
+              <p class="text-xs st-muted">@osiris7998 · Contenido digital y edición</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs st-muted"></i>
+        </a>
+
+        <!-- Enlace directo a WhatsApp sin icono de WhatsApp -->
+        <a href="https://wa.me/525663656095?text=Hola%20Iv%C3%A1n%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener noreferrer" class="st-card rounded-2xl p-5 flex items-center justify-between st-node-group">
+          <div class="flex items-center gap-4">
+            <span class="st-node-circle">
+              <i class="fa-regular fa-paper-plane"></i>
+            </span>
+            <div>
+              <h3 class="text-sm sm:text-base font-bold" data-i18n="hub_wa_title">Mensaje Directo Inmediato</h3>
+              <p class="text-xs st-muted">+52 56 6365 6095 · Respuesta en línea</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs st-muted"></i>
+        </a>
+
+        <a href="https://github.com/IvanOsiris/MYWEB" target="_blank" rel="noopener noreferrer" class="st-card rounded-2xl p-5 flex items-center justify-between st-node-group">
+          <div class="flex items-center gap-4">
+            <span class="st-node-circle">
+              <i class="fa-brands fa-github"></i>
+            </span>
+            <div>
+              <h3 class="text-sm sm:text-base font-bold" data-i18n="hub_gh_title">GitHub & Código Web</h3>
+              <p class="text-xs st-muted">github.com/IvanOsiris/MYWEB</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs st-muted"></i>
+        </a>
+
+        <a href="mailto:ivanolguin333@gmail.com?subject=Contacto%20desde%20Portafolio%20Web%20-%20Iv%C3%A1n%20Olgu%C3%ADn" class="st-card rounded-2xl p-5 flex items-center justify-between st-node-group">
+          <div class="flex items-center gap-4">
+            <span class="st-node-circle">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+            <div>
+              <h3 class="text-sm sm:text-base font-bold" data-i18n="hub_mail_title">Correo Electrónico</h3>
+              <p class="text-xs st-muted">ivanolguin333@gmail.com</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs st-muted"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- 8. PREGUNTAS FRECUENTES -->
+    <section id="faq" class="st-surface-alt py-16 px-4 sm:px-6 lg:px-8 border-y st-divider">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 reveal">
+          <span class="text-[11px] font-bold uppercase tracking-[0.14em]" style="color: var(--st-purple);" data-i18n="faq_kicker">Resolución de Dudas</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2" data-i18n="faq_title">Preguntas Frecuentes</h2>
+        </div>
+
+        <div class="space-y-3 reveal">
+          <div class="st-card rounded-2xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-semibold hover:text-[#0095ff] transition-colors" aria-expanded="false">
+              <span data-i18n="faq_q1">¿En qué consiste tu colaboración en el proyecto PlayHouse?</span>
+              <i class="fa-solid fa-chevron-down text-xs st-muted transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-xs sm:text-sm st-body leading-relaxed" data-i18n="faq_a1">
+              Soy colaborador activo del proyecto de Productive Playhouse a través de la plataforma Upwork, participando en flujos de trabajo remotos donde aplico análisis bilingüe, criterio lingüístico y cumplimiento riguroso de estándares de calidad.
+            </div>
+          </div>
+
+          <div class="st-card rounded-2xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-semibold hover:text-[#0095ff] transition-colors" aria-expanded="false">
+              <span data-i18n="faq_q2">¿Qué nivel de inglés manejas y en qué modalidades trabajas?</span>
+              <i class="fa-solid fa-chevron-down text-xs st-muted transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-xs sm:text-sm st-body leading-relaxed" data-i18n="faq_a2">
+              Cuento con inglés avanzado (nivel B2+) tanto hablado como escrito, probado en atención a cuentas empresariales (AT&T Small Business) y soporte internacional. Estoy disponible para proyectos remotos, híbridos o presenciales en CDMX y área metropolitana.
+            </div>
+          </div>
+
+          <div class="st-card rounded-2xl overflow-hidden">
+            <button type="button" class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-semibold hover:text-[#0095ff] transition-colors" aria-expanded="false">
+              <span data-i18n="faq_q3">¿Qué tipo de proyectos digitales y de contenido realizas?</span>
+              <i class="fa-solid fa-chevron-down text-xs st-muted transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-xs sm:text-sm st-body leading-relaxed" data-i18n="faq_a3">
+              Produzco y edito contenido audiovisual dinámico con CapCut para mi canal de YouTube (@osiris7998), además de diseñar páginas web modernas y responsivas enfocadas en conversión y marca personal.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACTO INTERACTIVO -->
+    <section id="contacto" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div class="st-card rounded-3xl p-6 sm:p-10 reveal">
+        <div class="text-center max-w-xl mx-auto mb-6">
+          <span class="text-[11px] font-bold uppercase tracking-[0.14em]" style="color: var(--st-cyan);" data-i18n="contact_kicker">Contacto Inmediato</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2" data-i18n="contact_title">Iniciemos una Conversación</h2>
+          <p class="text-sm st-muted mt-2" data-i18n="contact_subtitle">
+            Elige una plantilla rápida o escribe tu mensaje personalizado para enviarlo de forma directa o por correo electrónico.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+          <button type="button" data-preset="recruiter" class="preset-btn px-3.5 py-1.5 rounded-full text-xs font-medium st-surface-alt border st-divider hover:border-[#0095ff] transition-colors">
+            <span data-i18n="preset_1">Propuesta Laboral / CX</span>
+          </button>
+          <button type="button" data-preset="upwork" class="preset-btn px-3.5 py-1.5 rounded-full text-xs font-medium st-surface-alt border st-divider hover:border-[#00cfbe] transition-colors">
+            <span data-i18n="preset_2">Proyecto Remoto / Upwork</span>
+          </button>
+          <button type="button" data-preset="content" class="preset-btn px-3.5 py-1.5 rounded-full text-xs font-medium st-surface-alt border st-divider hover:border-[#a855f7] transition-colors">
+            <span data-i18n="preset_3">Colaboración Digital / Web</span>
+          </button>
+        </div>
+
+        <form id="contact-form" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="visitor-name" class="block text-xs font-semibold uppercase tracking-wider st-muted mb-1.5" data-i18n="form_name_label">Tu nombre o empresa</label>
+              <input id="visitor-name" type="text" required placeholder="Ej. Ana García / Tech Corp" class="st-input w-full px-4 py-2.5 rounded-xl text-sm" />
+            </div>
+            <div>
+              <label for="visitor-topic" class="block text-xs font-semibold uppercase tracking-wider st-muted mb-1.5" data-i18n="form_topic_label">Motivo de contacto</label>
+              <select id="visitor-topic" class="st-input w-full px-4 py-2.5 rounded-xl text-sm">
+                <option value="Oportunidad Laboral / Customer Care Bilingüe">Oportunidad Laboral / Customer Care Bilingüe</option>
+                <option value="Proyecto Remoto / Colaboración vía Upwork">Proyecto Remoto / Colaboración vía Upwork</option>
+                <option value="Colaboración YouTube (@osiris7998) / Contenido">Colaboración YouTube (@osiris7998) / Contenido</option>
+                <option value="Proyecto de Marketing / Desarrollo Web">Proyecto de Marketing / Desarrollo Web</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="visitor-message" class="block text-xs font-semibold uppercase tracking-wider st-muted mb-1.5" data-i18n="form_msg_label">Mensaje</label>
+            <textarea id="visitor-message" rows="3" required placeholder="Hola Iván, revisé tu portafolio web y me gustaría conversar contigo sobre..." class="st-input w-full px-4 py-2.5 rounded-xl text-sm"></textarea>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center gap-3 pt-3">
+            <!-- Envía directo a WhatsApp sin icono de WhatsApp -->
+            <button type="submit" id="send-wa-btn" class="inline-flex items-center gap-2 px-7 py-3 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-wider text-white shadow-md transition-transform hover:scale-[1.02]" style="background: linear-gradient(90deg, var(--st-cyan), var(--st-blue));">
+              <span data-i18n="form_btn_wa">Enviar Mensaje Directo</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+
+            <button type="button" id="send-email-btn" class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs sm:text-sm font-semibold st-surface-alt border st-divider hover:border-[#0095ff] transition-colors">
+              <i class="fa-regular fa-envelope" style="color: var(--st-blue);"></i>
+              <span data-i18n="form_btn_email">Abrir en Correo</span>
+            </button>
+
+            <button type="button" id="copy-email-btn" class="inline-flex items-center gap-2 px-4 py-3 rounded-full text-xs font-medium st-surface-alt border st-divider hover:border-[#00cfbe] transition-colors">
+              <i class="fa-regular fa-copy" style="color: var(--st-cyan);"></i>
+              <span>ivanolguin333@gmail.com</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER MINIMALISTA -->
+  <footer class="st-surface-alt border-t st-divider py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3 text-center sm:text-left">
+        <img src="https://i.ibb.co/v4KHZZ2c/1792322473279.jpg" alt="Iván Olguín" width="40" height="40" class="w-10 h-10 rounded-full object-cover border st-divider shrink-0" />
+        <div>
+          <a href="#inicio" class="text-sm font-bold uppercase tracking-[0.12em]">IVÁN OLGUÍN</a>
+          <p class="text-xs st-muted mt-0.5" data-i18n="footer_tagline">
+            Customer Care Bilingüe · Colaborador PlayHouse (Upwork) · YouTube (@osiris7998)
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://www.youtube.com/@osiris7998" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="st-node-circle !w-9 !h-9 text-xs"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer" aria-label="Upwork" class="st-node-circle !w-9 !h-9 text-xs"><i class="fa-solid fa-globe"></i></a>
+        <a href="https://github.com/IvanOsiris/MYWEB" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="st-node-circle !w-9 !h-9 text-xs"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/525663656095?text=Hola%20Iv%C3%A1n%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20conversar" target="_blank" rel="noopener noreferrer" aria-label="Mensaje Directo" class="st-node-circle !w-9 !h-9 text-xs"><i class="fa-regular fa-paper-plane"></i></a>
+        <a href="mailto:ivanolguin333@gmail.com" aria-label="Correo electrónico" class="st-node-circle !w-9 !h-9 text-xs"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-6 pt-6 border-t st-divider text-center text-xs st-muted">
+      <p>© <span id="current-year">2026</span> Iván Osiris Olguín Becerra. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT PRINCIPAL -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let currentLang = 'es';
+      let toastTimer = null;
+      const $ = (id) => document.getElementById(id);
+
+      // 1. Año actual
+      if ($('current-year')) $('current-year').textContent = new Date().getFullYear();
+
+      // 2. Animación fluida de los medidores numéricos al cargar
+      const animateReadout = (el, endVal, prefix = '', decimals = 1, duration = 1100) => {
+        if (!el) return;
+        const start = performance.now();
+        const step = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const val = (endVal * eased).toFixed(decimals);
+          el.textContent = `${prefix}${val}`;
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      };
+      animateReadout($('counter-csat'), 99.0, '', 1, 1200);
+      animateReadout($('counter-exp'), 4.0, '+', 1, 1200);
+
+      // 3. Barra de progreso superior + Scroll-Spy del Menú Flotante
+      const progressEl = $('scroll-progress');
+      const spyLinks = document.querySelectorAll('.nav-spy-link');
+      const sections = document.querySelectorAll('main section[id]');
+
+      window.addEventListener('scroll', () => {
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (progressEl && docHeight > 0) {
+          progressEl.style.width = `${Math.min((window.scrollY / docHeight) * 100, 100)}%`;
+        }
+      }, { passive: true });
+
+      if ('IntersectionObserver' in window && sections.length) {
+        const spyObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute('id');
+              spyLinks.forEach((link) => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+              });
+            }
+          });
+        }, { rootMargin: '-35% 0px -55% 0px' });
+        sections.forEach((sec) => spyObserver.observe(sec));
+      }
+
+      // 4. Switch Sol / Luna
+      const applyTheme = (dark) => {
+        document.documentElement.classList.toggle('dark-theme', dark);
+        try { localStorage.setItem('ivan_st_theme', dark ? 'dark' : 'light'); } catch {}
+      };
+
+      try {
+        if (localStorage.getItem('ivan_st_theme') === 'dark') applyTheme(true);
+      } catch {}
+
+      $('theme-toggle-btn')?.addEventListener('click', () => {
+        const isDark = !document.documentElement.classList.contains('dark-theme');
+        applyTheme(isDark);
+      });
+
+      // 5. Notificación Toast
+      const showToast = (message) => {
+        const toast = $('toast-notification');
+        const msgEl = $('toast-message');
+        if (!toast || !msgEl) return;
+        msgEl.textContent = message;
+        toast.classList.replace('hidden', 'flex');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.replace('flex', 'hidden'), 3200);
+      };
+
+      // 6. Copiar al portapapeles
+      const copyToClipboard = (text, labelEs, labelEn) => {
+        const notify = () => showToast(currentLang === 'es' ? `${labelEs}: ${text}` : `${labelEn}: ${text}`);
+        if (navigator.clipboard?.writeText) {
+          navigator.clipboard.writeText(text).then(notify).catch(() => fallbackCopy(text, notify));
+        } else {
+          fallbackCopy(text, notify);
+        }
+      };
+
+      const fallbackCopy = (text, onSuccess) => {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); onSuccess(); } catch { showToast(text); }
+        document.body.removeChild(ta);
+      };
+
+      ['copy-email-hero', 'copy-email-btn'].forEach((id) => {
+        $(id)?.addEventListener('click', () => copyToClipboard('ivanolguin333@gmail.com', 'Correo copiado', 'Email copied'));
+      });
+      $('copy-cert-id-btn')?.addEventListener('click', () => {
+        copyToClipboard('FHL W57 T6K', 'ID copiado', 'ID copied');
+      });
+
+      // 7. Menú móvil / compacto
+      const mobileMenu = $('mobile-menu');
+      const mobileMenuBtn = $('mobile-menu-btn');
+      const mobileMenuIcon = $('mobile-menu-icon');
+
+      const toggleMobileMenu = (forceClose = false) => {
+        if (!mobileMenu || !mobileMenuBtn || !mobileMenuIcon) return;
+        const open = forceClose ? false : mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden', !open);
+        mobileMenuBtn.setAttribute('aria-expanded', String(open));
+        mobileMenuIcon.classList.toggle('fa-bars', !open);
+        mobileMenuIcon.classList.toggle('fa-xmark', open);
+      };
+
+      mobileMenuBtn?.addEventListener('click', () => toggleMobileMenu());
+      document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+        link.addEventListener('click', () => toggleMobileMenu(true));
+      });
+
+      // 8. Modales
+      const setModal = (el, open) => {
+        if (!el) return;
+        el.classList.toggle('hidden', !open);
+        el.classList.toggle('flex', open);
+      };
+
+      const caseModal = $('case-modal');
+      const caseData = {
+        playhouse: {
+          es: {
+            badge: 'Productive Playhouse · Upwork',
+            title: 'Colaborador del Proyecto PlayHouse vía Upwork',
+            desc: 'Colaboración remota verificada con Productive Playhouse gestionada íntegramente a través de la plataforma Upwork.',
+            bullets: [
+              'Ejecución de tareas especializadas en español latinoamericano e inglés (B2+).',
+              'Cumplimiento estricto de lineamientos de calidad, confidencialidad y entregas en tiempo.',
+              'Gestión profesional de contrato y entregables mediante Upwork Global.'
+            ],
+            linkUrl: 'https://www.productiveplayhouse.com/',
+            linkText: 'Visitar Productive Playhouse'
+          },
+          en: {
+            badge: 'Productive Playhouse · Upwork',
+            title: 'PlayHouse Project Collaborator via Upwork',
+            desc: 'Verified remote collaboration with Productive Playhouse managed through the Upwork platform.',
+            bullets: [
+              'Execution of specialized bilingual workflows in Latin American Spanish and English (B2+).',
+              'Strict adherence to quality benchmarks, confidentiality, and turnaround times.',
+              'Professional contract and milestone coordination via Upwork Global.'
+            ],
+            linkUrl: 'https://www.productiveplayhouse.com/',
+            linkText: 'Visit Productive Playhouse'
+          }
+        },
+        youtube: {
+          es: {
+            badge: 'YouTube Oficial · @osiris7998',
+            title: 'Creación y Edición de Contenido Digital',
+            desc: 'Dirección creativa, edición de video y gestión de comunidad en mi canal oficial de YouTube (@osiris7998).',
+            bullets: [
+              'Edición dinámica con CapCut enfocada en retención de audiencia y ritmo visual.',
+              'Optimización de títulos, descripciones y diseño visual para formatos largos y Shorts.',
+              'Storytelling digital adaptable a marcas y proyectos creativos.'
+            ],
+            linkUrl: 'https://www.youtube.com/@osiris7998',
+            linkText: 'Abrir Canal @osiris7998'
+          },
+          en: {
+            badge: 'Official YouTube · @osiris7998',
+            title: 'Digital Content Creation & Video Editing',
+            desc: 'Creative direction, video production, and community growth on my official YouTube channel (@osiris7998).',
+            bullets: [
+              'High-retention video editing using CapCut with dynamic visual pacing.',
+              'Metadata, thumbnail, and format optimization across videos and Shorts.',
+              'Engaging digital storytelling adaptable to brand campaigns.'
+            ],
+            linkUrl: 'https://www.youtube.com/@osiris7998',
+            linkText: 'Open @osiris7998 Channel'
+          }
+        },
+        cx: {
+          es: {
+            badge: 'AT&T · Uber Eats · Cox · GitHub',
+            title: 'Gestión de Cuentas B2B, CX Bilingüe & Web MYWEB',
+            desc: 'Más de 4 años resolviendo casos complejos, impulsando ventas consultivas y construyendo presencia digital.',
+            bullets: [
+              'AT&T Small Business (2025): Atención y ventas consultivas para cuentas empresariales.',
+              'Concentrix / Uber Eats & Cox Communications: Soporte ágil y retención de clientes.',
+              'Desarrollo del portafolio interactivo MYWEB con HTML5, Tailwind CSS y JavaScript.'
+            ],
+            linkUrl: 'https://github.com/IvanOsiris/MYWEB',
+            linkText: 'Ver Repositorio en GitHub'
+          },
+          en: {
+            badge: 'AT&T · Uber Eats · Cox · GitHub',
+            title: 'B2B Account Management, Bilingual CX & MYWEB',
+            desc: 'Over 4 years resolving complex client issues, driving consultative sales, and building web solutions.',
+            bullets: [
+              'AT&T Small Business (2025): Business-tier account care and consultative sales growth.',
+              'Concentrix / Uber Eats & Cox Communications: Fast-paced support and account strategy.',
+              'Development of the interactive bilingual MYWEB portfolio using Tailwind CSS & JS.'
+            ],
+            linkUrl: 'https://github.com/IvanOsiris/MYWEB',
+            linkText: 'View GitHub Repository'
+          }
+        }
+      };
+
+      document.querySelectorAll('.open-case-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const entry = caseData[btn.dataset.case];
+          if (!entry) return;
+          const content = entry[currentLang] || entry.es;
+          $('modal-badge').textContent = content.badge;
+          $('modal-title').textContent = content.title;
+          $('modal-desc').textContent = content.desc;
+          $('modal-external-link').href = content.linkUrl;
+          $('modal-link-text').textContent = content.linkText;
+
+          const list = $('modal-list');
+          list.innerHTML = '';
+          content.bullets.forEach((item) => {
+            const li = document.createElement('li');
+            li.className = 'flex items-start gap-2';
+            li.innerHTML = '<i class="fa-solid fa-check mt-1" style="color: var(--st-cyan);"></i><span></span>';
+            li.querySelector('span').textContent = item;
+            list.appendChild(li);
+          });
+          setModal(caseModal, true);
+        });
+      });
+
+      $('close-modal-btn')?.addEventListener('click', () => setModal(caseModal, false));
+      caseModal?.addEventListener('click', (e) => { if (e.target === caseModal) setModal(caseModal, false); });
+
+      // Lightbox Certificados
+      const certLightbox = $('cert-lightbox');
+      const certConfig = {
+        primary: {
+          el: $('cert-card-img-1'),
+          es: 'Certificado Oficial de Finalización — Fundamentos de Marketing Digital (ID: FHL W57 T6K)',
+          en: 'Official Certificate of Completion — Fundamentals of Digital Marketing (ID: FHL W57 T6K)'
+        },
+        audit: {
+          el: $('cert-card-img-2'),
+          es: 'Ficha de Acreditación y Huella Digital — Google Actívate (ID: FHL W57 T6K)',
+          en: 'Verified Digital Record & Credential — Google Actívate (ID: FHL W57 T6K)'
+        }
+      };
+
+      document.querySelectorAll('.open-cert-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const item = certConfig[btn.dataset.certView] || certConfig.primary;
+          if (!item.el) return;
+          const clone = item.el.cloneNode(true);
+          clone.removeAttribute('id');
+          $('cert-lightbox-img').innerHTML = '';
+          $('cert-lightbox-img').appendChild(clone);
+          $('cert-lightbox-title').textContent = item[currentLang];
+          setModal(certLightbox, true);
+        });
+      });
+
+      $('close-cert-lightbox')?.addEventListener('click', () => setModal(certLightbox, false));
+      certLightbox?.addEventListener('click', (e) => { if (e.target === certLightbox) setModal(certLightbox, false); });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          toggleMobileMenu(true);
+          setModal(caseModal, false);
+          setModal(certLightbox, false);
+        }
+      });
+
+      // 9. FAQ Accordion
+      document.querySelectorAll('.faq-toggle').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const content = btn.nextElementSibling;
+          const isOpen = content.classList.toggle('hidden') === false;
+          btn.setAttribute('aria-expanded', String(isOpen));
+          btn.querySelector('i')?.classList.toggle('rotate-180', isOpen);
+        });
+      });
+
+      // 10. Scroll Reveal
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.08 });
+        revealEls.forEach((el) => obs.observe(el));
+      } else {
+        revealEls.forEach((el) => el.classList.add('active'));
+      }
+
+      // 11. Filtro de Portafolio
+      const filterTabs = document.querySelectorAll('.portfolio-tab');
+      const portfolioCards = document.querySelectorAll('.portfolio-card');
+      filterTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const selected = tab.dataset.filter;
+          filterTabs.forEach((t) => {
+            const active = t === tab;
+            if (active) {
+              t.style.background = 'linear-gradient(90deg, var(--st-cyan), var(--st-blue))';
+              t.classList.add('text-white');
+              t.classList.remove('st-card', 'st-muted');
+            } else {
+              t.style.background = '';
+              t.classList.remove('text-white');
+              t.classList.add('st-card', 'st-muted');
+            }
+          });
+          portfolioCards.forEach((card) => {
+            card.classList.toggle('hidden', selected !== 'all' && card.dataset.category !== selected);
+          });
+        });
+      });
+
+      // 12. Plantillas y Formulario de Contacto (mantiene envío directo a WhatsApp)
+      const presets = {
+        recruiter: {
+          es: 'Hola Iván, revisé tu portafolio web y tu experiencia en Customer Care Bilingüe (AT&T / Uber Eats). Nos gustaría conversar contigo sobre una vacante.',
+          en: 'Hi Iván, I reviewed your portfolio and your Bilingual Customer Care background (AT&T / Uber Eats). We would love to discuss an open role with you.',
+          topicIndex: 0
+        },
+        upwork: {
+          es: 'Hola Iván, vi que eres colaborador del proyecto PlayHouse a través de Upwork y me gustaría invitarte a colaborar en un proyecto remoto.',
+          en: 'Hi Iván, I saw that you are a PlayHouse project collaborator via Upwork and would like to invite you to a remote project.',
+          topicIndex: 1
+        },
+        content: {
+          es: 'Hola Iván, vi tu canal de YouTube (@osiris7998) y tu página web. Me gustaría platicar sobre un proyecto de contenido digital / web.',
+          en: 'Hi Iván, I checked out your YouTube channel (@osiris7998) and website. I would like to discuss a digital content / web project.',
+          topicIndex: 2
+        }
+      };
+
+      document.querySelectorAll('.preset-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const item = presets[btn.dataset.preset];
+          if (!item) return;
+          if ($('visitor-topic')?.options[item.topicIndex]) $('visitor-topic').selectedIndex = item.topicIndex;
+          if ($('visitor-message')) {
+            $('visitor-message').value = item[currentLang];
+            $('visitor-message').focus();
+          }
+          showToast(currentLang === 'es' ? 'Plantilla cargada' : 'Template loaded');
+        });
+      });
+
+      const getFormPayload = () => ({
+        name: $('visitor-name')?.value.trim() || 'Visitante Web',
+        topic: $('visitor-topic')?.value || 'Contacto desde Portafolio Web',
+        msg: $('visitor-message')?.value.trim() || 'Hola Iván, vi tu portafolio web y me gustaría conversar contigo.'
+      });
+
+      $('contact-form')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const { name, topic, msg } = getFormPayload();
+        const text = `Hola Iván, soy ${name} (${topic}). ${msg}`;
+        window.open(`https://wa.me/525663656095?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+        showToast(currentLang === 'es' ? 'Abriendo chat directo...' : 'Opening direct chat...');
+      });
+
+      $('send-email-btn')?.addEventListener('click', () => {
+        const { name, topic, msg } = getFormPayload();
+        const subject = `${topic} - ${name}`;
+        const body = `Hola Iván,\n\nSoy ${name}.\n\n${msg}\n\nSaludos.`;
+        window.location.href = `mailto:ivanolguin333@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        showToast(currentLang === 'es' ? 'Abriendo cliente de correo...' : 'Opening email client...');
+      });
+
+      // 13. Traducciones ES / EN
+      const translations = {
+        es: {
+          nav_home: 'Inicio', nav_about: 'Perfil', nav_specialties: 'Servicios', nav_experience: 'Trayectoria',
+          nav_certs: 'Certificados', nav_portfolio: 'Portafolio', nav_hub: 'Hub', nav_contact: 'Contacto', nav_cta: 'Hablemos',
+          hero_live_badge: 'Disponible Global · Colaborador PlayHouse (Upwork)',
+          hero_kicker: 'Iván Osiris Olguín Becerra · ES / EN B2+',
+          hero_h1_part1: 'Customer Experience',
+          hero_h1_part2: 'Bilingüe & Gestión B2B.',
+          hero_desc: 'Transformo soporte crítico y cuentas empresariales en retención medible. Más de 4 años impulsando operaciones para AT&T Small Business, Uber Eats (Concentrix) y Cox Communications, colaborando actualmente en Productive Playhouse vía Upwork y creando contenido en YouTube (@osiris7998).',
+          gauge_1_label: 'CALIDAD', gauge_1_sub: 'Enfoque CSAT / SLA',
+          gauge_2_label: 'TRAYECTORIA', gauge_2_unit: 'Años',
+          gauge_3_label: 'IDIOMAS',
+          hero_btn_portfolio: 'Explorar Portafolio', btn_copy_email: 'Copiar Email',
+          portal_status: 'En Línea', hero_go_btn: 'CONTACTO',
+          portal_hint: 'Clic para iniciar conversación directa inmediata',
+          portal_node1_title: 'Línea Directa', portal_node2_link: 'Abrir formulario',
+          trust_1: 'Colaborador vía Upwork', trust_2: 'Cuentas B2B & Ventas', trust_3: 'Soporte & Retención CX',
+          about_kicker: 'Perfil Ejecutivo', about_title: 'Sobre Mí y Propuesta de Valor',
+          about_p1: 'Soy un profesional dinámico, autodidacta y orientado a la resolución de problemas complejos. A lo largo de mi carrera he gestionado cuentas empresariales, soporte técnico bilingüe, retención de clientes y operaciones de cobranza en sectores de telecomunicaciones, plataformas de entrega y servicios financieros.',
+          about_p2: 'Actualmente combino mi experiencia en Customer Experience con mi trabajo como colaborador del proyecto Productive Playhouse a través de la plataforma Upwork, además de desarrollar proyectos web modernos y producir contenido audiovisual para mi canal de YouTube (@osiris7998).',
+          pillar_1: 'Comunicación Estratégica', pillar_2: 'Resolución Ágil', pillar_3: 'Alta Tolerancia a Presión', pillar_4: 'Enfoque Tecnológico',
+          skills_matrix_title: 'Dominio de Competencias',
+          skill_bar_1: 'Customer Care B2B/B2C & Retención', skill_bar_2: 'Comunicación Bilingüe (Español / Inglés B2+)',
+          skill_bar_3: 'Colaboración Remota (PlayHouse · Upwork)', skill_bar_4: 'Creación Digital, CapCut & Desarrollo Web',
+          spec_kicker: 'Soluciones Profesionales', spec_title: 'Especialidades y Áreas de Impacto',
+          spec_subtitle: 'Atención al cliente bilingüe, estrategia comercial, proyectos internacionales en Upwork y creación digital.',
+          spec_1_title: 'Customer Care & Soporte Bilingüe (ES/EN B2+)',
+          spec_1_desc: 'Atención especializada para cuentas corporativas (B2B) y usuarios finales (B2C) en español e inglés avanzado. Manejo experto de objeciones, desescalada de casos críticos y cumplimiento sobresaliente de SLA, FCR y CSAT.',
+          spec_2_title: 'Gestión de Cuentas B2B, Ventas & Marketing',
+          spec_2_desc: 'Administración estratégica de carteras de clientes, presentación clara de atributos técnicos y beneficios comerciales, ventas consultivas, retención de cuentas y negociación efectiva.',
+          spec_3_title: 'Colaborador del Proyecto PlayHouse vía Upwork',
+          spec_3_desc: 'Colaborador activo en el proyecto de Productive Playhouse a través de la plataforma Upwork, ejecutando tareas remotas con precisión lingüística, análisis detallado y cumplimiento puntual de entregables internacionales.',
+          spec_4_title: 'Creación Digital (@osiris7998) & Desarrollo Web',
+          spec_4_desc: 'Producción y edición de video dinámico con CapCut para YouTube (@osiris7998), storytelling visual, además de diseño y desarrollo de páginas web responsivas con HTML5, Tailwind CSS y JavaScript.',
+          exp_kicker: 'Trayectoria Profesional', exp_title: 'Experiencia Laboral y Proyectos',
+          exp_subtitle: 'Recorrido sólido en empresas internacionales de telecomunicaciones, tecnología, comercio y colaboración remota.',
+          exp_1_role: 'Colaborador del Proyecto PlayHouse (a través de Upwork)', exp_1_date: '2026 – Presente',
+          exp_1_desc: 'Colaborador independiente verificado en el proyecto de Productive Playhouse gestionado a través de la plataforma Upwork. Ejecución de flujos de trabajo remotos, evaluación de calidad y comunicación efectiva bajo estándares internacionales.',
+          exp_2_role: 'Customer Care Service & Sales (B2B)', exp_2_date: 'Feb 2025 – Ago 2025',
+          exp_2_desc: 'Gestión de cuentas de clientes de nivel empresarial (B2B), enfocándome en la excelencia del servicio y el crecimiento de ventas. Explicación consultiva de atributos técnicos de productos y beneficios comerciales para impulsar la satisfacción y retención.',
+          exp_3_role: 'Creador de Contenido Digital & Desarrollador Web', exp_3_date: '2024 – Presente',
+          exp_3_desc: 'Dirección, edición de video con CapCut y publicación continua en mi canal de YouTube (@osiris7998), junto con el diseño y programación de sitios web modernos e interactivos en HTML5, Tailwind CSS y JavaScript.',
+          exp_4_role: 'Customer Service Representative', exp_4_date: 'Nov 2022 – Nov 2023',
+          exp_4_desc: 'Soporte de alto nivel para usuarios y socios de Uber Eats, resolviendo incidencias operativas con sentido de urgencia y manteniendo métricas sobresalientes de desempeño en un entorno de ritmo acelerado.',
+          exp_5_role: 'Account Manager Executive & Ejecutivo CAT', exp_5_date: 'Feb 2021 – Abr 2022',
+          exp_5_desc: 'Supervisión de cuentas y punto de contacto principal para estrategia de servicio en Cox Communications, así como asistencia al cliente y negociación efectiva en entornos financieros de alta presión en Coppel.',
+          cert_kicker: 'Credenciales Verificadas', cert_title: 'Certificaciones Oficiales',
+          cert_subtitle: 'Formación acreditada por Google Actívate, IAB Europe y The Open University en estrategia digital y marketing.',
+          cert_course_name: 'Fundamentos de Marketing Digital',
+          cert_course_meta: 'Otorgado a Iván Osiris Olguín Becerra · Duración acreditada: 40 horas (26 módulos completados) · 6 de diciembre de 2021',
+          cert_lightbox_meta: 'Acreditado: 40 horas (26 módulos) · 6 de diciembre de 2021',
+          cert_verify_btn: 'Verificar Registro Digital', cert_card1_label: '1. Certificado Oficial de Finalización',
+          cert_card2_label: '2. Ficha de Acreditación y Huella Digital', cert_zoom_btn: 'Ampliar certificado',
+          port_kicker: 'Portafolio Interactivo', port_title: 'Proyectos y Casos de Éxito',
+          port_subtitle: 'Filtra por área o haz clic en cada tarjeta para abrir el desglose completo del proyecto.',
+          tab_all: 'Todos', tab_cx: 'Customer Care & Ventas', tab_web: 'Web & IA', tab_content: 'YouTube & Contenido',
+          badge_active: 'Activo', badge_channel: 'Canal Oficial',
+          proj_1_title: 'Colaborador en Proyecto PlayHouse (Upwork)',
+          proj_1_desc: 'Colaboración remota verificada en el proyecto de Productive Playhouse a través de la plataforma Upwork, aportando análisis bilingüe y ejecución de alta precisión.',
+          proj_2_title: 'Creación Digital en YouTube (@osiris7998)',
+          proj_2_desc: 'Producción audiovisual, edición rítmica en CapCut, narrativa visual y crecimiento orgánico de comunidad en mi canal oficial de YouTube.',
+          proj_3_title: 'Gestión de Cuentas B2B & Portafolio MYWEB',
+          proj_3_desc: 'Estrategia de retención, ventas consultivas y soporte bilingüe de alto volumen combinados con el desarrollo de mi ecosistema digital en GitHub.',
+          btn_case_details: 'Ver detalles del proyecto', modal_highlights_title: 'Logros y Enfoque Clave',
+          hub_kicker: 'Ecosistema Digital', hub_title: 'Hub de Canales Oficiales',
+          hub_subtitle: 'Accede directamente a mis plataformas de trabajo, canal de contenido y mensajería inmediata.',
+          hub_upwork_title: 'Colaborador del Proyecto PlayHouse a través de Upwork',
+          hub_upwork_sub: 'Colaboración remota verificada en Productive Playhouse mediante la plataforma Upwork',
+          hub_yt_title: 'Canal Oficial de YouTube', hub_wa_title: 'Mensaje Directo Inmediato',
+          hub_gh_title: 'GitHub & Código Web', hub_mail_title: 'Correo Electrónico',
+          faq_kicker: 'Resolución de Dudas', faq_title: 'Preguntas Frecuentes',
+          faq_q1: '¿En qué consiste tu colaboración en el proyecto PlayHouse?',
+          faq_a1: 'Soy colaborador activo del proyecto de Productive Playhouse a través de la plataforma Upwork, participando en flujos de trabajo remotos donde aplico análisis bilingüe, criterio lingüístico y cumplimiento riguroso de estándares de calidad.',
+          faq_q2: '¿Qué nivel de inglés manejas y en qué modalidades trabajas?',
+          faq_a2: 'Cuento con inglés avanzado (nivel B2+) tanto hablado como escrito, probado en atención a cuentas empresariales (AT&T Small Business) y soporte internacional. Estoy disponible para proyectos remotos, híbridos o presenciales en CDMX y área metropolitana.',
+          faq_q3: '¿Qué tipo de proyectos digitales y de contenido realizas?',
+          faq_a3: 'Produzco y edito contenido audiovisual dinámico con CapCut para mi canal de YouTube (@osiris7998), además de diseñar páginas web modernas y responsivas enfocadas en conversión y marca personal.',
+          contact_kicker: 'Contacto Inmediato', contact_title: 'Iniciemos una Conversación',
+          contact_subtitle: 'Elige una plantilla rápida o escribe tu mensaje personalizado para enviarlo de forma directa o por correo electrónico.',
+          preset_1: 'Propuesta Laboral / CX', preset_2: 'Proyecto Remoto / Upwork', preset_3: 'Colaboración Digital / Web',
+          form_name_label: 'Tu nombre o empresa', form_topic_label: 'Motivo de contacto', form_msg_label: 'Mensaje',
+          form_btn_wa: 'Enviar Mensaje Directo', form_btn_email: 'Abrir en Correo',
+          footer_tagline: 'Customer Care Bilingüe · Colaborador PlayHouse (Upwork) · YouTube (@osiris7998)',
+          footer_rights: 'Todos los derechos reservados.'
+        },
+        en: {
+          nav_home: 'Home', nav_about: 'Profile', nav_specialties: 'Services', nav_experience: 'Track Record',
+          nav_certs: 'Certificates', nav_portfolio: 'Portfolio', nav_hub: 'Hub', nav_contact: 'Contact', nav_cta: 'Let’s Talk',
+          hero_live_badge: 'Available Globally · PlayHouse Collaborator (Upwork)',
+          hero_kicker: 'Iván Osiris Olguín Becerra · ES / EN B2+',
+          hero_h1_part1: 'Bilingual Customer',
+          hero_h1_part2: 'Experience & B2B Growth.',
+          hero_desc: 'Turning critical support and corporate accounts into measurable retention. Over 4 years driving operations for AT&T Small Business, Uber Eats (Concentrix), and Cox Communications, currently collaborating with Productive Playhouse via Upwork and creating content on YouTube (@osiris7998).',
+          gauge_1_label: 'QUALITY', gauge_1_sub: 'CSAT / SLA Focus',
+          gauge_2_label: 'EXPERIENCE', gauge_2_unit: 'Years',
+          gauge_3_label: 'LANGUAGES',
+          hero_btn_portfolio: 'Explore Portfolio', btn_copy_email: 'Copy Email',
+          portal_status: 'Online', hero_go_btn: 'CONTACT',
+          portal_hint: 'Click to start an instant direct conversation',
+          portal_node1_title: 'Direct Line', portal_node2_link: 'Open contact form',
+          trust_1: 'Collaborator via Upwork', trust_2: 'B2B Accounts & Sales', trust_3: 'CX Support & Retention',
+          about_kicker: 'Executive Profile', about_title: 'About Me & Value Proposition',
+          about_p1: 'I am a dynamic, self-taught professional focused on solving complex client challenges. Throughout my career I have managed business-tier accounts, bilingual technical support, client retention, and collections operations across telecom, delivery platforms, and financial services.',
+          about_p2: 'Today I combine my Customer Experience background with my work as a collaborator on the Productive Playhouse project through the Upwork platform, while building modern web experiences and producing video content for my YouTube channel (@osiris7998).',
+          pillar_1: 'Strategic Communication', pillar_2: 'Agile Problem Solving', pillar_3: 'High-Pressure Resilience', pillar_4: 'Tech-Driven Mindset',
+          skills_matrix_title: 'Core Competencies',
+          skill_bar_1: 'B2B/B2C Customer Care & Retention', skill_bar_2: 'Bilingual Communication (Spanish / English B2+)',
+          skill_bar_3: 'Remote Collaboration (PlayHouse · Upwork)', skill_bar_4: 'Digital Creation, CapCut & Web Development',
+          spec_kicker: 'Professional Solutions', spec_title: 'Specialties & Areas of Impact',
+          spec_subtitle: 'Bilingual customer support, commercial strategy, international Upwork projects, and digital media.',
+          spec_1_title: 'Bilingual Customer Care & Support (ES/EN B2+)',
+          spec_1_desc: 'Dedicated support for business-tier (B2B) and consumer (B2C) accounts in Spanish and Advanced English. Expert objection handling, critical issue de-escalation, and strong SLA, FCR, and CSAT execution.',
+          spec_2_title: 'B2B Account Management, Sales & Marketing',
+          spec_2_desc: 'Strategic portfolio oversight, clear communication of technical product attributes and commercial value, consultative upselling, client retention, and effective negotiation.',
+          spec_3_title: 'PlayHouse Project Collaborator via Upwork',
+          spec_3_desc: 'Active collaborator on the Productive Playhouse project through the Upwork platform, delivering remote workflows with linguistic precision, analytical rigor, and reliable turnaround.',
+          spec_4_title: 'Digital Creation (@osiris7998) & Web Development',
+          spec_4_desc: 'Dynamic video production and editing with CapCut for YouTube (@osiris7998), visual storytelling, and responsive modern web development using HTML5, Tailwind CSS, and JavaScript.',
+          exp_kicker: 'Career Track Record', exp_title: 'Work Experience & Projects',
+          exp_subtitle: 'Proven trajectory across international telecommunications, tech platforms, retail finance, and remote collaboration.',
+          exp_1_role: 'PlayHouse Project Collaborator (via Upwork)', exp_1_date: '2026 – Present',
+          exp_1_desc: 'Verified independent collaborator on the Productive Playhouse project managed through the Upwork platform. Executing remote workflows, quality evaluation, and effective bilingual communication under international standards.',
+          exp_2_role: 'Customer Care Service & Sales (B2B)', exp_2_date: 'Feb 2025 – Aug 2025',
+          exp_2_desc: 'Managed business-tier customer accounts focusing on service excellence and sales growth. Explained technical product attributes and commercial benefits to drive client satisfaction and retention.',
+          exp_3_role: 'Digital Content Creator & Web Developer', exp_3_date: '2024 – Present',
+          exp_3_desc: 'Video direction, CapCut editing, and continuous publishing on my official YouTube channel (@osiris7998), alongside designing and coding responsive web interfaces on GitHub (@IvanOsiris).',
+          exp_4_role: 'Customer Service Representative', exp_4_date: 'Nov 2022 – Nov 2023',
+          exp_4_desc: 'Provided high-level support for Uber Eats users and partners, resolving operational issues with urgency and maintaining high performance metrics in a fast-paced environment.',
+          exp_5_role: 'Account Manager Executive & CAT Specialist', exp_5_date: 'Feb 2021 – Apr 2022',
+          exp_5_desc: 'Oversaw client accounts and served as primary point of contact for service strategy at Cox Communications, and handled customer assistance and credit negotiations at Coppel.',
+          cert_kicker: 'Verified Credentials', cert_title: 'Official Certifications',
+          cert_subtitle: 'Accredited training by Google Actívate, IAB Europe, and The Open University in digital marketing and strategy.',
+          cert_course_name: 'Fundamentals of Digital Marketing',
+          cert_course_meta: 'Awarded to Iván Osiris Olguín Becerra · Accredited duration: 40 hours (26 modules completed) · December 6, 2021',
+          cert_lightbox_meta: 'Accredited: 40 hours (26 modules) · December 6, 2021',
+          cert_verify_btn: 'Verify Digital Record', cert_card1_label: '1. Official Certificate of Completion',
+          cert_card2_label: '2. Accreditation Record & Digital Fingerprint', cert_zoom_btn: 'Enlarge certificate',
+          port_kicker: 'Interactive Portfolio', port_title: 'Featured Projects & Case Studies',
+          port_subtitle: 'Filter by category or click any card to inspect the full project breakdown.',
+          tab_all: 'All', tab_cx: 'Customer Care & Sales', tab_web: 'Web & AI', tab_content: 'YouTube & Media',
+          badge_active: 'Active', badge_channel: 'Official Channel',
+          proj_1_title: 'PlayHouse Project Collaborator (Upwork)',
+          proj_1_desc: 'Verified remote collaboration on the Productive Playhouse project via the Upwork platform, delivering bilingual analysis and high-precision execution.',
+          proj_2_title: 'YouTube Digital Creation (@osiris7998)',
+          proj_2_desc: 'Video production, rhythmic CapCut editing, visual storytelling, and organic community growth on my official YouTube channel.',
+          proj_3_title: 'B2B Account Management & MYWEB Portfolio',
+          proj_3_desc: 'Client retention strategy, consultative sales, and high-volume bilingual support paired with building my web ecosystem on GitHub.',
+          btn_case_details: 'View project details', modal_highlights_title: 'Key Achievements & Focus',
+          hub_kicker: 'Digital Ecosystem', hub_title: 'Official Channels Hub',
+          hub_subtitle: 'Direct access to my work platforms, content channel, and instant messaging.',
+          hub_upwork_title: 'PlayHouse Project Collaborator via Upwork',
+          hub_upwork_sub: 'Verified remote collaboration with Productive Playhouse through the Upwork platform',
+          hub_yt_title: 'Official YouTube Channel', hub_wa_title: 'Instant Direct Message',
+          hub_gh_title: 'GitHub & Web Source Code', hub_mail_title: 'Direct Email',
+          faq_kicker: 'Quick Answers', faq_title: 'Frequently Asked Questions',
+          faq_q1: 'What does your collaboration on the PlayHouse project involve?',
+          faq_a1: 'I am an active collaborator on the Productive Playhouse project through the Upwork platform, participating in remote workflows where I apply bilingual analysis, linguistic accuracy, and strict quality standards.',
+          faq_q2: 'What is your English proficiency and work availability?',
+          faq_a2: 'I speak and write Advanced English (B2+), proven in business-tier account management (AT&T Small Business) and international support. I am available for remote, hybrid, or on-site roles.',
+          faq_q3: 'What digital media and web projects do you build?',
+          faq_a3: 'I produce and edit dynamic video content with CapCut for my YouTube channel (@osiris7998), and design modern responsive websites focused on personal branding and conversion.',
+          contact_kicker: 'Immediate Contact', contact_title: 'Let’s Start a Conversation',
+          contact_subtitle: 'Pick a quick template or write a custom message to send directly or via email.',
+          preset_1: 'Job Opportunity / CX', preset_2: 'Remote Project / Upwork', preset_3: 'Digital / Web Collaboration',
+          form_name_label: 'Your name or company', form_topic_label: 'Reason for reaching out', form_msg_label: 'Message',
+          form_btn_wa: 'Send Direct Message', form_btn_email: 'Open in Email',
+          footer_tagline: 'Bilingual Customer Care · PlayHouse Collaborator (Upwork) · YouTube (@osiris7998)',
+          footer_rights: 'All rights reserved.'
+        }
+      };
+
+      const langSegBtns = document.querySelectorAll('[data-lang-btn]');
+      const applyLanguage = (lang) => {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        const dict = translations[lang] || translations.es;
+        document.querySelectorAll('[data-i18n]').forEach((node) => {
+          const val = dict[node.dataset.i18n];
+          if (val) node.textContent = val;
+        });
+        langSegBtns.forEach((btn) => {
+          btn.classList.toggle('active', btn.dataset.langBtn === lang);
+        });
+        try { localStorage.setItem('ivan_portfolio_lang', lang); } catch {}
+      };
+
+      langSegBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const next = btn.dataset.langBtn;
+          if (next && next !== currentLang) {
+            applyLanguage(next);
+            showToast(next === 'es' ? 'Idioma: Español' : 'Language: English');
+          }
+        });
+      });
+
+      try {
+        const saved = localStorage.getItem('ivan_portfolio_lang');
+        if (saved === 'en' || saved === 'es') currentLang = saved;
+      } catch {}
+      applyLanguage(currentLang);
+    });
+  </script>
+</body>
+</html>
